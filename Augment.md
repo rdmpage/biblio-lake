@@ -11,3 +11,14 @@ If we find a DOI then we do the following:
 3. Update record’s timestamp to “now”
 4. If record for DOI doesn’t exist in document store then enqueue the DOI.
 
+## How to use
+
+```
+cd augment
+php add_doi.php
+
+cd ../actions
+php dequeue.php 
+php upload_to_elastic.php
+```
+ 

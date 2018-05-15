@@ -42,7 +42,7 @@ function get_query_string($id)
 
 
 $ids = array(
-'https://orcid.org/0000-0003-3628-2567/work/21039664'
+'https://orcid.org/0000-0003-3628-2567/work/21039667'
 );
 
 foreach ($ids as $id)
