@@ -1,0 +1,282 @@
+<html>
+	<head>
+		<title>Cited reference to Elastic Search</title>
+		<meta charset="UTF-8"/>
+		<script src="jquery.js"></script>
+		<!-- stuff below needs to go into CouchDB views -->
+		<script src="shared.js"></script>
+		<script src="language.js"></script>
+		<style>
+		td { border: 1px solid red; }
+		</style>
+	</head>
+<body>
+
+<h1>Cited reference to Elastic Search</h1>
+
+
+<div>
+	<div style="width:100%;height:auto;">
+		<h2>JSON</h2>
+			<!-- JSON for data object goes below -->
+			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">{
+  "_id": "https://doi.org/10.1007/s12225-010-9229-9#9229_CR7",
+  "_rev": "1-a6cc00084d60baf5dc7846b3e0af6784",
+  "message": {
+    "key": "9229_CR7",
+    "first-page": "475",
+    "volume": "30",
+    "author": "C Jeffrey",
+    "year": "1975",
+    "unstructured": "____ (1975). Further notes on Cucurbitaceae: III: Some Southern African Taxa. Kew Bull. 30: 475 – 493.",
+    "journal-title": "Kew Bull."
+  },
+  "message-format": "application/vnd.crossref-citation+json",
+  "message-timestamp": "2018-05-15T13:14:47+00:00",
+  "message-modified": "2018-05-15T13:14:47+00:00"
+}</textarea>			
+						<br />
+			<button onclick="convert()">Convert JSON to RDF</button>
+	</div>
+	<div style="clear:both;"></div>
+	
+	<div style="width:100%;">
+		<h2>JSON-LD</h2>
+		<div id="jsonld" style="width:100%;white-space:pre;background-color:#333;color:white;overflow:auto;"></div>
+
+</div>			
+			
+		
+		
+		
+<script>
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// START COUCHDB VIEW
+//----------------------------------------------------------------------------------------
+
+
+//----------------------------------------------------------------------------------------
+function add_values(elastic_search_doc, key, value, boost) {
+	elastic_search_doc.search_data.fulltext_values.push(value);
+	
+	boosted = (typeof boost !== 'undefined') ?  boost : false;
+	
+	if (boosted) {
+		elastic_search_doc.search_data.fulltext_boosted_values.push(value);
+	}
+	
+	switch (key) {
+		case 'container':
+		case 'author':
+			elastic_search_doc.search_data[key].push(value);
+			break;
+
+		case 'year':
+			elastic_search_doc.search_data[key] = value;
+			break;
+	
+		default:
+			break;
+	}
+	
+	return elastic_search_doc;
+}
+
+//----------------------------------------------------------------------------------------
+function message(doc) {
+  if (doc.message) {
+
+    var elastic_search_doc = {};
+    
+    elastic_search_doc.id = doc._id;
+    
+    // type of document
+    elastic_search_doc.type = 'citation';
+    
+	// output to display in list of hits
+	elastic_search_doc.search_result_data = {};
+	
+	// possible fields to hold information on how to display this object
+	elastic_search_doc.search_result_data.name = '';
+	elastic_search_doc.search_result_data.description = '';
+	elastic_search_doc.search_result_data.creator = [];
+	elastic_search_doc.search_result_data.thumbnailUrl = '';
+	elastic_search_doc.search_result_data.url = '';
+	
+	// temporary
+	elastic_search_doc.search_result_data.description_parts = [];
+	
+	/*
+	if ($url)
+	{
+		$doc->search_result_data->url = $url;
+	}
+	*/
+
+	// fields that will be searched on
+	elastic_search_doc.search_data = {};
+	
+	// text fields for searching on
+	elastic_search_doc.search_data.fulltext_values = [];
+	elastic_search_doc.search_data.fulltext_boosted_values = [];
+	
+	// things to use as facets
+	elastic_search_doc.search_data.container = [];
+	elastic_search_doc.search_data.author = [];
+	elastic_search_doc.search_data.year = null;
+	elastic_search_doc.search_data.subject = [];
+	
+	/*
+	      {
+        "issue": "602",
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.11646/zootaxa.602.1.1",
+        "article-title": "A new species of Pedinotus (Hymenoptera: Braconidae: Doryctinae) from Brazil",
+        "author": "FÉLIX FC.",
+        "year": "2004",
+        "journal-title": "Zootaxa"
+      },
+  */
+	
+	// title
+	if (doc.message['article-title']) {
+		elastic_search_doc = add_values(elastic_search_doc, 'title', doc.message['article-title'], true);
+		
+        elastic_search_doc.search_result_data.name = doc.message['article-title'];
+	}
+
+	// journal
+	if (doc.message['journal-title']) {
+		elastic_search_doc = add_values(elastic_search_doc, 'container', doc.message['journal-title'], true);
+		elastic_search_doc.search_result_data.description_parts.push('in ' + doc.message['journal-title']);	
+	}
+
+	// volume
+	if (doc.message.volume) {
+		elastic_search_doc = add_values(elastic_search_doc, 'volume', doc.message.volume, true);
+		elastic_search_doc.search_result_data.description_parts.push('in volume' + doc.message.volume);	
+	}
+
+	// issue
+	if (doc.message.issue) {
+		elastic_search_doc = add_values(elastic_search_doc, 'issue', doc.message.issue, true);
+		elastic_search_doc.search_result_data.description_parts.push('issue ' + doc.message.issue);	
+	}
+
+	// page
+	if (doc.message['first-page']) {
+		elastic_search_doc = add_values(elastic_search_doc, 'volume', doc.message['first-page'], true);
+		elastic_search_doc.search_result_data.description_parts.push('page ' + doc.message['first-page']);	
+	}
+
+	// year
+	if (doc.message.year) {
+		elastic_search_doc = add_values(elastic_search_doc, 'year', doc.message.year, true);
+		elastic_search_doc.search_result_data.description_parts.push('in ' + doc.message.year);	
+	}
+
+	// DOI
+	if (doc.message.doi) {
+		elastic_search_doc = add_values(elastic_search_doc, 'doi', doc.message.doi);		
+		
+		elastic_search_doc.search_result_data.doi = doc.message.doi;
+	} 
+	
+	// authors
+	if (doc.message.author) {
+		if (Array.isArray(doc.message.author)) {	
+			for (var i in doc.message.author) {
+				elastic_search_doc.search_data['author'].push(doc.message.author[i]);
+				elastic_search_doc.search_result_data['creator'].push(doc.message.author[i]);
+			}
+		} else {
+			elastic_search_doc.search_data['author'].push(doc.message.author);
+			elastic_search_doc.search_result_data['creator'].push(doc.message.author);		
+		}
+	}
+	
+	//------------------------------------------------------------------------------------
+	
+	// cleanup
+	if (doc.message.unstructured) {
+		// If we have unstructured text then we have the full citation text already
+		elastic_search_doc.search_data.fulltext = doc.message.unstructured;
+		delete elastic_search_doc.search_data.fulltext_values;
+		
+		elastic_search_doc.search_data.fulltext_boosted = doc.message.unstructured;
+		delete elastic_search_doc.search_data.fulltext_boosted_values;	
+		
+		if (elastic_search_doc.search_result_data.name == '') {
+			elastic_search_doc.search_result_data.name = doc.message.unstructured;
+		}
+			
+	} else {
+		// otherwise concatenate values
+		elastic_search_doc.search_data.fulltext = elastic_search_doc.search_data.fulltext_values.join(' ');
+		delete elastic_search_doc.search_data.fulltext_values;
+
+		elastic_search_doc.search_data.fulltext_boosted = elastic_search_doc.search_data.fulltext_boosted_values.join(' ');
+		delete elastic_search_doc.search_data.fulltext_boosted_values;	
+		
+		if (elastic_search_doc.search_result_data.name == '') {
+			elastic_search_doc.search_result_data.name = doc.message.unstructured;
+		}
+		
+	}
+	
+	//elastic_search_doc.search_result_data.description = 'Published ' + elastic_search_doc.search_result_data.description_parts.join(', ');
+	//delete elastic_search_doc.search_result_data.description_parts;
+	
+	if (!elastic_search_doc.search_result_data.creator) {
+		delete elastic_search_doc.search_result_data.creator;
+	}
+	
+	if (!elastic_search_doc.search_result_data.thumbnailUrl) {
+		delete elastic_search_doc.search_result_data.thumbnailUrl;
+	}
+
+	if (!elastic_search_doc.search_result_data.url) {
+		delete elastic_search_doc.search_result_data.url;
+	}
+	
+	$('#jsonld').html(JSON.stringify(elastic_search_doc, null, 2));
+    
+
+  }
+}
+
+function couchdb(doc) {
+  if (doc['message-format']) {
+
+    if (doc['message-format'] === 'application/vnd.crossref-citation+json') {
+      message(doc);
+    }
+
+
+  }
+}
+
+// END COUCHDB VIEW
+		
+//----------------------------------------------------------------------------------------
+function convert() {
+	var json = $('#json').val();
+	var doc = JSON.parse(json);
+	
+	couchdb(doc);
+}
+
+	
+	</script>		
+			
+
+</div>
+</body>
+</html>			

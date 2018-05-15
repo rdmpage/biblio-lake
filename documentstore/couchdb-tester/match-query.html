@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>CSL JSON query string</title>
+		<title>Query string from CSL, citation, ZooBank, etc.</title>
 		<meta charset="UTF-8"/>
 		<script src="jquery.js"></script>
 		<!-- stuff below needs to go into CouchDB views -->
@@ -12,7 +12,7 @@
 	</head>
 <body>
 
-<h1>CSL JSON query string</h1>
+<h1>Query string from CSL, citation, ZooBank, etc.</h1>
 
 <!--
 
@@ -947,191 +947,119 @@ Elsevier open access
   }
 }
 
+
+// citation from CrossRef metadata
+
+{
+  "_id": "https://doi.org/10.1007/s12225-010-9229-9#9229_CR7",
+  "_rev": "1-a6cc00084d60baf5dc7846b3e0af6784",
+  "message": {
+    "key": "9229_CR7",
+    "first-page": "475",
+    "volume": "30",
+    "author": "C Jeffrey",
+    "year": "1975",
+    "unstructured": "____ (1975). Further notes on Cucurbitaceae: III: Some Southern African Taxa. Kew Bull. 30: 475 – 493.",
+    "journal-title": "Kew Bull."
+  },
+  "message-format": "application/vnd.crossref-citation+json",
+  "message-timestamp": "2018-05-15T13:14:47+00:00",
+  "message-modified": "2018-05-15T13:14:47+00:00"
+}
+
 -->
 
 <div>
 	<div style="width:100%;height:auto;">
 		<h2>JSON</h2>
 			<!-- JSON for data object goes below -->
-			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">{
-  "_id": "https://doi.org/10.1016/j.sajb.2011.04.006",
-  "_rev": "2-0c9d4af3c1bb4dace561d387cf5eab98",
-  "message-timestamp": "2018-04-20T09:20:22+00:00",
-  "message-modified": "2018-04-20T09:20:23+00:00",
-  "message-format": "application/vnd.crossref-api-message+json",
-  "message-source": "https://api.crossref.org/v1/works/http://dx.doi.org/10.1016/j.sajb.2011.04.006",
-  "message": {
-    "indexed": {
-      "date-parts": [
-        [
-          2018,
-          3,
-          27
-        ]
-      ],
-      "date-time": "2018-03-27T17:22:38Z",
-      "timestamp": 1522171358305
-    },
-    "reference-count": 19,
-    "publisher": "Elsevier BV",
-    "license": [
-      {
-        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
-        "start": {
-          "date-parts": [
-            [
-              2012,
-              1,
-              1
-            ]
-          ],
-          "date-time": "2012-01-01T00:00:00Z",
-          "timestamp": 1325376000000
-        },
-        "delay-in-days": 0,
-        "content-version": "tdm"
-      },
-      {
-        "URL": "http://creativecommons.org/licenses/by/4.0/",
-        "start": {
-          "date-parts": [
-            [
-              2016,
-              10,
-              26
-            ]
-          ],
-          "date-time": "2016-10-26T00:00:00Z",
-          "timestamp": 1477440000000
-        },
-        "delay-in-days": 1760,
-        "content-version": "vor"
-      }
-    ],
-    "funder": [
-      {
-        "name": "Spanish Science and Innovation Ministry",
-        "award": [
-          "JCI-2009-05243",
-          "CGL2008-02982-C03-03/CLI",
-          "CGL2009-07405/BOS"
-        ]
-      }
-    ],
-    "content-domain": {
-      "domain": [],
-      "crossmark-restriction": false
-    },
-    "short-container-title": [
-      "South African Journal of Botany"
-    ],
-    "published-print": {
-      "date-parts": [
-        [
-          2012,
-          1
-        ]
-      ]
-    },
-    "DOI": "10.1016/j.sajb.2011.04.006",
-    "type": "journal-article",
-    "created": {
-      "date-parts": [
-        [
-          2011,
-          6,
-          3
-        ]
-      ],
-      "date-time": "2011-06-03T13:11:26Z",
-      "timestamp": 1307106686000
-    },
-    "page": "257-265",
-    "source": "Crossref",
-    "is-referenced-by-count": 6,
-    "title": [
-      "A morphological re-evaluation of the taxonomic status of the genus Pellegriniodendron (Harms) J. Léonard (Leguminosae–Caesalpinioideae–Detarieae) and its inclusion in Gilbertiodendron J. Léonard"
-    ],
-    "prefix": "10.1016",
-    "volume": "78",
-    "author": [
-      {
-        "given": "M.",
-        "family": "de la Estrella",
-        "affiliation": []
-      },
-      {
-        "given": "J.A.",
-        "family": "Devesa",
-        "affiliation": []
-      },
-      {
-        "given": "J.J.",
-        "family": "Wieringa",
-        "affiliation": []
-      }
-    ],
-    "member": "78",
-    "container-title": [
-      "South African Journal of Botany"
-    ],
-    "original-title": [],
-    "link": [
-      {
-        "URL": "http://api.elsevier.com/content/article/PII:S025462991100055X?httpAccept=text/xml",
-        "content-type": "text/xml",
-        "content-version": "vor",
-        "intended-application": "text-mining"
-      },
-      {
-        "URL": "http://api.elsevier.com/content/article/PII:S025462991100055X?httpAccept=text/plain",
-        "content-type": "text/plain",
-        "content-version": "vor",
-        "intended-application": "text-mining"
-      }
-    ],
-    "deposited": {
-      "date-parts": [
-        [
-          2017,
-          6,
-          20
-        ]
-      ],
-      "date-time": "2017-06-20T01:04:23Z",
-      "timestamp": 1497920663000
-    },
-    "score": 1,
-    "subtitle": [],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          2012,
-          1
-        ]
-      ]
-    },
-    "references-count": 19,
-    "alternative-id": [
-      "S025462991100055X"
-    ],
-    "URL": "http://dx.doi.org/10.1016/j.sajb.2011.04.006",
-    "relation": {},
-    "ISSN": [
-      "0254-6299"
-    ],
-    "issn-type": [
-      {
-        "value": "0254-6299",
-        "type": "print"
-      }
-    ],
-    "subject": [
-      "Plant Science"
-    ]
-  }
-}</textarea>
+			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">
+			
+
+{
+	"message-format": "application\/vnd.zoobank+json",
+	"_id": "http:\/\/zoobank.org\/References\/0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+	"message-timestamp": "2017-05-04T18:02:30+00:00",
+	"message-modified": "2017-05-04T18:02:30+00:00",
+	"message": {
+		"referenceuuid": "0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+		"label": "Parrilla-Bel, Jara, Mark T. Young, Miguel Moreno-Azanza & Jos\u00e9 I. Canudo.  2013. The first metriorhynchid crocodyliform from the Middle Jurassic of Spain, with implications for evolution of the subclade Rhacheosaurini. Public Library of Science, ONE 8(1): e54275.",
+		"value": "Parrilla-Bel, Jara, Mark T. Young, Miguel Moreno-Azanza & Jos\u00e9 I. Canudo.  2013. The first metriorhynchid crocodyliform from the Middle Jurassic of Spain, with implications for evolution of the subclade Rhacheosaurini. Public Library of Science, ONE 8(1): e54275.",
+		"authorlist": "Parrilla-Bel, Jara, Mark T. Young, Miguel Moreno-Azanza & Jos\u00e9 I. Canudo.",
+		"year": "2013",
+		"title": "The first metriorhynchid crocodyliform from the Middle Jurassic of Spain, with implications for evolution of the subclade Rhacheosaurini",
+		"citationdetails": "<em>Public Library of Science, ONE<\/em> <b>8<\/b>(1): e54275.",
+		"volume": "8",
+		"number": "1",
+		"edition": "",
+		"publisher": "",
+		"placepublished": "",
+		"pagination": "e54275",
+		"startpage": "",
+		"endpage": "",
+		"language": "English",
+		"languageid": "19691433",
+		"referencetype": "Journal Article",
+		"lsid": "urn:lsid:zoobank.org:pub:0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+		"parentreferenceid": "8D47F6C5-DF9C-4886-8091-4435EBD88CF2",
+		"parentreference": "Public Library of Science, ONE (PLoS ONE)",
+		"authors": [
+			[{
+				"familyname": "Parrilla-Bel",
+				"givenname": "Jara",
+				"gnubuuid": "44746D99-A7D1-4A53-BE50-71276F859324"
+			}],
+			[{
+				"familyname": "Young",
+				"givenname": "Mark Thomas",
+				"gnubuuid": "015D8A5F-3A47-42EA-AFA4-07BC5F796EE4"
+			}],
+			[{
+				"familyname": "Moreno-Azanza",
+				"givenname": "Miguel",
+				"gnubuuid": "3BA06DE0-12EC-408C-BAB6-BC898BEF9DC9"
+			}],
+			[{
+				"familyname": "Canudo",
+				"givenname": "Jos\u00e9 I.",
+				"gnubuuid": "37C94FC5-5489-4268-A4EB-757C61DD6763"
+			}]
+		],
+		"NomenclaturalActs": [{
+			"tnuuuid": "BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"OriginalReferenceUUID": "0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+			"protonymuuid": "BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"label": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"value": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"lsid": "urn:lsid:zoobank.org:act:BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"parentname": "",
+			"namestring": "Maledictosuchus",
+			"rankgroup": "Genus",
+			"usageauthors": "Parrilla-Bel, Young, Moreno-Azanza & Canudo",
+			"taxonnamerankid": "60",
+			"parentusageuuid": "",
+			"cleanprotonym": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo, 2013",
+			"NomenclaturalCode": "ICZN"
+		}, {
+			"tnuuuid": "503A90A7-DEB6-40E6-9CBC-B8A0FC076D5B",
+			"OriginalReferenceUUID": "0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+			"protonymuuid": "503A90A7-DEB6-40E6-9CBC-B8A0FC076D5B",
+			"label": "riclaensis Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"value": "riclaensis Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"lsid": "urn:lsid:zoobank.org:act:503A90A7-DEB6-40E6-9CBC-B8A0FC076D5B",
+			"parentname": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo, 2013",
+			"namestring": "riclaensis",
+			"rankgroup": "Species",
+			"usageauthors": "Parrilla-Bel, Young, Moreno-Azanza & Canudo",
+			"taxonnamerankid": "70",
+			"parentusageuuid": "BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"cleanprotonym": "Maledictosuchus riclaensis Parrilla-Bel, Young, Moreno-Azanza & Canudo, 2013",
+			"NomenclaturalCode": "ICZN"
+		}],
+		"doi": "10.1371\/journal.pone.0054275"
+	}
+}
+			</textarea>
 			<br />
 			<button onclick="convert()">Convert JSON to RDF</button>
 	</div>
@@ -1263,17 +1191,208 @@ function csl_query(doc) {
 	}
 	
 	query.string = values.join(' ');
-	
-	
-	
-	
-
-	
+		
 	$('#jsonld').html(JSON.stringify(query, null, 2));
-    
+    emit(doc._id, query);
 
   }
 }
+
+//----------------------------------------------------------------------------------------
+// Reference cited in CrossRef metadata, or web page
+function reference_query(doc) {
+  if (doc.message) {
+
+    var query = {};
+    query.parameters = {};
+    
+	// author
+	if (doc.message.author) {
+		query.parameters.author = [];
+		if (Array.isArray(doc.message.author)) {
+			for (var i in doc.message.author) {
+				query.parameters.author.push(doc.message.author[i]);
+			}
+		} else {
+			query.parameters.author.push(doc.message.author);
+		}		
+	}    
+    
+    // year
+    if (doc.message.year) {
+      query.parameters.year = doc.message.year;
+    }    
+    
+	// title
+	if (doc.message['article-title']) {
+		query.parameters.title = doc.message['article-title'];  
+	}
+	
+	if (doc.message['journal-title']) {
+		query.parameters.journal = doc.message['journal-title'];  
+	}
+	
+	// volume
+	if (doc.message.volume) {
+		query.parameters.volume = doc.message.volume; 		
+	} 
+
+	// issue
+	if (doc.message.issue) {
+		query.parameters.issue = doc.message.issue; 		
+	} 
+
+	// page
+	if (doc.message['first-page']) {
+		query.parameters.page = doc.message['first-page']; 		
+	} 
+	
+	/*
+    // starting page
+    if (doc.message['page-first']) {
+      query.parameters.spage = doc.message['page-first'];
+    } else {
+      var m = doc.message.page.match(/(\d+)(-(\d+))?/);
+      if (m) {
+      	query.parameters.spage = m[1];
+      	if (m[2]) {
+      		query.parameters.epage = m[3];
+      	}
+      }
+    }
+    */
+	
+	var keys = [];
+	var values = [];
+	
+	// OpenURL
+	
+	// Google Scholar
+	
+	// Simple string	
+	if (doc.message.unstructured) {
+		query.string = doc.message.unstructured;	
+	} else {
+		keys=['author', 'year', 'title', 'journal', 'volume', 'issue', 'page'];
+	
+		values = [];
+		for (var i in keys) {
+			switch (keys[i]) {
+				case 'author':
+					values.push(query.parameters[keys[i]].join(' '));
+					break;
+				default:
+					values.push(query.parameters[keys[i]]);
+					break;
+			}
+		}
+	
+		query.string = values.join(' ');	
+	}
+
+	
+	$('#jsonld').html(JSON.stringify(query, null, 2));
+    //emit(doc._id, query);
+
+  }
+}
+
+//----------------------------------------------------------------------------------------
+function zoobank_query(doc) {
+  if (doc.message) {
+
+    var query = {};
+    query.parameters = {};
+    
+	// author
+	if (doc.message.author) {
+		query.parameters.author = [];
+		for (var i in doc.message.author) {
+			// simple case
+			var name = [];
+		
+			if (doc.message.author[i].givenname) {
+				name.push(doc.message.author[i].givenname);
+			}
+			if (doc.message.author[i].familyname) {
+				name.push(doc.message.author[i].familyname);
+			}
+		
+			if (name.length > 0) {
+				query.parameters.author.push(name.join(' '));
+			}
+		}
+	}    
+    
+    // year
+    if (doc.message.year) {
+      query.parameters.year = doc.message.year;
+    }    
+    
+	// title
+	if (doc.message.title) {
+		query.parameters.title = doc.message.title;  
+	}
+	
+	// journal
+	if (doc.message.parentreference) {
+		if (doc.message.parentreference != '') {
+			query.parameters.journal = doc.message.parentreference; 
+		}		
+	} 
+		
+	// volume
+	if (doc.message.volume) {
+		if (doc.message.volume != '') {
+			query.parameters.volume = doc.message.volume; 
+		}		
+	} 
+
+	// issue
+	if (doc.message.number) {
+		if (doc.message.number != '') {
+			query.parameters.issue = doc.message.number; 
+		}		
+	} 
+
+	// page
+	if (doc.message.pagination) {
+		query.parameters.page = doc.message.pagination; 		
+	} 
+	
+	// starting page
+	if (doc.message.startpage) {
+		if (doc.message.startpage != '') {
+			query.parameters.spage = doc.message.startpage; 
+		}		
+	} 
+
+	// ending page
+	if (doc.message.endpage) {
+		if (doc.message.endpage != '') {
+			query.parameters.epage = doc.message.endpage; 
+		}		
+	} 
+
+	
+	var keys = [];
+	var values = [];
+	
+	// OpenURL
+	
+	// Google Scholar
+	
+	// Simple string	
+	query.string = doc.message.label;	
+
+	
+	$('#jsonld').html(JSON.stringify(query, null, 2));
+     //emit(doc._id, query);
+
+  }
+}
+
+
 
 function couchdb(doc) {
   if (doc['message-format']) {
@@ -1287,6 +1406,18 @@ function couchdb(doc) {
     if (doc['message-format'] === 'application/vnd.crossref-api-message+json') {
       csl_query(doc);
     }
+    
+    // Reference cited in CrossRef metadata or on web page
+    if (doc['message-format'] === 'application/vnd.crossref-citation+json') {
+      reference_query(doc);
+    }
+    
+    // Zoobank
+    if (doc['message-format'] === 'application/vnd.zoobank+json') {
+      zoobank_query(doc);
+    }
+    
+    
 
   }
 }
