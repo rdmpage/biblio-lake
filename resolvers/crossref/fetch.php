@@ -57,113 +57,51 @@ function get_work($doi)
 					if (isset($cited->DOI))
 					{
 						$data->links[] = 'https://doi.org/' . strtolower(trim($cited->DOI));
-					} else {
+					} 
+					else 
+					{
 						// Handle citations that lack a DOI
 						
-					}
-				}
-			}
-				
-			/*
-			// Uncomment this if we want to add cited literature to the databank
-			// cited literature (ensure we use same logic when naming these as in CouchDB view)
-			// see http://data.crossref.org/schemas/common4.3.7.xsd
-			if (isset($data->message->reference))
-			{
-				// extract and add cited literature to database
-				
-				foreach ($data->message->reference as $cited) {
-				
-					$doc = new stdclass;
-					$doc->message = $reference;
+						$doc = new stdclass;
+						$doc->message = $reference;
 
-					$doc->{'message-format'} = 'application/vnd.crossref-citation+json'; // made up by rdmp	
-					$doc->{'message-timestamp'} = date("c", time());
-					$doc->{'message-modified'} 	= $doc->{'message-timestamp'};
+						$doc->{'message-format'} = 'application/vnd.crossref-citation+json'; // made up by rdmp	
+						$doc->{'message-timestamp'} = date("c", time());
+						$doc->{'message-modified'} 	= $doc->{'message-timestamp'};
 					
-					$doc->_id = 'http://identifiers.org/doi/' . $doi . '#' . $cited->key;
-					
-					$cited->{'cited-by'} = 'http://identifiers.org/doi/' . $doi;
-					
-					// utilities for searching
-					$cited->query = new stdclass;
-					
-					// OpenURL
-					$fragments = array();
-					foreach ($cited as $k => $v)
-					{
-						switch ($k)
-						{
-							case 'author':
-								$fragments['au'] = $v;
-								break;
-								
-							case 'journal-title':
-								$fragments['title'] = $v;
-								break;
-
-							case 'article-title':
-								$fragments['atitle'] = $v;
-								break;
-
-							case 'first-page':
-								$fragments['spage'] = $v;
-								break;
-								
-							case 'volume':
-							case 'year':
-								$fragments[$k] = $v;
-								break;
-								
-							default:
-								break;
-						}
-							
-					}
-					
-					if (count($fragments) > 2)
-					{
-						$cited->query->openurl = http_build_query($fragments);				
-					}
-					
-					// text string
-					if (isset($cited->unstructured))
-					{
-						$cited->query->string = $cited->unstructured;
-					}
-					else
-					{
-						$cited->query->string = '';
-						$keys = array('au', 'year', 'atitle', 'title', 'volume', 'spage');
-						foreach ($keys as $k)
-						{
-							$cited->query->string .= ' ' . $fragments[$k];
-						}
-						$cited->query->string = trim($cited->query->string);
-					}
+						// need consistent way of identifying these references,
+						// note that the "key" used by CrossRef or in HTML version of article
+						// is not always compatible with a URI :(
 						
-					// to do: do we want to try and resolve any of these on the fly?
-					
-					$doc->message = $cited;
-				
-					// add to database----------------------------------------------------
-					$exists = $couch->exists($doc->_id);
-					if (!$exists)
-					{
-						$couch->add_update_or_delete_document($doc, $doc->_id, 'add');	
-					}
-					else
-					{
-						if ($force)
+						$id = $cited->key;
+						
+						// clean 						
+						$id = preg_replace('/[^a-zA-Z0-9_]/', '', $id);
+												
+						// make hash id 
+						$doc->_id = 'https://doi.org/' . $doi . '#' . $id;
+						$doc->cluster_id = $doc->_id;
+						
+						$doc->message = $cited;
+						
+						// Add directly to database
+						$exists = $couch->exists($doc->_id);
+						if (!$exists)
 						{
-							$couch->add_update_or_delete_document($doc, $doc->_id, 'update');
+							$couch->add_update_or_delete_document($doc, $doc->_id, 'add');	
 						}
+						else
+						{
+							if ($force)
+							{
+								$couch->add_update_or_delete_document($doc, $doc->_id, 'update');
+							}
+						}
+
 					}
-				
 				}
-				
 			}
-			*/
+
 
 			
 		}
@@ -209,6 +147,8 @@ if (0)
 	//$doi = '10.7554/eLife.08347'; 
 	
 	$doi = '10.1007/s12225-010-9229-9'; 
+	
+	//$doi = '10.1371/journal.pone.0194877'; // PloS with lots of references
 	
 	$data = crossref_fetch($doi);
 	
