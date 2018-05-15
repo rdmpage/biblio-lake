@@ -45,6 +45,10 @@ $ids = array(
 'https://orcid.org/0000-0003-3628-2567/work/21039667'
 );
 
+$ids = array(
+'https://doi.org/10.1007/s12225-010-9229-9#9229_CR11'
+);
+
 foreach ($ids as $id)
 {
 	echo "Work: " . $id . "\n";
@@ -69,8 +73,6 @@ foreach ($ids as $id)
 					
 					echo "Found DOI: " . $doi . "\n";
 					
-					
-					
 					// update document store item with message content
 					$resp = $couch->send("GET", "/" . $config['couchdb_options']['database'] . "/" . urlencode($id));
 					var_dump($resp);
@@ -90,6 +92,9 @@ foreach ($ids as $id)
 							
 							$doc->cluster_id = 'https://doi.org/' . $doi;							
 							$doc->{'message-modified'} = date("c", time());	
+							
+							//print_r($doc);
+							//exit();
 							
 							$resp = $couch->send("PUT", "/" . $config['couchdb_options']['database'] . "/" . urlencode($doc->_id), json_encode($doc));
 							var_dump($resp);
