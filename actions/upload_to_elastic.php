@@ -61,7 +61,7 @@ $obj = list_modified($view, '2018-05-12');
 $start_time = date("c", time() - (60 * 5)); // last 5 minutes
 
 $start_time = date("c", time() - (60 * 60)); // last hour
-$start_time = date("c", time() - (60 * 180)); // last 3 hours
+//$start_time = date("c", time() - (60 * 180)); // last 3 hours
 
 
 //$views = array('csl', 'reference');

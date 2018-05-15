@@ -189,15 +189,20 @@
 									
 									switch (data.hits.hits[i]._source.type) {
 										case 'citation':
-											html += '<i class="small material-icons">format_quote</i>';										
+											html += '<i class="small material-icons red-text">format_quote</i>';										
 											break;
 											
 										default:
-											html += '<i class="small material-icons">description</i>';	
+											html += '<i class="small material-icons red-text">description</i>';	
 											break;
 									}
 									
-									html += data.hits.hits[i]._source.search_result_data.name;
+									if (data.hits.hits[i]._source.search_result_data.name) {
+										html += data.hits.hits[i]._source.search_result_data.name;
+									} else {
+										html += '[Unknown title]';
+									}
+									
 									html += '</span>';
 									
 		

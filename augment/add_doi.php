@@ -49,6 +49,11 @@ $ids = array(
 'https://doi.org/10.1007/s12225-010-9229-9#9229_CR11'
 );
 
+
+$ids = array(
+'https://doi.org/10.1007/s12225-010-9229-9#9229_CR7'
+);
+
 foreach ($ids as $id)
 {
 	echo "Work: " . $id . "\n";

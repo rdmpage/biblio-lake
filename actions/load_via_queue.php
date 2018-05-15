@@ -178,6 +178,13 @@ $urls = array(
 'https://doi.org/10.1080/00222933708655256' 
 );
 
+$urls = array(
+'https://doi.org/10.3897/phytokeys.94.21553',
+'https://doi.org/10.1111/j.1756-1051.1997.tb00306.x', // citations
+'https://doi.org/10.1021/np50070a013',
+'https://doi.org/10.2305/iucn.uk.1998.rlts.t31725a9655727.en'
+);
+
 
 //----------------------------------------------------------------------------------------
 // Add items to the queue
