@@ -1,0 +1,1310 @@
+<html>
+	<head>
+		<title>CSL JSON query string</title>
+		<meta charset="UTF-8"/>
+		<script src="jquery.js"></script>
+		<!-- stuff below needs to go into CouchDB views -->
+		<script src="shared.js"></script>
+		<script src="language.js"></script>
+		<style>
+		td { border: 1px solid red; }
+		</style>
+	</head>
+<body>
+
+<h1>CSL JSON query string</h1>
+
+<!--
+
+an ORCID work
+
+{
+  "_id": "https://pub.orcid.org/v2.1/0000-0001-6238-2743/work/41066436",
+  "_rev": "14-d820290c916da8d83af4e684c70015ca",
+  "message-timestamp": "2018-04-17T13:56:18+00:00",
+  "message-modified": "2018-04-17T13:56:19+00:00",
+  "message-format": "application/vnd.citationstyles.csl+json",
+  "message": {
+    "id": "-GEN-1s6102i0s3",
+    "type": "article-journal",
+    "author": [
+      {
+        "literal": "谭运洪 and Qiang Liu and Shi-Shun Zhou and Xiao-Hua Jin and Bo Pan and Kyaw Win Maung and Myint Zyaw and Ren Li and Rui-Chang Quan and Yun-Hong Tan"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          29
+        ]
+      ]
+    },
+    "container-title": "PhytoKeys",
+    "DOI": "10.3897/phytokeys.94.21337",
+    "title": "Dendrobium naungmungense (Orchidaceae, Dendrobieae), a new species from Kachin State, Myanmar",
+    "URL": "http://doi.org/10.3897/phytokeys.94.21337"
+  }
+}
+-->
+
+<!--
+
+an ORCID work
+
+{
+  "_id": "https://pub.orcid.org/v2.1/0000-0002-9116-606X/work/41693997",
+  "_rev": "2-52c8022fc95afdb2e68ebac2c790a41d",
+  "message-timestamp": "2018-04-17T14:25:58+00:00",
+  "message-modified": "2018-04-17T14:26:04+00:00",
+  "message-format": "application/vnd.citationstyles.csl+json",
+  "message": {
+    "id": "Tanasevitch2017",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Tanasevitch",
+        "given": "A.V."
+      }
+    ],
+    "event-date": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "collection-title": "Revue Suisse de Zoologie",
+    "container-title": "Revue Suisse de Zoologie",
+    "DOI": "10.5281/zenodo.893545",
+    "issue": "2",
+    "number": "2",
+    "number-of-pages": "3",
+    "page": "331-333",
+    "page-first": "331",
+    "title": "Another new species of Oedothorax Bertkau, 1883 from India (Araneae, Linyphiidae)",
+    "URL": "10.5281/zenodo.893545",
+    "volume": "124"
+  }
+}
+
+-->
+
+<!--
+
+			{
+  "_id": "https://doi.org/10.3897/phytokeys.94.21337",
+  "_rev": "26-601b47237eaf6255d6e232a84680483d",
+  "message-timestamp": "2018-04-17T15:54:51+00:00",
+  "message-modified": "2018-04-17T15:54:51+00:00",
+  "message-format": "application/vnd.crossref-api-message+json",
+  "message-source": "https://api.crossref.org/v1/works/http://dx.doi.org/10.3897/phytokeys.94.21337",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          29
+        ]
+      ],
+      "date-time": "2018-01-29T15:10:35Z",
+      "timestamp": 1517238635522
+    },
+    "reference-count": 24,
+    "publisher": "Pensoft Publishers",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              1,
+              29
+            ]
+          ],
+          "date-time": "2018-01-29T00:00:00Z",
+          "timestamp": 1517184000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PK"
+    ],
+    "DOI": "10.3897/phytokeys.94.21337",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          29
+        ]
+      ],
+      "date-time": "2018-01-29T14:42:24Z",
+      "timestamp": 1517236944000
+    },
+    "page": "31-38",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "\n          Dendrobium naungmungense (Orchidaceae, Dendrobieae), a new species from Kachin State, Myanmar"
+    ],
+    "prefix": "10.3897",
+    "volume": "94",
+    "member": "2258",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          29
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "21337_B1",
+        "DOI": "10.3897/phytokeys.82.13172",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "key": "21337_B2",
+        "author": "Cribb",
+        "year": "2005"
+      },
+      {
+        "key": "21337_B3",
+        "author": "Govaerts",
+        "year": "2017"
+      },
+      {
+        "key": "21337_B4",
+        "year": "2017"
+      },
+      {
+        "key": "21337_B5",
+        "author": "Kurzweil",
+        "year": "2014"
+      },
+      {
+        "key": "21337_B6",
+        "first-page": "133",
+        "article-title": "First record of Taeniophyllum (Orchidaceae) in Myanmar.",
+        "volume": "64",
+        "author": "Kurzweil",
+        "year": "2012a",
+        "journal-title": "The Gardens’ Bulletin, Singapore"
+      },
+      {
+        "key": "21337_B7",
+        "first-page": "108",
+        "article-title": "New records in the orchid flora of Myanmar.",
+        "volume": "40",
+        "author": "Kurzweil",
+        "year": "2012b",
+        "journal-title": "Thai Forest Bulletin (Botany)"
+      },
+      {
+        "issue": "11",
+        "key": "21337_B8",
+        "first-page": "2064",
+        "article-title": "New orchids record in the flora of China.",
+        "volume": "110",
+        "author": "Liu",
+        "year": "2015",
+        "journal-title": "Current Science"
+      },
+      {
+        "key": "21337_B9",
+        "DOI": "10.11646/phytotaxa.305.1.9",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "key": "21337_B10",
+        "author": "Lindley",
+        "year": "1844"
+      },
+      {
+        "key": "21337_B11",
+        "first-page": "189",
+        "article-title": "Taxonomic changes in Gooderinae (Orchidaceae: Orchidoideae).",
+        "volume": "17",
+        "author": "Ormerod",
+        "year": "2002",
+        "journal-title": "Lindleyana"
+      },
+      {
+        "key": "21337_B12",
+        "first-page": "43",
+        "article-title": "Orchidaceous additions to the flora of Burma (Myanmar).",
+        "volume": "13",
+        "author": "Ormerod",
+        "year": "2003",
+        "journal-title": "Rheedea"
+      },
+      {
+        "key": "21337_B13",
+        "author": "Ormerod",
+        "year": "2008"
+      },
+      {
+        "key": "21337_B14",
+        "DOI": "10.3100/025.015.0215",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "key": "21337_B15",
+        "author": "Ormerod",
+        "year": "2012"
+      },
+      {
+        "key": "21337_B16",
+        "author": "Rao",
+        "year": "2005"
+      },
+      {
+        "key": "21337_B17",
+        "author": "Seidenfaden",
+        "year": "1985"
+      },
+      {
+        "key": "21337_B18",
+        "author": "Stearn",
+        "year": "1983"
+      },
+      {
+        "key": "21337_B19",
+        "first-page": "61",
+        "article-title": "Dianome epidendri generis Linn.",
+        "volume": "6",
+        "author": "Swartz",
+        "year": "1799",
+        "journal-title": "Nova Actaregiae Societatis Scientiarum Upsaliensis, Edman, Upsala"
+      },
+      {
+        "key": "21337_B20",
+        "first-page": "161",
+        "article-title": "New or noteworthy plant collections from Myanmar (7): Fourteen additional species of Orchidaceae.",
+        "volume": "61",
+        "author": "Tanaka",
+        "year": "2011",
+        "journal-title": "Acta Phytotaxonomica et Geobotanica"
+      },
+      {
+        "key": "21337_B21",
+        "DOI": "10.11646/phytotaxa.238.1.5",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "key": "21337_B22",
+        "DOI": "10.11646/phytotaxa.316.3.10",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "key": "21337_B23",
+        "author": "Wood",
+        "year": "2006"
+      },
+      {
+        "key": "21337_B24",
+        "author": "Zhu",
+        "first-page": "367",
+        "year": "2009",
+        "article-title": "Dendrobium.",
+        "journal-title": "25). Science Press, Beijing and Missouri Botanical Garden Press, St. Louis"
+      }
+    ],
+    "container-title": [
+      "PhytoKeys"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://phytokeys.pensoft.net/lib/ajax_srv/article_elements_srv.php?action=download_pdf&item_id=21337",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://phytokeys.pensoft.net/lib/ajax_srv/article_elements_srv.php?action=download_xml&item_id=21337",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://phytokeys.pensoft.net/article_preview.php?id=21337&skip_redirect=1",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          29
+        ]
+      ],
+      "date-time": "2018-01-29T14:42:24Z",
+      "timestamp": 1517236944000
+    },
+    "score": 1,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          29
+        ]
+      ]
+    },
+    "references-count": 24,
+    "URL": "http://dx.doi.org/10.3897/phytokeys.94.21337",
+    "relation": {
+      "cites": []
+    },
+    "ISSN": [
+      "1314-2003",
+      "1314-2011"
+    ],
+    "issn-type": [
+      {
+        "value": "1314-2011",
+        "type": "print"
+      },
+      {
+        "value": "1314-2003",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Plant Science",
+      "Ecology, Evolution, Behavior and Systematics"
+    ]
+  }
+}
+
+-->
+
+<!-- SciElo
+			
+{
+  "_id": "http://dx.doi.org/10.1590/s1519-69842010000500028",
+  "_rev": "2-b8178fc59667c1d9f215e3766b65afd6",
+  "message-timestamp": "2018-04-19T14:59:26+00:00",
+  "message-modified": "2018-04-19T14:59:27+00:00",
+  "message-format": "application/vnd.crossref-api-message+json",
+  "message-source": "https://api.crossref.org/v1/works/http://dx.doi.org/10.1590/s1519-69842010000500028",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T13:35:34Z",
+      "timestamp": 1509024934362
+    },
+    "reference-count": 12,
+    "publisher": "FapUNIFESP (SciELO)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Braz. J. Biol."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          11
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Two new species of Pedinotus genus are described from the Brazilian savannah area, providing a new key to identify the species.</jats:p>",
+    "DOI": "10.1590/s1519-69842010000500028",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          12,
+          20
+        ]
+      ],
+      "date-time": "2010-12-20T05:16:39Z",
+      "timestamp": 1292822199000
+    },
+    "page": "1103-1107",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Two new species of Pedinotus Szépligeti 1902 (Hymenoptera: Braconidae: Doryctinae) from the Savannah in São Paulo state, Brazil"
+    ],
+    "prefix": "10.1590",
+    "volume": "70",
+    "author": [
+      {
+        "given": "CS.",
+        "family": "Castro",
+        "affiliation": [
+          {
+            "name": "Universidade Federal de São Carlos,  Brazil"
+          }
+        ]
+      },
+      {
+        "given": "JF.",
+        "family": "Nunes",
+        "affiliation": [
+          {
+            "name": "Universidade Federal de São Carlos,  Brazil"
+          }
+        ]
+      },
+      {
+        "given": "AM.",
+        "family": "Penteado-Dias",
+        "affiliation": [
+          {
+            "name": "Universidade Federal de São Carlos,  Brazil"
+          }
+        ]
+      }
+    ],
+    "member": "530",
+    "reference": [
+      {
+        "issue": "142",
+        "key": "ref1",
+        "doi-asserted-by": "crossref",
+        "first-page": "369",
+        "DOI": "10.1111/j.1096-3642.2004.00133.x",
+        "article-title": "Phylogeny of the genera of the parasitic wasps subfamily Doryctinae (Hymenoptera: Braconidae) based on morphological evidence",
+        "author": "BELOKOBYLSKIJ AS.",
+        "year": "2004",
+        "journal-title": "Zoological Journal of the Linnean Society",
+        "ISSN": "http://id.crossref.org/issn/0024-4082",
+        "issn-type": "print"
+      },
+      {
+        "issue": "602",
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.11646/zootaxa.602.1.1",
+        "article-title": "A new species of Pedinotus (Hymenoptera: Braconidae: Doryctinae) from Brazil",
+        "author": "FÉLIX FC.",
+        "year": "2004",
+        "journal-title": "Zootaxa"
+      },
+      {
+        "key": "ref3",
+        "first-page": "512",
+        "article-title": "Hymenoptera de la región Neotropical",
+        "volume": "77",
+        "author": "HANSON PE.",
+        "year": "2006",
+        "journal-title": "The American Entomological Institute"
+      },
+      {
+        "issue": "1",
+        "key": "ref4",
+        "article-title": "A conservação do Cerrado brasileiro",
+        "volume": "1",
+        "author": "KLINK CA.",
+        "year": "2005",
+        "journal-title": "Megadiversidade"
+      },
+      {
+        "issue": "2",
+        "key": "ref5",
+        "doi-asserted-by": "crossref",
+        "first-page": "457",
+        "DOI": "10.1590/S1519-69842008000200034",
+        "article-title": "First record of Schizopyga Gravenhorst (Hymenoptera, Ichneumonidae, Pimplinae) from Brazil and a description of a new species",
+        "volume": "68",
+        "author": "LOFFREDO AP.",
+        "year": "2008",
+        "journal-title": "Brazilizan Journal of Biology"
+      },
+      {
+        "issue": "4",
+        "key": "ref6",
+        "doi-asserted-by": "crossref",
+        "first-page": "911",
+        "DOI": "10.1590/S1519-69842008000400032",
+        "article-title": "First record of Ticapimpla vilmae Gauld, 1991 (Hymenoptera, Ichneumonidae, Pimplinae) from Brazil",
+        "volume": "68",
+        "author": "LOFFREDO AP.",
+        "year": "2008",
+        "journal-title": "Brazilizan Journal of Biology"
+      },
+      {
+        "key": "ref7",
+        "first-page": "166",
+        "article-title": "The Doryctinae of Costa Rica (excluding the genus Heterospilus)",
+        "volume": "70",
+        "author": "MARSH PM.",
+        "year": "2002",
+        "journal-title": "Memoirs of the American Entomological Institute"
+      },
+      {
+        "issue": "2b",
+        "key": "ref8",
+        "doi-asserted-by": "crossref",
+        "first-page": "755",
+        "DOI": "10.1590/S1519-69842006000400020",
+        "article-title": "Aiura, a new genus of Campopleginae (Hymenoptera: Ichneumonidae) from Brazil",
+        "volume": "66",
+        "author": "ONODY HC.",
+        "year": "2006",
+        "journal-title": "Brazilizan Journal of Biology"
+      },
+      {
+        "issue": "2",
+        "key": "ref9",
+        "first-page": "55",
+        "article-title": "Formigas como indicadores da qualidade ambiental e da biodiversidade de outros invertebrados terrestres",
+        "volume": "12",
+        "author": "SILVA RR.",
+        "year": "1999",
+        "journal-title": "Biotemas",
+        "ISSN": "http://id.crossref.org/issn/0103-1643",
+        "issn-type": "print"
+      },
+      {
+        "issue": "4",
+        "key": "ref10",
+        "first-page": "1",
+        "article-title": "Biodiversity in the Neotropics: ecological, economics and social values",
+        "volume": "68",
+        "author": "TUNDISI JG.",
+        "year": "2008",
+        "journal-title": "Brazilizan Journal of Biology"
+      },
+      {
+        "issue": "1",
+        "key": "ref11",
+        "first-page": "207",
+        "article-title": "Manual of the new world genera of the family Braconidae (Hymenoptera)",
+        "author": "WHARTON RA.",
+        "year": "1997",
+        "journal-title": "Special Publication of the International Society of Hymenopterists"
+      },
+      {
+        "issue": "22",
+        "key": "ref12",
+        "doi-asserted-by": "crossref",
+        "first-page": "345",
+        "DOI": "10.1071/IS07028",
+        "article-title": "Molecular phylogeny and historical biogeography of the cosmopolitan parasitic wasp subfamily Doryctinae (Hymenoptera: Braconidae)",
+        "author": "ZALDIVAR-RIVERÓN A.",
+        "year": "2008",
+        "journal-title": "Invertebrate Systematics"
+      }
+    ],
+    "container-title": [
+      "Brazilian Journal of Biology"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.scielo.br/pdf/bjb/v70n4/a28v70n4.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          26
+        ]
+      ],
+      "date-time": "2017-05-26T18:08:35Z",
+      "timestamp": 1495822115000
+    },
+    "score": 1,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          11
+        ]
+      ]
+    },
+    "references-count": 12,
+    "alternative-id": [
+      "S1519-69842010000500028"
+    ],
+    "URL": "http://dx.doi.org/10.1590/s1519-69842010000500028",
+    "relation": {
+      "cites": []
+    },
+    "ISSN": [
+      "1519-6984"
+    ],
+    "issn-type": [
+      {
+        "value": "1519-6984",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "General Agricultural and Biological Sciences"
+    ]
+  }
+}
+
+-->
+
+<!--
+
+Elsevier open access
+
+{
+  "_id": "https://doi.org/10.1016/j.sajb.2011.04.006",
+  "_rev": "2-0c9d4af3c1bb4dace561d387cf5eab98",
+  "message-timestamp": "2018-04-20T09:20:22+00:00",
+  "message-modified": "2018-04-20T09:20:23+00:00",
+  "message-format": "application/vnd.crossref-api-message+json",
+  "message-source": "https://api.crossref.org/v1/works/http://dx.doi.org/10.1016/j.sajb.2011.04.006",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          27
+        ]
+      ],
+      "date-time": "2018-03-27T17:22:38Z",
+      "timestamp": 1522171358305
+    },
+    "reference-count": 19,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2012,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2012-01-01T00:00:00Z",
+          "timestamp": 1325376000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              10,
+              26
+            ]
+          ],
+          "date-time": "2016-10-26T00:00:00Z",
+          "timestamp": 1477440000000
+        },
+        "delay-in-days": 1760,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Spanish Science and Innovation Ministry",
+        "award": [
+          "JCI-2009-05243",
+          "CGL2008-02982-C03-03/CLI",
+          "CGL2009-07405/BOS"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "South African Journal of Botany"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.sajb.2011.04.006",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          3
+        ]
+      ],
+      "date-time": "2011-06-03T13:11:26Z",
+      "timestamp": 1307106686000
+    },
+    "page": "257-265",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "A morphological re-evaluation of the taxonomic status of the genus Pellegriniodendron (Harms) J. Léonard (Leguminosae–Caesalpinioideae–Detarieae) and its inclusion in Gilbertiodendron J. Léonard"
+    ],
+    "prefix": "10.1016",
+    "volume": "78",
+    "author": [
+      {
+        "given": "M.",
+        "family": "de la Estrella",
+        "affiliation": []
+      },
+      {
+        "given": "J.A.",
+        "family": "Devesa",
+        "affiliation": []
+      },
+      {
+        "given": "J.J.",
+        "family": "Wieringa",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": [
+      "South African Journal of Botany"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S025462991100055X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S025462991100055X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          20
+        ]
+      ],
+      "date-time": "2017-06-20T01:04:23Z",
+      "timestamp": 1497920663000
+    },
+    "score": 1,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    },
+    "references-count": 19,
+    "alternative-id": [
+      "S025462991100055X"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.sajb.2011.04.006",
+    "relation": {},
+    "ISSN": [
+      "0254-6299"
+    ],
+    "issn-type": [
+      {
+        "value": "0254-6299",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Plant Science"
+    ]
+  }
+}			
+
+
+
+{
+  "_id": "https://doi.org/10.3969/j.issn.1000-1565.2001.01.019",
+  "_rev": "5-17361cf5ad4e1b7c6a4d10183a4de246",
+  "message-timestamp": "2018-04-25T12:05:21+00:00",
+  "message-modified": "2018-04-25T12:05:21+00:00",
+  "message-format": "application/vnd.citationstyles.csl+json",
+  "message-source": "http://localhost/~rpage/microcitation/www/citeproc-api.php?guid=10.3969%2Fj.issn.1000-1565.2001.01.019",
+  "message": {
+    "id": "ITEM-1",
+    "unstructured": "张俊霞, 宋大祥 (2001) 中国平腹蛛属（蜘蛛目:平腹蛛科）一新种记述. 河北大学学报(自然科学版), 21(1): 78-79",
+    "title": "中国平腹蛛属（蜘蛛目:平腹蛛科）一新种记述",
+    "abstract": "记述中国平腹蛛科平腹蛛属一新种：铃形平腹蛛Gna phosa campanulata sp. nov..",
+    "multi": {
+      "_key": {
+        "abstract": {
+          "zh": "记述中国平腹蛛科平腹蛛属一新种：铃形平腹蛛Gna phosa campanulata sp. nov.."
+        },
+        "title": {
+          "en": "One New Spider Species of the Genus Gnaphosa (Araneae: Gnaphosidae) from China",
+          "zh": "中国平腹蛛属（蜘蛛目:平腹蛛科）一新种记述"
+        },
+        "container-title": {
+          "en": "JOURNAL OF HEBEI UNIVERSITY",
+          "zh": "河北大学学报(自然科学版)"
+        }
+      }
+    },
+    "type": "article-journal",
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "张俊霞",
+        "multi": {
+          "_key": {
+            "literal": {
+              "en": "ZHANG Jun-xia",
+              "zh": "张俊霞"
+            }
+          }
+        }
+      },
+      {
+        "literal": "宋大祥",
+        "multi": {
+          "_key": {
+            "literal": {
+              "en": "SONG Da-xiang",
+              "zh": "宋大祥"
+            }
+          }
+        }
+      }
+    ],
+    "container-title": "河北大学学报(自然科学版)",
+    "volume": "21",
+    "issue": "1",
+    "page": "78-79",
+    "ISSN": [
+      "1000-1565"
+    ],
+    "alternative-id": [
+      "DOI:10.3969/j.issn.1000-1565.2001.01.019",
+      "http://d.old.wanfangdata.com.cn/Periodical/hebdxxb200101019"
+    ],
+    "DOI": "10.3969/j.issn.1000-1565.2001.01.019",
+    "URL": "http://d.old.wanfangdata.com.cn/Periodical/hebdxxb200101019"
+  }
+}
+
+-->
+
+<div>
+	<div style="width:100%;height:auto;">
+		<h2>JSON</h2>
+			<!-- JSON for data object goes below -->
+			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">{
+  "_id": "https://doi.org/10.1016/j.sajb.2011.04.006",
+  "_rev": "2-0c9d4af3c1bb4dace561d387cf5eab98",
+  "message-timestamp": "2018-04-20T09:20:22+00:00",
+  "message-modified": "2018-04-20T09:20:23+00:00",
+  "message-format": "application/vnd.crossref-api-message+json",
+  "message-source": "https://api.crossref.org/v1/works/http://dx.doi.org/10.1016/j.sajb.2011.04.006",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          27
+        ]
+      ],
+      "date-time": "2018-03-27T17:22:38Z",
+      "timestamp": 1522171358305
+    },
+    "reference-count": 19,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2012,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2012-01-01T00:00:00Z",
+          "timestamp": 1325376000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              10,
+              26
+            ]
+          ],
+          "date-time": "2016-10-26T00:00:00Z",
+          "timestamp": 1477440000000
+        },
+        "delay-in-days": 1760,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Spanish Science and Innovation Ministry",
+        "award": [
+          "JCI-2009-05243",
+          "CGL2008-02982-C03-03/CLI",
+          "CGL2009-07405/BOS"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "South African Journal of Botany"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.sajb.2011.04.006",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          3
+        ]
+      ],
+      "date-time": "2011-06-03T13:11:26Z",
+      "timestamp": 1307106686000
+    },
+    "page": "257-265",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "A morphological re-evaluation of the taxonomic status of the genus Pellegriniodendron (Harms) J. Léonard (Leguminosae–Caesalpinioideae–Detarieae) and its inclusion in Gilbertiodendron J. Léonard"
+    ],
+    "prefix": "10.1016",
+    "volume": "78",
+    "author": [
+      {
+        "given": "M.",
+        "family": "de la Estrella",
+        "affiliation": []
+      },
+      {
+        "given": "J.A.",
+        "family": "Devesa",
+        "affiliation": []
+      },
+      {
+        "given": "J.J.",
+        "family": "Wieringa",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": [
+      "South African Journal of Botany"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S025462991100055X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S025462991100055X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          20
+        ]
+      ],
+      "date-time": "2017-06-20T01:04:23Z",
+      "timestamp": 1497920663000
+    },
+    "score": 1,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    },
+    "references-count": 19,
+    "alternative-id": [
+      "S025462991100055X"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.sajb.2011.04.006",
+    "relation": {},
+    "ISSN": [
+      "0254-6299"
+    ],
+    "issn-type": [
+      {
+        "value": "0254-6299",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Plant Science"
+    ]
+  }
+}</textarea>
+			<br />
+			<button onclick="convert()">Convert JSON to RDF</button>
+	</div>
+	<div style="clear:both;"></div>
+	
+	<div style="width:100%;">
+		<h2>JSON-LD</h2>
+		<div id="jsonld" style="width:100%;white-space:pre;background-color:#333;color:white;overflow:auto;"></div>
+
+</div>			
+			
+		
+		
+		
+<script>
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// START COUCHDB VIEW
+//----------------------------------------------------------------------------------------
+
+
+//----------------------------------------------------------------------------------------
+function csl_query(doc) {
+  if (doc.message) {
+
+    var query = {};
+    query.parameters = {};
+    
+	// author
+	if (doc.message.author) {
+		query.parameters.author = [];
+		for (var i in doc.message.author) {
+    		// simple case
+    		var name = [];
+    		
+    		if (doc.message.author[i].given) {
+    			name.push(doc.message.author[i].given);
+    		}
+     		if (doc.message.author[i].family) {
+    			name.push(doc.message.author[i].family);
+    		}
+
+			// just use literal if we have it
+     		if (doc.message.author[i].literal) {
+    			name = [doc.message.author[i].literal];
+    		}
+    		
+    		if (name.length > 0) {
+    			query.parameters.author.push(name.join(' '));
+    		}
+
+		}
+	}    
+    
+    // year
+    if (doc.message.issued) {
+      query.parameters.year = doc.message.issued['date-parts'][0][0];
+    }    
+    
+	// title
+	if (doc.message.title) {
+		if (Array.isArray(doc.message.title)) {
+			query.parameters.title = doc.message.title[0];  
+		} else {
+			query.parameters.title = doc.message.title;  
+		}
+	}
+	
+	if (doc.message['container-title']) {
+		if (Array.isArray(doc.message['container-title'])) {
+			query.parameters.journal = doc.message['container-title'][0];  
+		} else {
+			query.parameters.journal = doc.message['container-title'];  
+		}
+	}
+	
+	// volume
+	if (doc.message.volume) {
+		query.parameters.volume = doc.message.volume; 		
+	} 
+
+	// issue
+	if (doc.message.issue) {
+		query.parameters.issue = doc.message.issue; 		
+	} 
+
+	// page
+	if (doc.message.page) {
+		query.parameters.page = doc.message.page; 		
+	} 
+	
+    // starting page
+    if (doc.message['page-first']) {
+      query.parameters.spage = doc.message['page-first'];
+    } else {
+      var m = doc.message.page.match(/(\d+)(-(\d+))?/);
+      if (m) {
+      	query.parameters.spage = m[1];
+      	if (m[2]) {
+      		query.parameters.epage = m[3];
+      	}
+      }
+    }
+	
+	var keys = [];
+	var values = [];
+	
+	// OpenURL
+	
+	// Google Scholar
+	
+	// Simple string
+	keys=['author', 'year', 'title', 'journal', 'volume', 'issue', 'page'];
+	
+	values = [];
+	for (var i in keys) {
+		switch (keys[i]) {
+			case 'author':
+				values.push(query.parameters[keys[i]].join(' '));
+				break;
+			default:
+				values.push(query.parameters[keys[i]]);
+				break;
+		}
+	}
+	
+	query.string = values.join(' ');
+	
+	
+	
+	
+
+	
+	$('#jsonld').html(JSON.stringify(query, null, 2));
+    
+
+  }
+}
+
+function couchdb(doc) {
+  if (doc['message-format']) {
+
+    // ORCID work
+    if (doc['message-format'] === 'application/vnd.citationstyles.csl+json') {
+      csl_query(doc);
+    }
+
+    // CrossRef
+    if (doc['message-format'] === 'application/vnd.crossref-api-message+json') {
+      csl_query(doc);
+    }
+
+  }
+}
+
+// END COUCHDB VIEW
+		
+//----------------------------------------------------------------------------------------
+function convert() {
+	var json = $('#json').val();
+	var doc = JSON.parse(json);
+	
+	couchdb(doc);
+}
+
+	
+	</script>		
+			
+
+</div>
+</body>
+</html>			

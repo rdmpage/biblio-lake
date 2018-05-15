@@ -1,0 +1,329 @@
+<html>
+	<head>
+		<title>ZooBank to Elastic Search</title>
+		<meta charset="UTF-8"/>
+		<script src="jquery.js"></script>
+		<!-- stuff below needs to go into CouchDB views -->
+		<script src="shared.js"></script>
+		<script src="language.js"></script>
+		<style>
+		td { border: 1px solid red; }
+		</style>
+	</head>
+<body>
+
+<h1>ZooBank to to Elastic Search</h1>
+
+
+<div>
+	<div style="width:100%;height:auto;">
+		<h2>JSON</h2>
+			<!-- JSON for data object goes below -->
+			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">{
+	"message-format": "application\/vnd.zoobank+json",
+	"_id": "http:\/\/zoobank.org\/References\/0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+	"message-timestamp": "2017-05-04T18:02:30+00:00",
+	"message-modified": "2017-05-04T18:02:30+00:00",
+	"message": {
+		"referenceuuid": "0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+		"label": "Parrilla-Bel, Jara, Mark T. Young, Miguel Moreno-Azanza & Jos\u00e9 I. Canudo.  2013. The first metriorhynchid crocodyliform from the Middle Jurassic of Spain, with implications for evolution of the subclade Rhacheosaurini. Public Library of Science, ONE 8(1): e54275.",
+		"value": "Parrilla-Bel, Jara, Mark T. Young, Miguel Moreno-Azanza & Jos\u00e9 I. Canudo.  2013. The first metriorhynchid crocodyliform from the Middle Jurassic of Spain, with implications for evolution of the subclade Rhacheosaurini. Public Library of Science, ONE 8(1): e54275.",
+		"authorlist": "Parrilla-Bel, Jara, Mark T. Young, Miguel Moreno-Azanza & Jos\u00e9 I. Canudo.",
+		"year": "2013",
+		"title": "The first metriorhynchid crocodyliform from the Middle Jurassic of Spain, with implications for evolution of the subclade Rhacheosaurini",
+		"citationdetails": "<em>Public Library of Science, ONE<\/em> <b>8<\/b>(1): e54275.",
+		"volume": "8",
+		"number": "1",
+		"edition": "",
+		"publisher": "",
+		"placepublished": "",
+		"pagination": "e54275",
+		"startpage": "",
+		"endpage": "",
+		"language": "English",
+		"languageid": "19691433",
+		"referencetype": "Journal Article",
+		"lsid": "urn:lsid:zoobank.org:pub:0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+		"parentreferenceid": "8D47F6C5-DF9C-4886-8091-4435EBD88CF2",
+		"parentreference": "Public Library of Science, ONE (PLoS ONE)",
+		"authors": [
+			[{
+				"familyname": "Parrilla-Bel",
+				"givenname": "Jara",
+				"gnubuuid": "44746D99-A7D1-4A53-BE50-71276F859324"
+			}],
+			[{
+				"familyname": "Young",
+				"givenname": "Mark Thomas",
+				"gnubuuid": "015D8A5F-3A47-42EA-AFA4-07BC5F796EE4"
+			}],
+			[{
+				"familyname": "Moreno-Azanza",
+				"givenname": "Miguel",
+				"gnubuuid": "3BA06DE0-12EC-408C-BAB6-BC898BEF9DC9"
+			}],
+			[{
+				"familyname": "Canudo",
+				"givenname": "Jos\u00e9 I.",
+				"gnubuuid": "37C94FC5-5489-4268-A4EB-757C61DD6763"
+			}]
+		],
+		"NomenclaturalActs": [{
+			"tnuuuid": "BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"OriginalReferenceUUID": "0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+			"protonymuuid": "BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"label": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"value": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"lsid": "urn:lsid:zoobank.org:act:BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"parentname": "",
+			"namestring": "Maledictosuchus",
+			"rankgroup": "Genus",
+			"usageauthors": "Parrilla-Bel, Young, Moreno-Azanza & Canudo",
+			"taxonnamerankid": "60",
+			"parentusageuuid": "",
+			"cleanprotonym": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo, 2013",
+			"NomenclaturalCode": "ICZN"
+		}, {
+			"tnuuuid": "503A90A7-DEB6-40E6-9CBC-B8A0FC076D5B",
+			"OriginalReferenceUUID": "0FB0955D-5FAF-47C4-A2BE-114E1DC7D997",
+			"protonymuuid": "503A90A7-DEB6-40E6-9CBC-B8A0FC076D5B",
+			"label": "riclaensis Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"value": "riclaensis Parrilla-Bel, Young, Moreno-Azanza & Canudo 2013",
+			"lsid": "urn:lsid:zoobank.org:act:503A90A7-DEB6-40E6-9CBC-B8A0FC076D5B",
+			"parentname": "Maledictosuchus Parrilla-Bel, Young, Moreno-Azanza & Canudo, 2013",
+			"namestring": "riclaensis",
+			"rankgroup": "Species",
+			"usageauthors": "Parrilla-Bel, Young, Moreno-Azanza & Canudo",
+			"taxonnamerankid": "70",
+			"parentusageuuid": "BB05397F-3EA7-42EB-98C9-D6AA3D2EC626",
+			"cleanprotonym": "Maledictosuchus riclaensis Parrilla-Bel, Young, Moreno-Azanza & Canudo, 2013",
+			"NomenclaturalCode": "ICZN"
+		}],
+		"doi": "10.1371\/journal.pone.0054275"
+	}
+}</textarea>
+			<br />
+			<button onclick="convert()">Convert JSON to RDF</button>
+	</div>
+	<div style="clear:both;"></div>
+	
+	<div style="width:100%;">
+		<h2>JSON-LD</h2>
+		<div id="jsonld" style="width:100%;white-space:pre;background-color:#333;color:white;overflow:auto;"></div>
+
+</div>			
+			
+		
+		
+		
+<script>
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// START COUCHDB VIEW
+//----------------------------------------------------------------------------------------
+
+
+//----------------------------------------------------------------------------------------
+function add_values(elastic_search_doc, key, value, boost) {
+	elastic_search_doc.search_data.fulltext_values.push(value);
+	
+	boosted = (typeof boost !== 'undefined') ?  boost : false;
+	
+	if (boosted) {
+		elastic_search_doc.search_data.fulltext_boosted_values.push(value);
+	}
+	
+	switch (key) {
+		case 'container':
+		case 'author':
+			elastic_search_doc.search_data[key].push(value);
+			break;
+
+		case 'year':
+			elastic_search_doc.search_data[key] = value;
+			break;
+	
+		default:
+			break;
+	}
+	
+	return elastic_search_doc;
+}
+
+//----------------------------------------------------------------------------------------
+function message(doc) {
+  if (doc.message) {
+
+    var elastic_search_doc = {};
+    
+    elastic_search_doc.id = doc._id;
+    
+    // type of document
+    elastic_search_doc.type = 'work';
+    
+	// output to display in list of hits
+	elastic_search_doc.search_result_data = {};
+	
+	// possible fields to hold information on how to display this object
+	elastic_search_doc.search_result_data.name = '';
+	elastic_search_doc.search_result_data.description = '';
+	elastic_search_doc.search_result_data.creator = [];
+	elastic_search_doc.search_result_data.thumbnailUrl = '';
+	elastic_search_doc.search_result_data.url = '';
+	
+	// temporary
+	//elastic_search_doc.search_result_data.description_parts = [];
+	
+	/*
+	if ($url)
+	{
+		$doc->search_result_data->url = $url;
+	}
+	*/
+
+	// fields that will be searched on
+	elastic_search_doc.search_data = {};
+	
+	// text fields for searching on
+	elastic_search_doc.search_data.fulltext_values = [];
+	elastic_search_doc.search_data.fulltext_boosted_values = [];
+	
+	// things to use as facets
+	elastic_search_doc.search_data.container = [];
+	elastic_search_doc.search_data.author = [];
+	elastic_search_doc.search_data.year = null;
+	elastic_search_doc.search_data.subject = [];
+	
+	// title (don't index this as everything is in the label field anyway)
+	if (doc.message.title) {
+		elastic_search_doc.search_result_data.name = doc.message.title;
+	}
+	
+	// complete citation
+	if (doc.message.label) {
+		elastic_search_doc = add_values(elastic_search_doc, 'label', doc.message.label, true);
+	}
+
+	if (doc.message.citationdetails) {
+		elastic_search_doc.search_result_data.description = doc.message.citationdetails;
+	}
+
+	// parentreference
+	if (doc.message.parentreference) {
+		elastic_search_doc.search_data['container'].push(doc.message.parentreference)		
+	} 
+
+	// date
+	if (doc.message.year) {
+		elastic_search_doc.search_data.year = parseInt(doc.message.year);
+	} 
+	
+	// referenceuuid
+	if (doc.message.referenceuuid) {
+		elastic_search_doc = add_values(elastic_search_doc, 'uuid', doc.message.referenceuuid);		
+	} 
+
+	// DOI
+	if (doc.message.doi) {
+		elastic_search_doc = add_values(elastic_search_doc, 'doi', doc.message.doi);		
+		
+		elastic_search_doc.search_result_data.doi = doc.message.doi;
+	} 
+	
+	// authors
+	if (doc.message.authors) {
+		for (var i in doc.message.authors) {
+			var name = [];
+			
+			if (doc.message.authors[i][0].givenname) {
+				name.push(doc.message.authors[i][0].givenname);
+			}
+
+			if (doc.message.authors[i][0].familyname) {
+				name.push(doc.message.authors[i][0].familyname);
+			}
+			
+			if (name.length > 0) {
+				elastic_search_doc.search_data['author'].push(name.join(' '));
+				elastic_search_doc.search_result_data['creator'].push(name.join(' '));
+			}			
+		}
+	}
+	
+	// 
+	
+	if (doc.message.NomenclaturalActs) {
+		for (var i in doc.message.NomenclaturalActs) {
+			elastic_search_doc = add_values(elastic_search_doc, 'subject', doc.message.NomenclaturalActs[i].namestring);
+			
+			elastic_search_doc.search_data.subject.push(doc.message.NomenclaturalActs[i].namestring);
+			
+		}
+	
+	}
+
+	
+
+	//------------------------------------------------------------------------------------
+	
+	// cleanup
+	elastic_search_doc.search_data.fulltext = elastic_search_doc.search_data.fulltext_values.join(' ');
+	delete elastic_search_doc.search_data.fulltext_values;
+
+	elastic_search_doc.search_data.fulltext_boosted = elastic_search_doc.search_data.fulltext_boosted_values.join(' ');
+	delete elastic_search_doc.search_data.fulltext_boosted_values;
+	
+	//elastic_search_doc.search_result_data.description = 'Published ' + elastic_search_doc.search_result_data.description_parts.join(', ');
+	//delete elastic_search_doc.search_result_data.description_parts;
+	
+	if (!elastic_search_doc.search_result_data.creator) {
+		delete elastic_search_doc.search_result_data.creator;
+	}
+	
+	if (!elastic_search_doc.search_result_data.thumbnailUrl) {
+		delete elastic_search_doc.search_result_data.thumbnailUrl;
+	}
+
+	if (!elastic_search_doc.search_result_data.url) {
+		delete elastic_search_doc.search_result_data.url;
+	}
+	
+	$('#jsonld').html(JSON.stringify(elastic_search_doc, null, 2));
+    
+
+  }
+}
+
+function couchdb(doc) {
+  if (doc['message-format']) {
+
+    // Zoobank
+    if (doc['message-format'] === 'application/vnd.zoobank+json') {
+      message(doc);
+    }
+
+
+  }
+}
+
+// END COUCHDB VIEW
+		
+//----------------------------------------------------------------------------------------
+function convert() {
+	var json = $('#json').val();
+	var doc = JSON.parse(json);
+	
+	couchdb(doc);
+}
+
+	
+	</script>		
+			
+
+</div>
+</body>
+</html>			
