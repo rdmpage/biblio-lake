@@ -185,7 +185,20 @@
 									html += '  <div class="card">';
 									html += '    <div class="card-content">';
 									//html += '      <span class="card-title activator">' + data.hits.hits[i]._source.search_result_data.name + '<i class="material-icons right">more_vert</i></span>';
-									html += '      <span class="card-title">' + data.hits.hits[i]._source.search_result_data.name + '</span>';
+									html += '      <span class="card-title">';
+									
+									switch (data.hits.hits[i]._source.type) {
+										case 'citation':
+											html += '<i class="small material-icons">format_quote</i>';										
+											break;
+											
+										default:
+											html += '<i class="small material-icons">description</i>';	
+											break;
+									}
+									
+									html += data.hits.hits[i]._source.search_result_data.name;
+									html += '</span>';
 									
 		
 									if (data.hits.hits[i]._source.search_result_data.creator) {
@@ -203,7 +216,7 @@
 									// Links
 									html += '    <div class="card-action';
 									
-									// highlight rrcords with no DOIs
+									// highlight records with no DOIs
 									if (!data.hits.hits[i]._source.search_result_data.doi) {
 										html += ' deep-orange lighten-5';
 									}
