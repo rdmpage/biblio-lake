@@ -14,3 +14,6 @@ King, D., Morse, D., Willis, A., & Dil, A. (2011). Towards the bibliography of l
 
 Sinha, A., Shen, Z., Song, Y., Ma, H., Eide, D., Hsu, B.-J. (Paul), & Wang, K. (2015). An Overview of Microsoft Academic Service (MAS) and Applications. Proceedings of the 24th International Conference on World Wide Web - WWW  ’15 Companion. doi:10.1145/2740908.2742839
 
+## Presentations
+
+Traversing the Academic Graph by Matt Luongo (presentation about defunct http://scholr.ly startup. https://speakerdeck.com/mhluongo/traversing-the-academic-graph
