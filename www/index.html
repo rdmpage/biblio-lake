@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- jquery -->
+	<script src="jquery.js">
+	</script>
+	
+	<style>
+		/* some overrides by me */
+		body { font-size:12px; }
+		nav { background-color: #ff8f00; }
+		.card .card-title { font-size:18px; }
+	</style>
+	
+</head>
+<body class="amber  lighten-5">
+<script>
+
+	//--------------------------------------------------------------------------------
+		// https://stackoverflow.com/a/8175221
+		function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
+
+	//--------------------------------------------------------------------------------
+		function show_aggregations(aggregations) {
+			var html = '';
+			
+			for (var i in aggregations) {
+				html += '<h4>' + i + '</h4>';
+				html += '<div class="collection">';
+				
+				sortByKey(aggregations[i].buckets, 'key');
+				
+				for (var j in aggregations[i].buckets) {
+					html += '<div class="collection-item truncate">';
+					html += '<span class="badge">' + aggregations[i].buckets[j].doc_count + '</span>' + aggregations[i].buckets[j].key;
+					html += '</div>';
+				}
+				html += '</div>';
+		
+			}
+			$('#panel').html(html);
+		}
+
+
+	//--------------------------------------------------------------------------------
+	function do_text_search(text) {
+	
+	$('#hits').html('');
+	$('#panel').html('');
+	
+	console.log(text);
+	
+		ids = [];
+	
+		//$('#hits').html('');
+		//$('#panel').html('');
+		
+		// elastic 
+		var q = {
+		"size": 30,
+		"query": {
+	"multi_match": {
+		"query": "",
+		"fields": [
+			"search_data.fulltext",
+			"search_data.fulltext_boosted^2"
+		]
+	}
+		},
+		"highlight": {
+	"pre_tags": [
+		"<span style=\"background-color:yellow;\">"
+	],
+	"post_tags": [
+		"<\/span>"
+	],
+	"fields": {
+		"search_data.fulltext": {},
+		"search_data.fulltext_boosted": {}
+	}
+		},
+	
+		"aggs": {
+	
+	"by_cluster_id": {
+		"terms": {
+			"field": "search_data.cluster_id.keyword",
+			"order": {
+				"max_score.value": "desc"
+			}
+		},
+	
+	
+		"aggs": {
+			"max_score": {
+				"max": {
+					"script": {
+						"lang": "painless",
+						"inline": "_score"
+					}
+				}
+			}
+		}
+	},
+			
+	      "type": {
+	         "terms": {
+	            "field": "type.keyword"
+	         }
+	      },
+	      "year": {
+	         "terms": {
+	            "field": "search_data.year"
+	         }
+	      },
+	      "container": {
+	         "terms": {
+	            "field": "search_data.container.keyword"
+	         }
+	      },
+	      "author": {
+	         "terms": {
+	            "field": "search_data.author.keyword"
+	         }
+	      }
+			
+	
+		}
+	};
+	
+		q.query.multi_match.query = text;
+		
+		console.log(JSON.stringify(q, null, 2));
+	
+		$.getJSON('proxy.php?url=' 
+				+ encodeURI('http://127.0.0.1:32774/works/_search?pretty')
+				+ '&postdata=' + JSON.stringify(q)
+				+ '&callback=?',
+			function(data){
+	  					//alert(JSON.stringify(data ));
+	  					
+	  					console.log(JSON.stringify(data, null, 2));
+	  					
+						if (data.aggregations) {
+  							show_aggregations(data.aggregations);
+  						}	  					
+	  					
+	  					
+						if (data.hits) {
+					
+						
+						if (data.hits.total > 0) {
+							// show all hits, but filter out duplicates
+							
+							var cluster_id = [];
+							
+							
+							var html = '';
+							for (var i in data.hits.hits) {
+							
+								console.log(data.hits.hits[i]._source.search_data.cluster_id);
+							    console.log(JSON.stringify(cluster_id, null, 2));
+							
+							    var show = true;
+							    if (cluster_id.indexOf(data.hits.hits[i]._source.search_data.cluster_id) == -1) {
+							      cluster_id.push(data.hits.hits[i]._source.search_data.cluster_id);
+							      show = true;
+							    } else {							     
+							      show = false;
+							    }
+							
+								if (show) {
+									html += '<div>';
+									html += '  <div class="card">';
+									html += '    <div class="card-content">';
+									//html += '      <span class="card-title activator">' + data.hits.hits[i]._source.search_result_data.name + '<i class="material-icons right">more_vert</i></span>';
+									html += '      <span class="card-title">' + data.hits.hits[i]._source.search_result_data.name + '</span>';
+									
+		
+									if (data.hits.hits[i]._source.search_result_data.creator) {
+										for (var j in data.hits.hits[i]._source.search_result_data.creator) {
+											html += '<div class="chip">' + data.hits.hits[i]._source.search_result_data.creator[j] + '</div>';
+										}
+									}
+
+									if (data.hits.hits[i]._source.search_result_data.description) {
+										html += '<div>' + data.hits.hits[i]._source.search_result_data.description + '</div>';
+									}
+
+									html += '    </div>';
+									
+									// Links
+									html += '    <div class="card-action';
+									
+									// highlight rrcords with no DOIs
+									if (!data.hits.hits[i]._source.search_result_data.doi) {
+										html += ' deep-orange lighten-5';
+									}
+									
+									html += '">';									
+									if (data.hits.hits[i]._source.search_result_data.doi) {
+										html += '<a href="https://doi.org/' + data.hits.hits[i]._source.search_result_data.doi + '" target="_new"><i class="material-icons">launch</i>' + data.hits.hits[i]._source.search_result_data.doi + '</a>';
+									}
+									html += '      <div><i class="material-icons">radio_button_unchecked</i>' + data.hits.hits[i]._source.id + '</div>';
+									html += '    </div>';
+									
+									/*
+									html += '    <div class="card-reveal">';
+									html += '      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>';
+									html += '      <p>Here is some more information about this product that is only revealed once clicked on.</p>';
+									html += '    </div>';
+									*/
+									
+									html += '  </div>';
+									html += '</div>';
+								}
+							}
+							$('#hits').html(html);
+						}
+						  					
+	  					}
+	  					
+	  					
+	  					
+	  				}
+	  				);
+	  			}
+</script>
+<!-- display -->
+<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper">
+			<form>
+				<div class="input-field">
+					<input id="search" type="search">
+					<label class="label-icon" for="search"><i class="material-icons">search</i></label> <i class="material-icons">close</i> 
+				</div>
+			</form>
+		</div>
+	</nav>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col s12 m8 l9"> 
+		<!-- <div> -->
+<!-- Page content
+              This content will be:
+          9-columns-wide on large screens,
+          8-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+			<div id="hits">
+			</div>
+		</div>
+		
+		<div class="col s12 m4 l3">
+			<div id="panel"></div>
+		</div> 
+
+	</div>
+</div>
+<script>
+	document.getElementById('search').addEventListener('keypress', function(event) {
+	        if (event.keyCode == 13) {
+	            do_text_search(document.getElementById('search').value);
+	            event.preventDefault();
+	        }
+	    });
+</script>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js">
+</script>
+</body>
+</html>
