@@ -1,0 +1,46 @@
+{
+   "size": 30,
+   "query": {
+      "multi_match": {
+         "query": "new species",
+         "fields": [
+            "search_data.fulltext",
+            "search_data.fulltext_boosted^2"
+         ]
+      }
+   },
+   "highlight": {
+      "pre_tags": [
+         "<span style=\"background-color:yellow;\">"
+      ],
+      "post_tags": [
+         "<\/span>"
+      ],
+      "fields": {
+         "search_data.fulltext": {},
+         "search_data.fulltext_boosted": {}
+      }
+   },
+   "aggs": {
+      "type": {
+         "terms": {
+            "field": "type.keyword"
+         }
+      },
+      "year": {
+         "terms": {
+            "field": "search_data.year"
+         }
+      },
+      "container": {
+         "terms": {
+            "field": "search_data.container.keyword"
+         }
+      },
+      "author": {
+         "terms": {
+            "field": "search_data.author.keyword"
+         }
+      }
+   }
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseURL</key>
+	<string>http://127.0.0.1:32774/works/_search?pretty</string>
+	<key>bodyString</key>
+	<string>{
+	"size": 30,
+	"query": {
+		"bool": {
+			"must": {
+				"multi_match": {
+					"query": "new species",
+					"fields": [
+						"search_data.fulltext",
+						"search_data.fulltext_boosted^2"
+					]
+				}
+			},
+			"filter": {
+				"term": {
+					"search_data.year": 2010
+				}
+			}
+
+		}
+	},
+	"highlight": {
+		"pre_tags": [
+			"&lt;span style=\"background-color:yellow;\"&gt;"
+		],
+		"post_tags": [
+			"&lt;\/span&gt;"
+		],
+		"fields": {
+			"search_data.fulltext": {},
+			"search_data.fulltext_boosted": {}
+		}
+	},
+	"aggs": {
+		"type": {
+			"terms": {
+				"field": "type.keyword"
+			}
+		},
+		"year": {
+			"terms": {
+				"field": "search_data.year"
+			}
+		},
+		"container": {
+			"terms": {
+				"field": "search_data.container.keyword"
+			}
+		},
+		"author": {
+			"terms": {
+				"field": "search_data.author.keyword"
+			}
+		}
+	}
+}</string>
+	<key>followRedirect</key>
+	<true/>
+	<key>handleJSONPCallbacks</key>
+	<false/>
+	<key>headers</key>
+	<array/>
+	<key>httpMethod</key>
+	<string>POST</string>
+	<key>jsonpScript</key>
+	<string></string>
+	<key>paramBodyUIChoice</key>
+	<integer>0</integer>
+	<key>parameters</key>
+	<array/>
+	<key>parametersType</key>
+	<integer>0</integer>
+	<key>presentBeforeChallenge</key>
+	<false/>
+	<key>stringEncoding</key>
+	<integer>4</integer>
+	<key>usingHTTPBody</key>
+	<true/>
+</dict>
+</plist>

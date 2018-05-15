@@ -1,0 +1,71 @@
+{
+	"size": 30,
+	"query": {
+		"multi_match": {
+			"query": "plant Oreomyrrhis",
+			"fields": [
+				"search_data.fulltext",
+				"search_data.fulltext_boosted^2"
+			]
+		}
+	},
+	"highlight": {
+		"pre_tags": [
+			"<span style=\"background-color:yellow;\">"
+		],
+		"post_tags": [
+			"<\/span>"
+		],
+		"fields": {
+			"search_data.fulltext": {},
+			"search_data.fulltext_boosted": {}
+		}
+	},
+
+	"aggs": {
+
+		"by_cluster_id": {
+			"terms": {
+				"field": "search_data.cluster_id.keyword",
+				"order": {
+					"max_score.value": "desc"
+				}
+			},
+
+
+			"aggs": {
+				"max_score": {
+					"max": {
+						"script": {
+							"lang": "painless",
+							"inline": "_score"
+						}
+					}
+				}
+			}
+		},
+				
+      "type": {
+         "terms": {
+            "field": "type.keyword"
+         }
+      },
+      "year": {
+         "terms": {
+            "field": "search_data.year"
+         }
+      },
+      "container": {
+         "terms": {
+            "field": "search_data.container.keyword"
+         }
+      },
+      "author": {
+         "terms": {
+            "field": "search_data.author.keyword"
+         }
+      }
+				
+
+	}
+}
