@@ -4,6 +4,13 @@ Papers and other documents relevant to this project.
 
 ## References
 
+Councill, I. G., Li, H., Zhuang, Z., Debnath, S., Bolelli, L., Lee, W. C., … Giles, C. L. (2006). Learning metadata from the evidence in an on-line citation matching scheme. Proceedings of the 6th ACM/IEEE-CS Joint Conference on Digital Libraries  - JCDL  ’06. doi:10.1145/1141753.1141817
+
+Claude Goutorbe
+Document Interlinking in a Digital Math Library
+In: Petr Sojka (ed.): Towards a Digital Mathematics Library. Grand Bend, Ontario, Canada, July 8-9th, 2009. Masaryk University Press, Brno, 2009. pp. 85--94.
+Persistent URL: http://dml.cz/dmlcz/702560
+
 Karl, J. W. (2018). Mining location information from life- and earth-sciences studies to facilitate knowledge discovery. Journal of Librarianship and Information Science, 096100061875941. doi:10.1177/0961000618759413
 
 Karl, J. W., Herrick, J. E., Unnasch, R. S., Gillan, J. K., Ellis, E. C., Lutters, W. G., & Martin, L. J. (2013). Discovering Ecologically Relevant Knowledge from Published Studies through Geosemantic Searching. BioScience, 63(8), 674–682. doi:10.1525/bio.2013.63.8.10
