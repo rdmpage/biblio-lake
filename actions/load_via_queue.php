@@ -207,6 +207,15 @@ $urls = array('https://doi.org/10.2478/s11535-013-0203-z');
 // PMID, PMC, data in BOLD http://dx.doi.org/10.5883/DS-TABAC
 $urls = array('https://dx.doi.org/10.1371/journal.pone.0138993');
 
+$urls = array('https://doi.org/10.3897/zookeys.574.6129');
+
+$urls = array('https://doi.org/10.1080/00379271.2018.1435306');
+
+$urls = array(
+'https://doi.org/10.3406/linly.1922.14602',
+'https://doi.org/10.3406/linly.1923.14612'
+);
+
 //----------------------------------------------------------------------------------------
 // Add items to the queue
 

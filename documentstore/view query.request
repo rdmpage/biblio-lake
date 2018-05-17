@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://127.0.0.1:5984/crowdsource/_design/export/_view/json-ld</string>
+	<string>http://127.0.0.1:5984/crowdsource/_design/media/_view/count</string>
 	<key>followRedirect</key>
 	<true/>
 	<key>handleJSONPCallbacks</key>
@@ -14,7 +14,7 @@
 			<key>header</key>
 			<string>header</string>
 			<key>inUse</key>
-			<true/>
+			<false/>
 			<key>value</key>
 			<string>value</string>
 		</dict>
@@ -33,7 +33,15 @@
 			<key>parameter</key>
 			<string>key</string>
 			<key>value</key>
-			<string>"https://doi.org/10.3897/phytokeys.94.21553"</string>
+			<string>"text/xml"</string>
+		</dict>
+		<dict>
+			<key>inUse</key>
+			<true/>
+			<key>parameter</key>
+			<string>reduce</string>
+			<key>value</key>
+			<string>false</string>
 		</dict>
 	</array>
 	<key>parametersType</key>

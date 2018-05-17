@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN" "http://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" article-type="research-article" dtd-version="1.1">
+   <front>
+      <journal-meta>
+         <journal-id journal-id-type="publisher-id">peerj</journal-id>
+         <journal-id journal-id-type="pmc">peerj</journal-id>
+         <journal-id journal-id-type="nlm-ta">PeerJ</journal-id>
+         <journal-title-group>
+            <journal-title>PeerJ</journal-title>
+            <abbrev-journal-title abbrev-type="publisher">PeerJ</abbrev-journal-title>
+         </journal-title-group>
+         <issn pub-type="epub">2167-8359</issn>
+         <publisher>
+            <publisher-name>PeerJ Inc.</publisher-name>
+            <publisher-loc>San Francisco, USA</publisher-loc>
+         </publisher>
+      </journal-meta>
+      <article-meta>
+         <article-id pub-id-type="publisher-id">4137</article-id>
+         <article-id pub-id-type="doi">10.7717/peerj.4137</article-id>
+         <article-categories>
+            <subj-group subj-group-type="categories">
+               <subject>Biodiversity</subject>
+               <subject>Plant Science</subject>
+               <subject>Taxonomy</subject>
+            </subj-group>
+         </article-categories>
+         <title-group>
+            <article-title><italic>Microcos magnifica</italic> (Sparrmanniaceae) a new species of cloudforest tree from Cameroon</article-title>
+         </title-group>
+         <contrib-group content-type="authors">
+            <contrib id="author-1" contrib-type="author" corresp="yes">
+               <name>
+                  <surname>Cheek</surname>
+                  <given-names>Martin</given-names>
+               </name>
+               <email>m.cheek@kew.org</email><xref ref-type="aff" rid="aff-1"/></contrib>
+            <aff id="aff-1"> 
+               <institution>Identification &amp; Naming, Science, Royal Botanic Gardens</institution>, <country>Kew</country></aff>
+         </contrib-group>
+         <contrib-group content-type="editors">
+            <contrib contrib-type="editor">
+               <name>
+                  <surname>Escudero</surname>
+                  <given-names>Marcial</given-names>
+               </name>
+            </contrib>
+         </contrib-group>
+         <pub-date pub-type="epub" date-type="pub" iso-8601-date="2017-12-05">
+            <day>5</day>
+            <month>12</month>
+            <year iso-8601-date="2017">2017</year>
+         </pub-date>
+         <volume>5</volume>
+         <elocation-id>e4137</elocation-id>
+         <history>
+            <date date-type="received" iso-8601-date="2017-04-19">
+               <day>19</day>
+               <month>4</month>
+               <year iso-8601-date="2017">2017</year>
+            </date>
+            <date date-type="accepted" iso-8601-date="2017-11-15">
+               <day>15</day>
+               <month>11</month>
+               <year iso-8601-date="2017">2017</year>
+            </date>
+         </history>
+         <permissions>
+            <copyright-statement>©2017 Cheek</copyright-statement>
+            <copyright-year>2017</copyright-year>
+            <copyright-holder>Cheek</copyright-holder>
+            <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+               <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, reproduction and adaptation in any medium and for any purpose provided that it is properly attributed. For attribution, the original author(s), title, publication source (PeerJ) and either DOI or URL of the article must be cited.</license-p>
+            </license>
+         </permissions>
+         <self-uri xlink:href="https://peerj.com/articles/4137"/>
+         <abstract>
+            <sec>
+               <title>Background</title>
+               <p>Although many new species to science have been discovered from thousands of specimens resulting from botanical inventories to support conservation management in Cameroon in recent years, additional species remain to be formally evaluated taxonomically and described. These include species from genera which have been taxonomically neglected for many decades in Africa, such as <italic>Microcos.</italic></p>
+            </sec>
+            <sec>
+               <title>Methods</title>
+               <p>This study is based mainly on herbarium specimens and field observations made in Cameroon during a series of botanical surveys. Herbarium material was examined with a Leica Wild M8 dissecting binocular microscope fitted with an eyepiece graticule.</p>
+            </sec>
+            <sec>
+               <title>Principal Findings</title>
+               <p><italic> Microcos magnifica</italic> Cheek (<italic>Malvaceae</italic>-<italic>Grewioideae</italic> or <italic>Sparrmanniaceae</italic>) is described as an Endangered (EN B2 ab(iii)) new tree species from the submontane forests of Cameroon. It is illustrated and described, and its conservation status and taxonomic affinities are assessed. It is the first new <italic>Microcos</italic> described from Africa in more than 90 years and is unique on the continent in having sculptured fruits.</p>
+            </sec>
+            <sec>
+               <title>Discussion</title>
+               <p>A systematic revision, with a molecular phylogenetic study, of <italic>Microcos</italic> Burm. ex L. in Africa is necessary if the affinities of the species, including <italic>M. magnifica</italic>, are to be reliably established.</p>
+            </sec>
+         </abstract>
+         <kwd-group kwd-group-type="author">
+            <kwd>Endangered</kwd>
+            <kwd>Conservation</kwd>
+            <kwd>Mt Kupe</kwd>
+            <kwd>Submontane</kwd>
+            <kwd>Narrow endemic</kwd>
+            <kwd>Taxonomy</kwd>
+         </kwd-group>
+         <funding-group>
+            <award-group id="fund-1">
+               <funding-source>Earthwatch Institute 1993–2005</funding-source>
+               <award-id>15034</award-id>
+               <award-id>8038</award-id>
+            </award-group>
+            <funding-statement>Darwin Initiative grants 15034 and 8038 supported this research. In addition, fieldwork for the research was supported by the Earthwatch Institute 1993–2005. The author’s salary during the study was paid by RBG, Kew. There was no additional external funding received for this study. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+         </funding-group>
+      </article-meta>
+   </front>
+   <body>
+      <sec sec-type="intro">
+         <title>Introduction</title>
+         <p>During identification of specimens resulting from botanical surveys of Mt Kupe and the Bakossi Mts in SW Region, Cameroon, specimens of a remarkable undescribed <italic>Microcos</italic> Burm. ex L. (<xref ref-type="bibr" rid="ref-45">Linnaeus, 1753</xref>) came to light, which were designated as <italic>Microcos</italic> sp. A (Cheek in <xref ref-type="bibr" rid="ref-29">Cheek et al., 2004</xref>: 414). Subsequently an additional specimen was discovered in the forests of Ebo, Littoral Region. Here these specimens are formally named as <italic>Microcos magnifica</italic> Cheek, the first new species to science to be described in the genus for Africa for 90 years. The species is remarkable for its sculptured fruit surfaces which are verrucate. Sculptured fruit surfaces are not otherwise known in the African species but do occur in some Asian species.</p>
+         <p><italic>Microcos</italic> is a palaeotropical genus of about 77 species (<ext-link ext-link-type="uri" xlink:href="http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328157-2">http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328157-2</ext-link>) based on <italic>M. paniculata</italic> Burm. ex L. (1753) from Sri Lanka. <xref ref-type="bibr" rid="ref-46">Linnaeus (1767)</xref> later synonymised <italic>Microcos</italic> under <italic>Grewia</italic> L. However, the genus was resurrected by <xref ref-type="bibr" rid="ref-5">Burret (1926)</xref>.</p>
+         <p>Burret’s authoritative revision (1926) of former Tiliaceae sens. lat. presaged its break-up into todays’s Brownloideae/Brownlowiaceae, Tiliaceae sensu stricto/Tilioideae and Grewioideae/Sparrmanniaceae (with the largest number of genera and species) including <italic>Microcos</italic> (<xref ref-type="bibr" rid="ref-2">Bayer et al., 1999</xref>; <xref ref-type="bibr" rid="ref-3">Bayer &amp; Kubitzki, 2003</xref>; <xref ref-type="bibr" rid="ref-12">Cheek, 2007a</xref>; <xref ref-type="bibr" rid="ref-13">Cheek, 2007b</xref>; <xref ref-type="bibr" rid="ref-14">Cheek, 2007c</xref>). In addition, <italic>Schoutenia</italic> Korth.included by Burret in Tiliaceae, is now placed in Dombeyoideae/Pentapetaceae (<xref ref-type="bibr" rid="ref-15">Cheek, 2007d</xref>). Burret’s was the last global treatment of <italic>Microcos</italic> (1926). He recognised 53 species, of which 19 were recorded from Africa and 34 in Asia.</p>
+         <p>Of the 99 names in <italic>Microcos</italic> listed in <ext-link ext-link-type="uri" xlink:href="http://ipni.org/">http://ipni.org/</ext-link>, <ext-link ext-link-type="uri" xlink:href="http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328157-2">http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:328157-2</ext-link> accept 77 names. The majority of these 77 are in S.E. Asia, but with 10 in Africa. The genus is absent from the Neotropics and Madagascar.</p>
+         <p>Illogically, while <italic>Microcos</italic> has been maintained as a separate genus from <italic>Grewia</italic> in Asia (e.g., <xref ref-type="bibr" rid="ref-35">Chung, 2003</xref>; <xref ref-type="bibr" rid="ref-36">Chung, 2006</xref>; <xref ref-type="bibr" rid="ref-40">Chung, Soepadmo &amp; Lim, 2005a</xref>; <xref ref-type="bibr" rid="ref-38">Chung &amp; Soepadmo, 2011</xref>), the two genera have often been united under <italic>Grewia</italic> in Africa. For example, in one of the most recent Flora accounts of <italic>Grewia</italic> (including <italic>Microcos</italic>) for Africa, <xref ref-type="bibr" rid="ref-54">Whitehouse (2001)</xref> states “ …Kirkup followed Burret in recognising <italic>Microcos</italic> as a distinct genus; this concept has also been followed in SE Asia. Although there are clear differences between <italic>Microcos</italic> and the other sections of <italic>Grewia</italic>, for consistency I am following the practice set by the other African floras, of not recognising….”</p>
+         <p>This practice is maintained widely today, for example by the excellent and essential African Plant Database at the Conservatoire et Jardin botaniques de la Ville de Genève (<ext-link ext-link-type="uri" xlink:href="http://www.ville-ge.ch/musinfo/bd/cjb/africa/">http://www.ville-ge.ch/musinfo/bd/cjb/africa/</ext-link>).</p>
+         <p>In fact the two genera are readily recognised as expressed in the key below, modified from that in <xref ref-type="bibr" rid="ref-54">Whitehouse (2001)</xref>:</p>
+         <table-wrap id="utable-1" position="anchor">
+            <table>
+               <colgroup>
+                  <col/>
+                  <col/>
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td>Trees and climbers, rarely shrubs, of evergreen forest; stigmas entire; fruit unlobed; inflorescences terminal, sometimes axillary also, many-flowered</td>
+                     <td><bold><italic>Microcos</italic></bold></td>
+                  </tr>
+                  <tr>
+                     <td>Shrubs, rarely trees, of bushland or woodland; stigmas lobed; fruit 4-lobed, rarely entire; inflorescences usually axillary or leaf-opposed, rarely terminal, usually few-flowered</td>
+                     <td><bold><italic>Grewia</italic></bold></td>
+                  </tr>
+               </tbody>
+            </table>
+         </table-wrap>
+         <p>According to the molecular analysis of <xref ref-type="bibr" rid="ref-4">Brunken &amp; Muellner (2012)</xref>, <italic>Microcos</italic> is not embedded in <italic>Grewia</italic>, neither are they sister groups, and they fall into distinct clades.</p>
+         <p>Additional characters for separating the two genera are found in the pollen, wood anatomy and in the leaf anatomy, particularly the epidermal cells (<xref ref-type="bibr" rid="ref-7">Chattaway, 1934</xref>; <xref ref-type="bibr" rid="ref-34">Chung, 2002</xref>; <xref ref-type="bibr" rid="ref-39">Chung, Soepadmo &amp; Lim, 2003</xref>; <xref ref-type="bibr" rid="ref-37">Chung et al., 2005b</xref>). <italic>Microcos</italic> was maintained in <xref ref-type="bibr" rid="ref-3">Bayer &amp; Kubitzki (2003)</xref>.</p>
+         <p>The genus <italic>Microcos</italic> has been little studied in Africa, as evidenced by the fact that the first new name in African <italic>Microcos</italic> since 1926 was published in 2004 (<italic>Microcos barombiensis</italic> (K. Schum.) Cheek in <xref ref-type="bibr" rid="ref-29">Cheek et al., 2004</xref>: 414). In the course of matching the material described as new in this paper, it became clear that a revision of the genus for Africa is desirable to address specimen misidentifications and additional apparently undescribed species. It is hoped to address these problems in a future paper.</p>
+      </sec>
+      <sec sec-type="materials|methods">
+         <title>Materials &amp; Methods</title>
+         <p>The electronic version of this article in Portable Document Format (PDF) will represent a published work according to the International Code of Nomenclature for algae, fungi, and plants (ICN), and hence the new names contained in the electronic version are effectively published under that Code from the electronic edition alone. In addition, new names contained in this work which have been issued with identifiers by IPNI will eventually be made available to the Global Names Index. The IPNI LSIDs can be resolved and the associated information viewed through any standard web browser by appending the LSID contained in this publication to the prefix “<ext-link ext-link-type="uri" xlink:href="http://ipni.org/">http://ipni.org/</ext-link>”. The online version of this work is archived and available from the following digital repositories: PeerJ, PubMed Central, and CLOCKSS.</p>
+         <p>This study is based mainly on herbarium specimens and field observations made in Cameroon during a series of botanical surveys beginning in 1991. These surveys were mainly led by the author. So far they have resulted in 52,450 specimens being studied at K and YA, of which 37,850 were newly collected, the data stored on the Kew Cameroon specimen Access database (Gosline, p. 11 in <xref ref-type="bibr" rid="ref-29">Cheek et al., 2004</xref>). The top set of specimens was initially deposited at SCA, and later YA, duplicates being sent to K. The fieldwork was approved by the Institutional Review Board of the Royal Botanic Gardens, Kew entitled the Overseas Fieldwork Committee (OFC). The most the most recent OFC approval is numbered 807. The most recent invitation to effect research on the flora and vegetation of Cameroon has the reference number 050/IRAD/DG/CRRA-NK/SSRB-HN/09/2016. It is issued under the terms of the five year Memorandum of Collaboration between Institute for Research in Agricultural Development (IRAD)-Herbier National du Cameroun and Royal Botanic Gardens, Kew signed 5th Sept 2014.</p>
+         <p>All specimens cited have been seen by the author unless indicated n.v. Herbarium citations follow Index Herbariorum (<ext-link ext-link-type="uri" xlink:href="http:// sweetgum.nybg.org/ih/">http:// sweetgum.nybg.org/ih/</ext-link>) and binomial authorities (<ext-link ext-link-type="uri" xlink:href="http://ipni.org/">http://ipni.org/</ext-link>). Material of the suspected new species was compared morphologically with material of all other African <italic>Microcos</italic> (or <italic>Grewia</italic> sect. <italic>Microcos</italic> (L.)Wight and Arnott) principally at K, but also using material from WAG. This comprised about 350 specimens.The online search address used for retrieving specimen data from labels at P was <ext-link ext-link-type="uri" xlink:href="http://coldb.mnhn.fr/catalognumber/mnhn/p/p00375109">http://coldb.mnhn.fr/catalognumber/mnhn/p/p00375109</ext-link>. Burret’s types of <italic>Microcos</italic> at B were destroyed by allied bombing in 1943 so it was not possible to consult them. This has necessitated that subsequent authors select neotypes of his names, e.g., <xref ref-type="bibr" rid="ref-54">Whitehouse (2001)</xref>. The description follows the format of <xref ref-type="bibr" rid="ref-54">Whitehouse (2001)</xref>.</p>
+         <p>The conservation assessment was made using the categories and criteria of <xref ref-type="bibr" rid="ref-43">IUCN (2012)</xref>. The extent of occurrence was calculated with Geocat (<xref ref-type="bibr" rid="ref-1">Bachman et al., 2011</xref>). Herbarium material was examined with a Leica Wild M8 dissecting binocular microscope. This was fitted with an eyepiece graticule measuring in units of 0.025 mm at maximum magnification. The drawing was made with the same equipment using Leica 308700 camera lucida attachment.</p>
+      </sec>
+      <sec sec-type="results">
+         <title>Results</title>
+         <sec>
+            <title>Key to the tree species of <italic>Microcos</italic> in Africa west of Democratic republic of Congo &amp; the Congo river</title>
+            <table-wrap id="utable-2" position="anchor">
+               <table>
+                  <colgroup>
+                     <col/>
+                     <col/>
+                     <col/>
+                  </colgroup>
+                  <tbody>
+                     <tr>
+                        <td><bold>1.</bold></td>
+                        <td>Leaves deeply toothed. Maiombe Mts of Cabinda</td>
+                        <td><bold><italic>M. gossweileri</italic> Burret</bold></td>
+                     </tr>
+                     <tr>
+                        <td/>
+                        <td>Leaves entire. Nigeria to Congo-Brazzaville, but unknown from Cabinda</td>
+                        <td>2</td>
+                     </tr>
+                     <tr>
+                        <td><bold>2.</bold></td>
+                        <td>Leaf base cuneate, leaf surfaces glabrous; fruits glossy, smooth</td>
+                        <td><bold><italic>M. coriacea</italic> Burret</bold></td>
+                     </tr>
+                     <tr>
+                        <td/>
+                        <td>Leaf base truncate or cordate, leaf blade lower surface stellate hairy; fruits matt, verrucate</td>
+                        <td><bold><italic>M. magnifica</italic> Cheek</bold></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </table-wrap>
+            <p><bold><italic>Microcos magnifica</italic></bold> <italic>Cheek</italic> species novum</p>
+            <p>Holotype: Cameroon, S.W. Province, Mt Kupe, Kupe village, main trail towards summit, fr. 9 July 1996, <italic>Etuge</italic> 2886 (holo. K; isotypes BR, K, MO, P, SCA, US, WAG, YA) (<xref ref-type="fig" rid="fig-1">Figs. 1</xref> and <xref ref-type="fig" rid="fig-2">2</xref>)</p>
+            <p><italic>Microcos</italic> sp. A, Cheek (in <xref ref-type="bibr" rid="ref-29">Cheek et al., 2004</xref>: 414).</p>
+            <p>Tree 20–35 m tall, 30–70 cm diameter at breast height, crown small, bole straight, base of bole with 4–5 concave slender buttresses reaching 1 to 1.5 m above the ground where sometimes spreading up to 2.5 m from the trunk and branching.</p>
+            <p>Bark dull medium red–brown, fibrous; slash hard fibrous-granular, without scent or exudates, white, oxidising rapidly from white to red.</p>
+            <p>Leafy stems 3–5 mm diameter below the third node, finely longitudinally ridged, densely minutely grey–brown puberulent, internodes 2.5 cm long.</p>
+            <p>Leaves obovate, obovate-oblong or elliptic, 12.5–25.5 × 6.6–13.5 cm (those of sterile stems large, to 28 cm long ), acumen 0.4–1.8 cm long, base truncate or truncate and abruptly cordate, margin entire, lateral nerves 11–13 on each side of the midrib, the basal pair more conspicuous by virtue of a pair subsidiary nerves, brochidodromous domatia absent, tertiary nerves strongly scalariform, quaternary nerves inconspicuous: upper surface with midrib varied, convex, densely and minutely grey-brown puberulent, secondary nerves flat but also puberulent: lower surface with midrib and secondary nerves strongly raised, brownish green, the areolae pale green or brown/khaki densely puberulent with minute pale brown 8–20-armed stellate hairs 0.1–0.2 mm diameter, touching each other, more or less completely concealing the epidermis. Presumed shade leaves (larger, from sterile branches—<italic>Elad</italic> 118) with hairs sparse, separated by 1 or 2 hair diameters, smaller, 0.075–0.1 mm diameter, with only 6—8 (–12) arms. Petiole stout, cylindrical, (1.5−)1.8–2 ×0.3 cm. Stipules caducous, not seen, but leaving an arched scar 4 mm long on the stem each side and 1 mm below the insertion of the leaf base.</p>
+            <fig id="fig-1">
+               <object-id pub-id-type="doi">10.7717/peerj.4137/fig-1</object-id><label>Figure 1</label><caption>
+                  <title><italic>Microcos magnifica.</italic></title>
+                  <p>(A) habit, fruiting branch; (B) habit sketch; (C) leaf variation: Etuge 2686: hairs on upper surface (left); hairs on lower surface (right). (D) leaf variation: Elad 118, with detail of hairs on lower surface; (E) leaf variation: Cable 2806, with detail of hairs on lower surface; (F) fruit, side view; (G) fruit, left with pericarp removed exposing mesocarp fibres; right longitudinal section (endocarp stippled, endosperm densely stippled), (H) endocarp, left, side view; right, distal end view; (I) endocarp with seed, transverse section. (A, C, F–K) from Etuge 2686; (B) from field observations of Cheek 12980; (D) Elad 128; (E) Cable 2806. All drawn by Andrew Brown.</p>
+               </caption>
+               <graphic mimetype="image" mime-subtype="png" xlink:href="https://peerj.com/articles/4137/fig-1.png"/>
+            </fig>
+            <fig id="fig-2">
+               <object-id pub-id-type="doi">10.7717/peerj.4137/fig-2</object-id><label>Figure 2</label><caption>
+                  <title>Global distribution of <italic>Microcos magnifica</italic>.</title>
+               </caption>
+               <graphic mimetype="image" mime-subtype="png" xlink:href="https://peerj.com/articles/4137/fig-2.png"/>
+            </fig>
+            <p>Inflorescence and flowers unknown. Infructescence terminal, paniculate, 11–16 × 5.5–13 cm, bearing 5–13(–12) fruits; peduncle 1.5–2.7 cm; bracts not seen; pedicel absent, fruits articulated at junction with stem.</p>
+            <p>Fruits fleshy, red when live, drying pink-brown, obovoid to ellipsoid 2–2.4 × 1.2–1.5 cm, verrucate and finely longitudinally wrinkled with 20–25 verrucae, verrucae 0.5–1 mm long, patent. Mesocarp: outer part thin and fleshy, inner part thick and densely fibrous. Endocarp obovoid, slightly 3-angled, woody, whitish brown, sutures longitudinal, alternating with three lines of hairs; locule 1, probably by abortion from 3, 1-seeded.</p>
+            <p>Seed narrowly ovoid, glabrous, slightly laterally compressed, hilum subapical; endosperm extensive, embryo flattened.</p>
+            <p><bold>Phenology:</bold> Fruiting: April to July; flowering: unknown.</p>
+            <p><bold>Distribution and habitat:</bold> SW and Littoral Regions of Cameroon; submontane or submontane-lowland forest with <italic>Medusandra mpomiana</italic> Letouzey &amp; Satabie, <italic>Santiria trimera</italic> (Oliv.) Aubrév., <italic>Allanblackia gabonensis</italic> (Pellegr.) Bamps, <italic>Coelocaryon preussii</italic> Warb. (Mt. Kupe); <italic>Pycnanthus</italic> Warb., <italic>Coelocaryon</italic> Warb. <italic>Staudtia</italic> Warb., <italic>Petersianthus</italic> Merr., <italic>Strombosia</italic> Blume and <italic>Maesobotrya</italic> Benth. (Ebo); 750–1,000 m alt.</p>
+            <p><bold>Etymology:</bold> Meaning magnificent, for the spectacular and unusual fruit ornamentation.</p>
+            <p><bold>Affinity:</bold> Resembling <italic>Microcos coriacea</italic> Burret, but fruits verrucate and matt, not smooth and glossy; leaves with base truncate or cordate, not cuneate; lower surface densely white stellate hairy, not glabrous.</p>
+            <p><bold>Additional specimens:</bold> South West Region. Mt Kupe, 15 Km WNW de Tombel, colline 930 m de NW de Ngussi, fr. 21 April 1976, <italic>Letouzey</italic> 14669 (P n.v.; YA 3 sheets); Mt Kupe, Nyasoso, trails above village, 4°49′N; 9°41′E, st. 6 Feb. 1995, <italic>Elad</italic> 118 (K, YA n.v.); Nyasoso, Max’s trail, fr. 3 June 1996, <italic>Cable</italic> 2806 (K, YA); Kupe village, main trail towards summit, fr. 9 July 1996, <italic>Etuge</italic> 2686 (holo. K; iso. BR, K, MO, P, SCA, US, WAG, YA). Littoral Region, Yingui, Ebo proposed National Park, 6 h walk S. of Iboti village; between the abandoned villages of Bekob and Masseng, 4 21 50 N; 10 25 20 E, st. 16 Feb. 2006, <italic>Cheek</italic> 12980 (K, SCA, YA)</p>
+            <p><bold>Conservation:</bold> <italic>Microcos magnifica</italic> is here assessed as Endangered (EN B2 ab(iii)) using the IUCN 2012 system, since it is known from four threat-based locations with an extent of occurrence of 303 km<sup>2</sup> calculated using Geocat (<xref ref-type="bibr" rid="ref-1">Bachman et al., 2011</xref>) and an area of occupancy of 16 km<sup>2</sup> using IUCN preferred 4 km<sup>2</sup> grid cells. The species is threatened at all its known locations, most immediately the three in the Mt Kupe area of Ngussi and Nyassoso where clearance of forest continues upslope from the volcanic, fertile lowlands of the Chide valley. The clearance is for small-holder agriculture, principally for food crops. The locations concerned are all far outside the Mt Kupe Ecological Reserve and on the edges of towns. It is quite likely that some or all of the trees that provided the specimens and the forest remnants in which they occurred, have been cleared already (M Cheek, pers. obs., 2007). In order to reduce the threat to the species here, a local conservation poster featuring the species is intended in order to raise awareness of the existence and importance of its protection. However, at the fourth location, in the proposed Ebo National Park, the species is secure from immediate threat, there being no resident human population. However, the future of Ebo as a protected area is not certain, and logging, plantation and mining are all threatened as alternative uses for the land.</p>
+            <p>Since there is no indication that more than a single mature individual has ever been recorded at each of the four locations, it is conceivable that <italic>Microcos magnifica</italic> might be better assessed as Critically Endangered under Criterion D of IUCN (less than 50 mature individuals recorded).</p>
+         </sec>
+      </sec>
+      <sec sec-type="discussion">
+         <title>Discussion</title>
+         <p>The affinities of <italic>M. magnifica</italic> may be with the only two other arborescent species of <italic>Microcos</italic> that occur in West-Central Africa (see key to species above). The majority of <italic>Microcos</italic> species in Africa are scandent climbers, completely different in habit from the arborescent species. Of the arborescent species, only <italic>M. coriacea</italic> is sympatric with <italic>M. magnifica.</italic> At Mt Kupe the two species have differing altitudinal ranges, <italic>M. coriacea</italic> with a range of 200–420 m, based on four records, and <italic>M. magnifica</italic> with 900–1,000 m, based on three records (Cheek in <xref ref-type="bibr" rid="ref-29">Cheek et al., 2004</xref>: 414). It can be postulated that <italic>M. magnifica</italic> has arisen as a submontane derivative of <italic>M. coriacea.</italic> However, among the taxa discovered as new at Mt Kupe at similar altitudes to <italic>M. magnifica</italic> was <italic>Kupea martinetugei</italic> Cheek (<xref ref-type="bibr" rid="ref-33">Cheek, Williams &amp; Etuge, 2003</xref>) which has its sister species in the Eastern Arc Mts of Tanzania (<xref ref-type="bibr" rid="ref-11">Cheek, 2004</xref>).</p>
+         <p>Exactly the same geographic range as <italic>Microcos magnifica,</italic> which extends disjunctly from the western slopes of Mt Kupe to the submontane N-S ridge of the Ebo forest, is seen also in <italic>Uvariopsis submontana</italic> Kenfack (<xref ref-type="bibr" rid="ref-44">Kenfack et al., 2003</xref>) and <italic>Costus kupensis</italic> H. Maas and Maas (<xref ref-type="bibr" rid="ref-48">Maas-van de Kamer et al., 2016</xref>). It is remarkable that none of these conspicuous species has been discovered in the submontane ridge of the Ngovayang massif to the east at Bipindi, nor in the Bakossi Mts, immediately West of Mt Kupe, despite significant botanical surveys in these areas by Zenker and by K-YA teams respectively. This suggests that these distributions are real and not the result of undercollecting. However, all of these species are infrequent and only known from three to six specimens in as many locations.</p>
+         <p>The discovery of such a distinctive new species in the Kupe-Bakossi, Ebo and adjoining areas is not unusual. Among other species discovered here were (in alphabetical order by genus): <italic>Allophylus ujori</italic> Cheek (<xref ref-type="bibr" rid="ref-23">Cheek &amp; Etuge, 2009a</xref>), <italic>Ancistrocladus grandiflorus</italic> Cheek (<xref ref-type="bibr" rid="ref-8">Cheek, 2000</xref>), <italic>Brachystephanus kupeensis</italic> Champl. (<xref ref-type="bibr" rid="ref-6">Champluvier &amp; Darbyshire, 2009</xref>), <italic>Chassalia laikomensis</italic> Cheek (<xref ref-type="bibr" rid="ref-19">Cheek &amp; Csiba, 2000</xref>), <italic>Coffea montekupensis</italic> Stoff. (<xref ref-type="bibr" rid="ref-52">Stoffelen et al., 1997</xref>), <italic>Coffea bakossii</italic> Cheek &amp; Bridson (<xref ref-type="bibr" rid="ref-22">Cheek, Csiba &amp; Bridson, 2002</xref>), <italic>Cola metallica</italic> Cheek (<xref ref-type="bibr" rid="ref-9">Cheek, 2002</xref>), <italic>Coleochloa domensis</italic> Muasya &amp; D.A. Simpson (<xref ref-type="bibr" rid="ref-49">Muasya et al., 2010</xref>), <italic>Deinbollia oreophila</italic> Cheek (<xref ref-type="bibr" rid="ref-24">Cheek &amp; Etuge, 2009b</xref>), <italic>Diospyros kupensis</italic> Gosline (<xref ref-type="bibr" rid="ref-42">Gosline &amp; Cheek, 1998</xref>); <italic>Dovyalis cameroonensis</italic> Cheek &amp; Ngolan (<xref ref-type="bibr" rid="ref-28">Cheek &amp; Ngolan, 2007</xref>), <italic>Dracaena kupensis</italic> Mwachala, Cheek, Eb. Fisch. et al. (<xref ref-type="bibr" rid="ref-50">Mwachala et al., 2007</xref>), <italic>Impatiens etindensis</italic> Cheek &amp; Eb. Fisch. (<xref ref-type="bibr" rid="ref-25">Cheek &amp; Fischer, 1999</xref>), <italic>Impatiens frithii</italic> Cheek (<xref ref-type="bibr" rid="ref-21">Cheek &amp; Csiba, 2002b</xref>), <italic>Isoglossa dispersa</italic> I. Darbysh. (<xref ref-type="bibr" rid="ref-41">Darbyshire, Pearce &amp; Banks, 2011</xref>), <italic>Kupea martinetugei</italic> Cheek &amp; S.A.Williams (<xref ref-type="bibr" rid="ref-33">Cheek, Williams &amp; Etuge, 2003</xref>), <italic>Ledermanniella onanae</italic> Cheek (<xref ref-type="bibr" rid="ref-10">Cheek, 2003</xref>), <italic>Ledermanniella pollardiana</italic> Cheek &amp; Ameka (<xref ref-type="bibr" rid="ref-17">Cheek &amp; Ameka, 2008</xref>), <italic>Memecylon kupeanum</italic> R.D.Stone, Ghogue &amp; Cheek (<xref ref-type="bibr" rid="ref-53">Stone, Ghogue &amp; Cheek, 2008</xref>), <italic>Mussaenda epiphytica</italic> Cheek (<xref ref-type="bibr" rid="ref-16">Cheek, 2009</xref>), <italic>Newtonia duncanthomasii</italic> Mackinder &amp; Cheek (<xref ref-type="bibr" rid="ref-47">Mackinder &amp; Cheek, 2003</xref>), <italic>Oxyanthus okuensis</italic> Cheek &amp; Sonké (<xref ref-type="bibr" rid="ref-30">Cheek &amp; Sonké, 2000</xref>)<italic>, Psychotria darwiniana</italic> Cheek (<xref ref-type="bibr" rid="ref-18">Cheek, Corcoran &amp; Horwath, 2009</xref>), <italic>Psychotria geophylax</italic> Cheek &amp; Sonké and <italic>P. bakossiensis</italic> <xref ref-type="bibr" rid="ref-31">Cheek &amp; Sonké (2005)</xref>, <italic>Psychotria kupensis</italic> Cheek (<xref ref-type="bibr" rid="ref-27">Cheek, Horwath &amp; Haynes, 2008</xref>), <italic>Psychotria moseskemei</italic> Cheek (<xref ref-type="bibr" rid="ref-20">Cheek &amp; Csiba, 2002a</xref>), <italic>Rhaptopetalum geophylax</italic> Cheek &amp; Gosline (<xref ref-type="bibr" rid="ref-26">Cheek, Gosline &amp; Csiba, 2002</xref>) and <italic>Ternstroemia cameroonensis</italic> Cheek (<xref ref-type="bibr" rid="ref-32">Cheek, Tchiengue &amp; Tacham, 2017</xref>).</p>
+         <p>Most of these species are threatened with extinction, since they are narrow endemics with small ranges, restricted to mainly submontane (cloud) forest which is steadily being cleared, mainly for small-scale cultivation of food crops. These species feature in the Red Data Book of Cameroon (<xref ref-type="bibr" rid="ref-51">Onana &amp; Cheek, 2011</xref>).</p>
+      </sec>
+      <sec sec-type="conclusions">
+         <title>Conclusions</title>
+         <p>A systematic revision, with a molecular phylogenetic study, of <italic>Microcos</italic> in Africa is necessary if the affinities of the species, including <italic>M. magnifica</italic>, are to be reliably established.</p>
+      </sec>
+   </body>
+   <back>
+      <ack>
+         <p>Bate Oben is thanked for assisting by making morphological measurements. Xander van der Burgt assisted digitising the image. George Gosline is thanked for producing the map, and Saba Rokni for providing the Geocat analysis. Gaston Achoundong, Jean-Michel Onana, former heads of the National Herbarium of Cameroon (YA) and their successor Marie Florence Ngo Ngwe are thanked for their collaboration and support of the Royal Botanic Gardens, Kew’s activities over the years. Laurence J. Dorr and two other, anonymous, reviewers are thanked for their constructive comments on an earlier version of this manuscript.</p>
+      </ack>
+      <sec sec-type="additional-information">
+         <title>Additional Information and Declarations</title>
+         <fn-group content-type="competing-interests">
+            <title>Competing Interests</title><fn id="conflict-1" fn-type="conflict"><p>The author declares there are no competing interests.</p></fn></fn-group>
+         <fn-group content-type="author-contributions">
+            <title>Author Contributions</title><fn id="contribution-1" fn-type="con"><p><xref ref-type="contrib" rid="author-1">Martin Cheek</xref> conceived and designed the experiments, performed the experiments, analyzed the data, contributed reagents/materials/analysis tools, wrote the paper, reviewed drafts of the paper.</p></fn></fn-group>
+         <fn-group content-type="other">
+            <title>Ethics</title><fn id="addinfo-1"><p>The following information was supplied relating to ethical approvals (i.e., approving body and any reference numbers):</p>
+            <p>The fieldwork was approved by the Institutional Review Board of the Royal Botanic Gardens, Kew entitled the Overseas Fieldwork Committee (OFC).</p></fn></fn-group>
+         <fn-group content-type="other">
+            <title>Field Study Permissions</title><fn id="addinfo-2"><p>The following information was supplied relating to field study approvals (i.e., approving body and any reference numbers):</p>
+            <p>IRAD-Herbier National du Cameroun sanctioned the field work under a series of Memoranda of Collaboration with the Royal Botanic Gardens, Kew, the most recent signed 5th Sept. 2014, extending five years from that date.</p></fn></fn-group>
+         <fn-group content-type="other">
+            <title>Data Availability</title><fn id="addinfo-3"><p>The following information was supplied regarding data availability:</p>
+            <p>The specimens on which this manuscript is based are housed in the herbaria for which the standard codes are K and YA. Specimen data and images of type material will be made available on the Kew Herbarium Catalogue at <ext-link ext-link-type="uri" xlink:href="http://apps.kew.org/herbcat/gotoSearchPage.do">http://apps.kew.org/herbcat/gotoSearchPage.do</ext-link>.</p></fn></fn-group>
+         <fn-group content-type="other">
+            <title>New Species Registration</title><fn id="addinfo-4"><p>The following information was supplied regarding the registration of a newly described species:</p>
+            <p><italic>Microcos magnifica</italic> Cheek LSID: 77167392-1.</p></fn></fn-group>
+      </sec>
+      <ref-list content-type="authoryear">
+         <title>References</title>
+         <ref id="ref-1"><label>Bachman et al. (2011)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Bachman</surname>
+                     <given-names>S</given-names>
+                  </name>
+                  <name>
+                     <surname>Moat</surname>
+                     <given-names>J</given-names>
+                  </name>
+                  <name>
+                     <surname>Hill</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>De la Torre</surname>
+                     <given-names>J</given-names>
+                  </name>
+                  <name>
+                     <surname>Scott</surname>
+                     <given-names>B</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2011">2011</year>
+               <article-title>Supporting Red List threat assessments with GeoCAT: geospatial conservation assessment tool</article-title>
+               <source>ZooKeys</source>
+               <volume>150</volume>
+               <fpage>117</fpage>
+               <lpage>126</lpage>
+               <pub-id pub-id-type="doi">10.3897/zookeys.150.2109</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-2"><label>Bayer et al. (1999)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Bayer</surname>
+                     <given-names>C</given-names>
+                  </name>
+                  <name>
+                     <surname>Fay</surname>
+                     <given-names>MF</given-names>
+                  </name>
+                  <name>
+                     <surname>De Bruijn</surname>
+                     <given-names>AY</given-names>
+                  </name>
+                  <name>
+                     <surname>Savolainen</surname>
+                     <given-names>V</given-names>
+                  </name>
+                  <name>
+                     <surname>Morton</surname>
+                     <given-names>CM</given-names>
+                  </name>
+                  <name>
+                     <surname>Kubitzki</surname>
+                     <given-names>K</given-names>
+                  </name>
+                  <name>
+                     <surname>Alverson</surname>
+                     <given-names>WS</given-names>
+                  </name>
+                  <name>
+                     <surname>Chase</surname>
+                     <given-names>MW</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1999">1999</year>
+               <article-title>Support for an expanded family concept of Malvaceae within a recircumscribed order Malvales: a combined analysis of plastid atpB and rbcL DNA sequences</article-title>
+               <source>Botanical Journal of the Linnean Society</source>
+               <volume>129</volume>
+               <fpage>267</fpage>
+               <lpage>303</lpage>
+               <pub-id pub-id-type="doi">10.1111/j.1095-8339.1999.tb00505.x</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-3"><label>Bayer &amp; Kubitzki (2003)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Bayer</surname>
+                     <given-names>C</given-names>
+                  </name>
+                  <name>
+                     <surname>Kubitzki</surname>
+                     <given-names>K</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2003">2003</year>
+               <article-title>Malvaceae</article-title>
+               <source>The families and genera of vascular plants 5: flowering plants dicotyledons</source>
+               <publisher-name>Springer-Verlag</publisher-name>
+               <publisher-loc>Berlin</publisher-loc>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Kubitzki</surname>
+                     <given-names>K</given-names>
+                  </name>
+                  <name>
+                     <surname>Bayer</surname>
+                     <given-names>C</given-names>
+                  </name>
+               </person-group>
+               <fpage>225</fpage>
+               <lpage>311</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-4"><label>Brunken &amp; Muellner (2012)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Brunken</surname>
+                     <given-names>U</given-names>
+                  </name>
+                  <name>
+                     <surname>Muellner</surname>
+                     <given-names>AN</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2012">2012</year>
+               <article-title>A new tribal classification of Grewioideae (Malvaceae) based on morphological and molecular phylogenetic evidence</article-title>
+               <source>Systematic Botany</source>
+               <volume>37</volume>
+               <issue>3</issue>
+               <fpage>699</fpage>
+               <lpage>711</lpage>
+               <pub-id pub-id-type="doi">10.1600/036364412X648670</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-5"><label>Burret (1926)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Burret</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1926">1926</year>
+               <article-title>Beiträge zur Kenntnis der Tiliaceae I</article-title>
+               <source>Notizblatt Des Königlich- Botanischen Gartens Und Museums zu Berlin-Dahlem</source>
+               <volume>9</volume>
+               <fpage>592</fpage>
+               <lpage>880</lpage>
+               <pub-id pub-id-type="doi">10.2307/3994327</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-6"><label>Champluvier &amp; Darbyshire (2009)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Champluvier</surname>
+                     <given-names>D</given-names>
+                  </name>
+                  <name>
+                     <surname>Darbyshire</surname>
+                     <given-names>I</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2009">2009</year>
+               <article-title>A revision of the genera Brachystephanus and Oreacanthus (Acanthaceae) in tropical Africa</article-title>
+               <source>Systematics and Geography of Plants</source>
+               <volume>79</volume>
+               <issue>2</issue>
+               <fpage>115</fpage>
+               <lpage>192</lpage>
+               <pub-id pub-id-type="doi">10.2307/25746</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-7"><label>Chattaway (1934)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chattaway</surname>
+                     <given-names>MM</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1934">1934</year>
+               <article-title>Anatomical evidence that Grewia and Microcos are distinct genera</article-title>
+               <source>Tropical Woods</source>
+               <volume>38</volume>
+               <fpage>9</fpage>
+               <lpage>11</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-8"><label>Cheek (2000)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2000">2000</year>
+               <article-title>A synoptic revision of Ancistrocladus (Ancistrocladaceae) in Africa, with a new species from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>55</volume>
+               <fpage>871</fpage>
+               <lpage>882</lpage>
+               <pub-id pub-id-type="doi">10.2307/4113632</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-9"><label>Cheek (2002)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2002">2002</year>
+               <article-title>Three new species of Cola (Sterculiaceae) from western Cameroon, Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>57</volume>
+               <fpage>402</fpage>
+               <lpage>415</lpage>
+               <pub-id pub-id-type="doi">10.2307/4111117</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-10"><label>Cheek (2003)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2003">2003</year>
+               <article-title>A new species of Ledermanniella (Podostemaceae) from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>58</volume>
+               <fpage>733</fpage>
+               <lpage>737</lpage>
+               <pub-id pub-id-type="doi">10.2307/4111153</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-11"><label>Cheek (2004)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2004">2004</year>
+               <article-title>Kupeaeae, a new tribe of Triuridaceae from Africa</article-title>
+               <source>Kew Bulletin</source>
+               <volume>58</volume>
+               <fpage>939</fpage>
+               <lpage>949</lpage>
+               <pub-id pub-id-type="doi">10.2307/4111207</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-12"><label>Cheek (2007a)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2007">2007a</year>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Heywood</surname>
+                     <given-names>VH</given-names>
+                  </name>
+                  <name>
+                     <surname>Brummitt</surname>
+                     <given-names>RK</given-names>
+                  </name>
+                  <name>
+                     <surname>Culham</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>Seberg</surname>
+                     <given-names>O</given-names>
+                  </name>
+               </person-group>
+               <article-title>Brownlowiaceae</article-title>
+               <volume>vol. 71</volume>
+               <source>Flowering plant families of the world</source>
+               <publisher-name>Royal Botanic Gardens</publisher-name>
+               <publisher-loc>Kew</publisher-loc>
+            </element-citation>
+         </ref>
+         <ref id="ref-13"><label>Cheek (2007b)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2007">2007b</year>
+               <article-title>Tiliaceae</article-title>
+               <source>Flowering plant families of the world</source>
+               <publisher-name>Royal Botanic Gardens</publisher-name>
+               <publisher-loc>Kew</publisher-loc>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Heywood</surname>
+                     <given-names>VH</given-names>
+                  </name>
+                  <name>
+                     <surname>Brummitt</surname>
+                     <given-names>RK</given-names>
+                  </name>
+                  <name>
+                     <surname>Culham</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>Seberg</surname>
+                     <given-names>O</given-names>
+                  </name>
+               </person-group>
+               <fpage>321</fpage>
+               <lpage>322</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-14"><label>Cheek (2007c)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2007">2007c</year>
+               <article-title>Sparrmanniaceae</article-title>
+               <source>Flowering plant families of the world</source>
+               <publisher-name>Royal Botanic Gardens</publisher-name>
+               <publisher-loc>Kew</publisher-loc>
+               <fpage>307</fpage>
+               <lpage>308</lpage>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Heywood</surname>
+                     <given-names>VH</given-names>
+                  </name>
+                  <name>
+                     <surname>Brummitt</surname>
+                     <given-names>RK</given-names>
+                  </name>
+                  <name>
+                     <surname>Culham</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>Seberg</surname>
+                     <given-names>O</given-names>
+                  </name>
+               </person-group>
+            </element-citation>
+         </ref>
+         <ref id="ref-15"><label>Cheek (2007d)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2007">2007d</year>
+               <article-title>Pentapetaceae</article-title>
+               <source>Flowering plant families of the world</source>
+               <publisher-name>Royal Botanic Gardens</publisher-name>
+               <publisher-loc>Kew</publisher-loc>
+               <fpage>247</fpage>
+               <lpage>248</lpage>
+               <person-group person-group-type="editor">
+                  <name>
+                     <surname>Heywood</surname>
+                     <given-names>VH</given-names>
+                  </name>
+                  <name>
+                     <surname>Brummitt</surname>
+                     <given-names>RK</given-names>
+                  </name>
+                  <name>
+                     <surname>Culham</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>Seberg</surname>
+                     <given-names>O</given-names>
+                  </name>
+               </person-group>
+            </element-citation>
+         </ref>
+         <ref id="ref-16"><label>Cheek (2009)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2009">2009</year>
+               <article-title><italic>Mussaenda epiphytica</italic> sp. nov. (Rubiaceae) an epiphytic shrub from cloud forest of the Bakossi Mts, western Cameroon</article-title>
+               <source>Nordic Journal of Botany</source>
+               <volume>27</volume>
+               <issue>6</issue>
+               <fpage>456</fpage>
+               <lpage>459</lpage>
+               <pub-id pub-id-type="doi">10.1111/j.1756-1051.2009.00576.x</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-17"><label>Cheek &amp; Ameka (2008)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Ameka</surname>
+                     <given-names>G</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2008">2008</year>
+               <article-title><italic>Ledermanniella pollardiana</italic> sp. nov. (Podostemaceae) from western Cameroon</article-title>
+               <source>Nordic Journal of Botany</source>
+               <volume>26</volume>
+               <fpage>214</fpage>
+               <lpage>217</lpage>
+               <pub-id pub-id-type="doi">10.1111/j.1756-1051.2008.00162.x</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-18"><label>Cheek, Corcoran &amp; Horwath (2009)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Corcoran</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Horwath</surname>
+                     <given-names>A</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2009">2009</year>
+               <article-title>Four new submontane species of <italic>Psychotria</italic> (Rubiaceae) with bacterial nodules from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>63</volume>
+               <fpage>405</fpage>
+               <lpage>418</lpage>
+               <pub-id pub-id-type="doi">10.1007/s12225-008-9056-4</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-19"><label>Cheek &amp; Csiba (2000)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Csiba</surname>
+                     <given-names>L</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2000">2000</year>
+               <article-title>A new species and new combination in Chassalia (Rubiaceae) of western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>55</volume>
+               <fpage>883</fpage>
+               <lpage>888</lpage>
+               <pub-id pub-id-type="doi">10.2307/4113633</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-20"><label>Cheek &amp; Csiba (2002a)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Csiba</surname>
+                     <given-names>L</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2002">2002a</year>
+               <article-title>A revision of the Psychotria chalconeura complex (Rubiaceae) in Guineo-Congolian Africa</article-title>
+               <source>Kew Bulletin</source>
+               <volume>57</volume>
+               <fpage>375</fpage>
+               <lpage>387</lpage>
+               <pub-id pub-id-type="doi">10.2307/4111113</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-21"><label>Cheek &amp; Csiba (2002b)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Csiba</surname>
+                     <given-names>L</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2002">2002b</year>
+               <article-title>A new epiphytic species of Impatiens (Balsaminaceae) from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>57</volume>
+               <issue>3</issue>
+               <fpage>669</fpage>
+               <lpage>674</lpage>
+               <pub-id pub-id-type="doi">10.2307/4110997</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-22"><label>Cheek, Csiba &amp; Bridson (2002)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Csiba</surname>
+                     <given-names>L</given-names>
+                  </name>
+                  <name>
+                     <surname>Bridson</surname>
+                     <given-names>D</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2002">2002</year>
+               <article-title>A new species of Coffea (Rubiaceae) from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>57</volume>
+               <fpage>675</fpage>
+               <lpage>680</lpage>
+               <pub-id pub-id-type="doi">10.2307/4110998</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-23"><label>Cheek &amp; Etuge (2009a)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Etuge</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2009">2009a</year>
+               <article-title>Allophylus conraui (Sapindaceae) reassessed and Allophylus ujori described from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>64</volume>
+               <issue>3</issue>
+               <fpage>495</fpage>
+               <lpage>502</lpage>
+               <pub-id pub-id-type="doi">10.1007/s12225-009-9139-x</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-24"><label>Cheek &amp; Etuge (2009b)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Etuge</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2009">2009b</year>
+               <article-title>A new submontane species of Deinbollia (Sapindaceae) from Western Cameroon and adjoining Nigeria</article-title>
+               <source>Kew Bulletin</source>
+               <volume>64</volume>
+               <issue>3</issue>
+               <fpage>503</fpage>
+               <lpage>508</lpage>
+               <pub-id pub-id-type="doi">10.1007/s12225-009-9132-4</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-25"><label>Cheek &amp; Fischer (1999)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Fischer</surname>
+                     <given-names>E</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1999">1999</year>
+               <article-title>A tuberous and epiphytic new species of Impatiens (Balsaminaceae) from Southwest Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>54</volume>
+               <issue>2</issue>
+               <fpage>471</fpage>
+               <lpage>475</lpage>
+               <pub-id pub-id-type="doi">10.2307/4115828</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-26"><label>Cheek, Gosline &amp; Csiba (2002)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Gosline</surname>
+                     <given-names>G</given-names>
+                  </name>
+                  <name>
+                     <surname>Csiba</surname>
+                     <given-names>L</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2002">2002</year>
+               <article-title>A new species of Rhaptopetalum (Scytopetalaceae) from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>57</volume>
+               <issue>3</issue>
+               <fpage>661</fpage>
+               <lpage>667</lpage>
+               <pub-id pub-id-type="doi">10.2307/4110996</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-27"><label>Cheek, Horwath &amp; Haynes (2008)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Horwath</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>Haynes</surname>
+                     <given-names>D</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2008">2008</year>
+               <article-title><italic>Psychotria kupensis</italic> (Rubiaceae) a new dwarf, litter gathering species from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>63</volume>
+               <fpage>243</fpage>
+               <lpage>246</lpage>
+               <pub-id pub-id-type="doi">10.1007/s12225-008-9018-x</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-28"><label>Cheek &amp; Ngolan (2007)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Ngolan</surname>
+                     <given-names>R</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2007">2007</year>
+               <article-title>A reassessment of the Dovyalis spinosissima Gilg (Flacourtiaceae) complex in Africa, with a new species from Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>61</volume>
+               <fpage>595</fpage>
+               <lpage>600</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-29"><label>Cheek et al. (2004)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Pollard</surname>
+                     <given-names>BJ</given-names>
+                  </name>
+                  <name>
+                     <surname>Darbyshire</surname>
+                     <given-names>I</given-names>
+                  </name>
+                  <name>
+                     <surname>Onana</surname>
+                     <given-names>J-M</given-names>
+                  </name>
+                  <name>
+                     <surname>Wild</surname>
+                     <given-names>C</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2004">2004</year>
+               <source>The plants of Kupe, Mwanenguba and the Bakossi Mountains, Cameroon. A conservation checklist</source>
+               <publisher-name>Royal Botanic Gardens</publisher-name>
+               <publisher-loc>Kew</publisher-loc>
+            </element-citation>
+         </ref>
+         <ref id="ref-30"><label>Cheek &amp; Sonké (2000)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Sonké</surname>
+                     <given-names>B</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2000">2000</year>
+               <article-title>A new species of Oxyanthus (Rubiaceae-Gardeniinae) from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>55</volume>
+               <fpage>889</fpage>
+               <lpage>893</lpage>
+               <pub-id pub-id-type="doi">10.2307/4113634</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-31"><label>Cheek &amp; Sonké (2005)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Sonké</surname>
+                     <given-names>B</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2005">2005</year>
+               <article-title>Two further new species of Psychotria (Rubiaceae) from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>60</volume>
+               <fpage>293</fpage>
+               <lpage>300</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-32"><label>Cheek, Tchiengue &amp; Tacham (2017)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Tchiengue</surname>
+                     <given-names>B</given-names>
+                  </name>
+                  <name>
+                     <surname>Tacham</surname>
+                     <given-names>WN</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2017">2017</year>
+               <article-title><italic>Ternstroemia cameroonensis</italic> (Ternstroemiaceae), a new medicinally important species of montane tree, nearly extinct in the Highlands of Cameroon</article-title>
+               <source>Blumea</source>
+               <volume>62</volume>
+               <issue>2017</issue>
+               <fpage>53</fpage>
+               <lpage>57</lpage>
+               <pub-id pub-id-type="doi">10.3767/000651917X695362</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-33"><label>Cheek, Williams &amp; Etuge (2003)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Williams</surname>
+                     <given-names>S</given-names>
+                  </name>
+                  <name>
+                     <surname>Etuge</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2003">2003</year>
+               <article-title><italic>Kupea martinetugei</italic>, a new genus and species of Triuridaceae from western Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>58</volume>
+               <fpage>225</fpage>
+               <lpage>228</lpage>
+               <pub-id pub-id-type="doi">10.2307/4119366</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-34"><label>Chung (2002)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chung</surname>
+                     <given-names>RCK</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2002">2002</year>
+               <article-title>Leaf epidermal micromorphology of <italic>Grewia</italic> L. and <italic>Microcos</italic> L. (Tiliaceae) in Peninsular Malaysia and Borneo</article-title>
+               <source>Gardens’ Bulletin Singapore</source>
+               <volume>54</volume>
+               <fpage>263</fpage>
+               <lpage>286</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-35"><label>Chung (2003)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chung</surname>
+                     <given-names>RCK</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2003">2003</year>
+               <article-title>New taxa and new combinations of Microcos (Tiliaceae) from Peninsular Malaysia and Borneo</article-title>
+               <source>Kew Bulletin</source>
+               <volume>58</volume>
+               <fpage>329</fpage>
+               <lpage>349</lpage>
+               <pub-id pub-id-type="doi">10.2307/4120619</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-36"><label>Chung (2006)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chung</surname>
+                     <given-names>RCK</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2006">2006</year>
+               <article-title>A revision of Grewia (Malvaceae-Grewioideae) in Peninsular Malaysia and Borneo</article-title>
+               <source>Edinburgh Journal of Botany</source>
+               <volume>62</volume>
+               <fpage>1</fpage>
+               <lpage>27</lpage>
+               <pub-id pub-id-type="doi">10.1017/S0960428606000011</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-37"><label>Chung et al. (2005b)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chung</surname>
+                     <given-names>RCK</given-names>
+                  </name>
+                  <name>
+                     <surname>Lim</surname>
+                     <given-names>SC</given-names>
+                  </name>
+                  <name>
+                     <surname>Lim</surname>
+                     <given-names>AL</given-names>
+                  </name>
+                  <name>
+                     <surname>Soepadmo</surname>
+                     <given-names>E</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2005">2005b</year>
+               <article-title>Wood anatomy of Grewia and Microcos from Peninsular Malaysia and Borneo</article-title>
+               <source>Journal of Tropical Forest Science</source>
+               <volume>17</volume>
+               <fpage>175</fpage>
+               <lpage>196</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-38"><label>Chung &amp; Soepadmo (2011)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chung</surname>
+                     <given-names>RCK</given-names>
+                  </name>
+                  <name>
+                     <surname>Soepadmo</surname>
+                     <given-names>E</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2011">2011</year>
+               <article-title>Taxonomic revision of the genus Microcos (Malvaceae-Grewioideae) in Peninsular Malaysia and Singapore</article-title>
+               <source>Blumea</source>
+               <volume>56</volume>
+               <fpage>273</fpage>
+               <lpage>299</lpage>
+               <pub-id pub-id-type="doi">10.3767/000651911X619704</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-39"><label>Chung, Soepadmo &amp; Lim (2003)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chung</surname>
+                     <given-names>RCK</given-names>
+                  </name>
+                  <name>
+                     <surname>Soepadmo</surname>
+                     <given-names>E</given-names>
+                  </name>
+                  <name>
+                     <surname>Lim</surname>
+                     <given-names>AL</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2003">2003</year>
+               <article-title>The significance of pollen morphology in the taxonomy of Grewia and Microcos (Tiliaceae) in Peninsular Malaysia and Borneo</article-title>
+               <source>Gardens’ Bulletin Singapore</source>
+               <volume>55</volume>
+               <fpage>239</fpage>
+               <lpage>256</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-40"><label>Chung, Soepadmo &amp; Lim (2005a)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Chung</surname>
+                     <given-names>RCK</given-names>
+                  </name>
+                  <name>
+                     <surname>Soepadmo</surname>
+                     <given-names>E</given-names>
+                  </name>
+                  <name>
+                     <surname>Lim</surname>
+                     <given-names>AL</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2005">2005a</year>
+               <article-title>A synopsis of the Bornean species of Microcos L. (Tiliaceae)</article-title>
+               <source>Gardens’ Bulletin Singapore</source>
+               <volume>57</volume>
+               <fpage>103</fpage>
+               <lpage>132</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-41"><label>Darbyshire, Pearce &amp; Banks (2011)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Darbyshire</surname>
+                     <given-names>I</given-names>
+                  </name>
+                  <name>
+                     <surname>Pearce</surname>
+                     <given-names>L</given-names>
+                  </name>
+                  <name>
+                     <surname>Banks</surname>
+                     <given-names>H</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2011">2011</year>
+               <article-title>The genus Isoglossa (Acanthaceae) in West Africa</article-title>
+               <source>Kew Bulletin</source>
+               <volume>66</volume>
+               <issue>3</issue>
+               <fpage>425</fpage>
+               <lpage>439</lpage>
+               <pub-id pub-id-type="doi">10.1007/s12225-011-9292-x</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-42"><label>Gosline &amp; Cheek (1998)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Gosline</surname>
+                     <given-names>G</given-names>
+                  </name>
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1998">1998</year>
+               <article-title>A new species of Diospyros (Ebenaceae) from Southwest Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>53</volume>
+               <issue>2</issue>
+               <fpage>461</fpage>
+               <lpage>465</lpage>
+               <pub-id pub-id-type="doi">10.2307/4114512</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-43"><label>IUCN (2012)</label><element-citation publication-type="software">
+               <person-group person-group-type="author">
+                  <collab>IUCN</collab>
+               </person-group>
+               <year iso-8601-date="2012">2012</year>
+               <data-title>IUCN Red List Categories and Criteria</data-title>
+               <version designator="3.1">Version 3.1</version>
+               <edition designator="2">Second edition</edition>
+               <publisher-loc>Gland, Switzerland and Cambridge</publisher-loc>
+               <publisher-name>IUCN</publisher-name>
+               <uri>http://www.iucnredlist.org</uri>
+               <date-in-citation content-type="access-date" iso-8601-date="2017-01-00">January 2017</date-in-citation>
+            </element-citation>
+         </ref>
+         <ref id="ref-44"><label>Kenfack et al. (2003)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Kenfack</surname>
+                     <given-names>D</given-names>
+                  </name>
+                  <name>
+                     <surname>Gosline</surname>
+                     <given-names>G</given-names>
+                  </name>
+                  <name>
+                     <surname>Gereau</surname>
+                     <given-names>RE</given-names>
+                  </name>
+                  <name>
+                     <surname>Schatz</surname>
+                     <given-names>G</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2003">2003</year>
+               <article-title>The genus Uvariopsis in Tropical Africa, with a recombination and one new species from Cameroon</article-title>
+               <source>Novon</source>
+               <volume>13</volume>
+               <fpage>443</fpage>
+               <lpage>449</lpage>
+               <pub-id pub-id-type="doi">10.2307/3393377</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-45"><label>Linnaeus (1753)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Linnaeus</surname>
+                     <given-names>C</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1753">1753</year>
+               <source>Species plantarum</source>
+               <publisher-name>Salvii</publisher-name>
+               <publisher-loc>Stockholm</publisher-loc>
+            </element-citation>
+         </ref>
+         <ref id="ref-46"><label>Linnaeus (1767)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Linnaeus</surname>
+                     <given-names>C</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1767">1767</year>
+               <source>Systema naturae</source>
+               <publisher-name>Salvii</publisher-name>
+               <publisher-loc>Stockholm</publisher-loc>
+               <edition designator="12">ed. 12 and 1,2</edition>
+            </element-citation>
+         </ref>
+         <ref id="ref-47"><label>Mackinder &amp; Cheek (2003)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Mackinder</surname>
+                     <given-names>B</given-names>
+                  </name>
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2003">2003</year>
+               <article-title>A new species of Newtonia (Leguminosae-Mimosoideae) from Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>58</volume>
+               <fpage>447</fpage>
+               <lpage>452</lpage>
+               <pub-id pub-id-type="doi">10.2307/4120627</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-48"><label>Maas-van de Kamer et al. (2016)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Maas-van de Kamer</surname>
+                     <given-names>H</given-names>
+                  </name>
+                  <name>
+                     <surname>Maas</surname>
+                     <given-names>PJM</given-names>
+                  </name>
+                  <name>
+                     <surname>Wieringa</surname>
+                     <given-names>JJ</given-names>
+                  </name>
+                  <name>
+                     <surname>Specht</surname>
+                     <given-names>CD</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2016">2016</year>
+               <article-title>Monograph of African Costus</article-title>
+               <source>Blumea–Biodiversity, Evolution and Biogeography of Plants</source>
+               <volume>61</volume>
+               <issue>3</issue>
+               <fpage>280</fpage>
+               <lpage>318</lpage>
+               <pub-id pub-id-type="doi">10.3767/000651916X694445</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-49"><label>Muasya et al. (2010)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Muasya</surname>
+                     <given-names>A</given-names>
+                  </name>
+                  <name>
+                     <surname>Harvey</surname>
+                     <given-names>YH</given-names>
+                  </name>
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Tah</surname>
+                     <given-names>K</given-names>
+                  </name>
+                  <name>
+                     <surname>Simpson</surname>
+                     <given-names>DA</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2010">2010</year>
+               <article-title>A new species of epiphytic Coleochloa (Cyperaceae) from Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>65</volume>
+               <fpage>1</fpage>
+               <lpage>3</lpage>
+               <pub-id pub-id-type="doi">10.1007/s12225-010-9194-3</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-50"><label>Mwachala et al. (2007)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Mwachala</surname>
+                     <given-names>G</given-names>
+                  </name>
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Fischer</surname>
+                     <given-names>E</given-names>
+                  </name>
+                  <name>
+                     <surname>Muasya</surname>
+                     <given-names>AM</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2007">2007</year>
+               <article-title>A new species of Dracaena L. (Ruscaceae) from Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>64</volume>
+               <fpage>613</fpage>
+               <lpage>616</lpage>
+            </element-citation>
+         </ref>
+         <ref id="ref-51"><label>Onana &amp; Cheek (2011)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Onana</surname>
+                     <given-names>J-M</given-names>
+                  </name>
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2011">2011</year>
+               <source>The red data book, plants, of Cameroon</source>
+               <publisher-name>Royal Botanic Gardens</publisher-name>
+               <publisher-loc>Kew</publisher-loc>
+            </element-citation>
+         </ref>
+         <ref id="ref-52"><label>Stoffelen et al. (1997)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Stoffelen</surname>
+                     <given-names>P</given-names>
+                  </name>
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+                  <name>
+                     <surname>Bridson</surname>
+                     <given-names>D</given-names>
+                  </name>
+                  <name>
+                     <surname>Robbrecht</surname>
+                     <given-names>E</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="1997">1997</year>
+               <article-title>A new species of Coffea (Rubiaceae) and notes on Mt Kupe (Cameroon)</article-title>
+               <source>Kew Bulletin</source>
+               <volume>52</volume>
+               <issue>4</issue>
+               <fpage>989</fpage>
+               <lpage>994</lpage>
+               <pub-id pub-id-type="doi">10.2307/3668527</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-53"><label>Stone, Ghogue &amp; Cheek (2008)</label><element-citation publication-type="journal">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Stone</surname>
+                     <given-names>RD</given-names>
+                  </name>
+                  <name>
+                     <surname>Ghogue</surname>
+                     <given-names>J-P</given-names>
+                  </name>
+                  <name>
+                     <surname>Cheek</surname>
+                     <given-names>M</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2008">2008</year>
+               <article-title>Revised treatment of Memecylon sect. Afzeliana (Melastomataceae-Olisbeoideae), including three new species from Cameroon</article-title>
+               <source>Kew Bulletin</source>
+               <volume>63</volume>
+               <fpage>227</fpage>
+               <lpage>241</lpage>
+               <pub-id pub-id-type="doi">10.1007/s12225-008-9033-y</pub-id>
+            </element-citation>
+         </ref>
+         <ref id="ref-54"><label>Whitehouse (2001)</label><element-citation publication-type="book">
+               <person-group person-group-type="author">
+                  <name>
+                     <surname>Whitehouse</surname>
+                     <given-names>C</given-names>
+                  </name>
+               </person-group>
+               <year iso-8601-date="2001">2001</year>
+               <article-title>Grewia, pp. 7–63 in Whitehouse, et al., Tiliaceae</article-title>
+               <source>Flora of tropical East Africa</source>
+               <publisher-name>Royal Botanic Gardens</publisher-name>
+               <publisher-loc>Kew</publisher-loc>
+            </element-citation>
+         </ref>
+      </ref-list>
+   </back>
+</article>

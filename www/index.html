@@ -11,6 +11,14 @@
 	<script src="jquery.js">
 	</script>
 	
+	<!-- prism -->
+	<!-- code formatting while we debug -->
+	<link type="text/css" rel="stylesheet" href="css/prism.css"/>	
+	<script src="js/prism.min.js"></script>
+	
+	<!-- altmetric -->
+	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+	
 	<style>
 		/* some overrides by me */
 		body { font-size:12px; }
@@ -19,8 +27,40 @@
 	</style>
 	
 </head>
-<body class="amber  lighten-5">
+<body>
 <script>
+
+	//--------------------------------------------------------------------------------
+function loadXMLDoc(filename) {
+	if (window.ActiveXObject) {
+		 xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+	} else {
+		 xhttp = new XMLHttpRequest();
+	}
+	xhttp.open("GET", filename, false);
+	xhttp.send("");
+	return xhttp.responseXML;
+ }
+	
+	//--------------------------------------------------------------------------------
+function show_jats_xml (jats_xml, id) {
+	var parser = new DOMParser();
+	xml = parser.parseFromString(jats_xml,"text/xml");
+
+	xsl = loadXMLDoc("xsl/full-text.xsl");
+	// code for IE
+	if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+		ex = xml.transformNode(xsl);
+	  	document.getElementById(id).innerHTML = ex;
+	}
+	// code for Chrome, Firefox, Opera, etc.
+	else if (document.implementation && document.implementation.createDocument) {
+		xsltProcessor = new XSLTProcessor();
+	  	xsltProcessor.importStylesheet(xsl);
+	  	resultDocument = xsltProcessor.transformToFragment(xml, document);
+	  	document.getElementById(id).appendChild(resultDocument);
+	}
+}		
 
 	//--------------------------------------------------------------------------------
 		// https://stackoverflow.com/a/8175221
@@ -53,6 +93,20 @@
 		}
 
 	//--------------------------------------------------------------------------------
+	function do_show_xml(url) {
+		$.getJSON(
+			'xml_proxy.php?url='
+				+ encodeURIComponent(url)
+				+ '&callback=?',			
+			function(data){
+	  			show_jats_xml(data.xml, 'xml');
+	  			
+			}
+		);
+	}
+
+
+	//--------------------------------------------------------------------------------
 	function do_show_record(id) {
 		// note the encoding of the encoding so we can cope with # uris (sigh)		
 		$.getJSON(
@@ -64,9 +118,198 @@
 	  			//alert(data);
 	  			
 	  			if (data.rows.length == 1) {
-	  				$('#content').html('<pre>' + JSON.stringify(data.rows[0], null, 2) + '</pre>');
-	  			}
-	  			
+	  				//$('#content').html('<pre>' + JSON.stringify(data.rows[0], null, 2) + '</pre>');
+	  				$('#panel').html('<pre class="language-json">' + JSON.stringify(data.rows[0], null, 2) + '</pre>');
+	  				
+	  				
+	  				//  title
+	  				var html = '';
+	  				
+	  				html += '<div class="blue white-text" style="padding:10px;">';
+    				html += '<span style="font-size:24px;">';
+    				html += data.rows[0].value.name;
+    				html += '</span>';
+    				html += '</div>';
+    				html += '<br>';
+    				$('#headline').html(html);
+    				
+    				
+    				
+    				// Identifiers
+    				html = '';
+    				
+					if (data.rows[0].value.identifier) {
+							for (var i in data.rows[0].value.identifier) {
+								switch (data.rows[0].value.identifier[i].propertyID) {
+									case 'doi':
+										html += '<div class="chip">' + data.rows[0].value.identifier[i].value + '</div>';
+										break;
+										
+									default:
+										break;
+								
+								}
+							}
+						
+						}
+						
+     				// Authors
+    				
+    				html += '<div>';
+    				if (data.rows[0].value.creator) {
+    					for (var i in data.rows[0].value.creator) {
+    						html += '<div class="chip">' + data.rows[0].value.creator[i].name + '</div>';
+    					}
+    				
+    				}
+    				html += '</div>';
+    				
+    				/*
+    				// Abstract
+    				if (data.rows[0].value.description) {
+    					html += '<div>' + data.rows[0].value.description + '</div>';
+    				}
+    				*/
+    				
+    				// PDF, XML, and other formats
+    				var pdf = '';
+    				var xml = '';
+    				if (data.rows[0].value.encoding) {
+    					for (var i in data.rows[0].value.encoding) {
+    						switch (data.rows[0].value.encoding[i].fileFormat) {
+    						
+    							case 'application/pdf':
+    								pdf = data.rows[0].value.encoding[i].contentUrl;
+    								break;
+    							
+    							case 'application/xml':
+    							case 'text/xml':
+    								xml = data.rows[0].value.encoding[i].contentUrl;
+    								break;
+    								
+    							case 'text/plain':
+    								break;
+    								
+    							default:
+    								break;
+    						
+    						}
+   						}    				
+    				}
+    				
+    				// Link to PDF
+    				if (pdf != '') {
+    					html += '<div class="center-align blue lighten-5">';
+    					html += '<br><h5><a href="' + pdf + '" target="_new">PDF</a></h5><br>';
+    					html += '</div>';
+    				}
+    				
+    				
+    				// Citations
+    				if (data.rows[0].value.citation) {
+    					html += '<ul class="collection with-header">';
+    					html += '<li class="collection-header"><h4>Cites</h4></li>';
+    				
+    					for (var i in data.rows[0].value.citation) {
+    					
+    						html += '<li class="collection-item avatar">';
+    						
+    					
+    						html += '<span class="title">';
+    						if (data.rows[0].value.citation[i]["@id"]) {
+    							html += '<a href="?id=' + encodeURIComponent(data.rows[0].value.citation[i]["@id"]) + '">';
+    						}    						
+    						
+    						
+    						if (data.rows[0].value.citation[i].name) {
+    							html += data.rows[0].value.citation[i].name;
+    						} else {
+    							html += '[Untitled]';
+    						} 
+    						
+     						if (data.rows[0].value.citation[i]["@id"]) {
+    							html += '</a>';
+    						}
+    						html += '</span>';
+    						
+    						if (data.rows[0].value.citation[i].identifier) {
+    							for (var j in data.rows[0].value.citation[i].identifier) {
+    								switch (data.rows[0].value.citation[i].identifier[j].propertyID) {
+    									case 'doi':
+    										html += '<div class="chip">' + data.rows[0].value.citation[i].identifier[j].value + '</div>';
+    										break;
+    										
+    									default:
+    										break;
+    								
+    								}
+    							}
+    						
+    						}
+    						
+    						html += '<div>';
+    						
+    						if (data.rows[0].value.citation[i].isPartOf) {
+    							html += data.rows[0].value.citation[i].isPartOf.name;    						
+    						}
+    						
+    						if (data.rows[0].value.citation[i].volume) {
+    							html += ' ' + data.rows[0].value.citation[i].volume;
+    						}
+    						if (data.rows[0].value.citation[i].issueNumber) {
+    							html += ' ' + data.rows[0].value.citation[i].issueNumber;
+    						}
+     						if (data.rows[0].value.citation[i].issueNumber) {
+    							html += ' ' + data.rows[0].value.citation[i].issueNumber;
+    						}
+    						if (data.rows[0].value.citation[i].pageStart) {
+    							html += ' ' + data.rows[0].value.citation[i].pageStart;
+    						}
+    						if (data.rows[0].value.citation[i].datePublished) {
+    							html += ' ' + data.rows[0].value.citation[i].datePublished;
+    						}
+  							html += '</div>';
+    						
+    						
+    						html += '<span class="secondary-content">';
+    						if (data.rows[0].value.citation[i]["@id"]) {
+    							html += '<div data-badge-popover="right" data-badge-type="donut" data-doi="' + data.rows[0].value.citation[i]["@id"].replace(/http:\/\/doi.org\//, "") + '" data-hide-no-mentions="true" class="altmetric-embed"></div>';
+    						}
+    						html += '</span>';
+    						
+    						
+    						html += '</li>';
+    					}
+    				
+    					html += '</ul>';
+    				}
+    				
+    				
+    				$('#content').html(html);
+    				
+    				
+    				// Experiments dsplaying XML and embedding PDFs
+   					var html = '';
+   				
+    				// XML
+    				if (xml != '') {
+       					do_show_xml(xml, 'xml');   				
+    				}
+    				
+ 					if (pdf) {
+ 						// Need to think about whether we want to display PDF's, or whether we leave that to the user
+ 						// Pensoft PDFs break pdf.js:(  
+ 					
+ 						// https issues with hypothes.is				
+    					//html = '<iframe width=500 height="600" src="external/pdf.js-hypothes.is/viewer/web/viewer.html?file="' + encodeURIComponent('pdf_proxy.php?url=' + pdf) + '" />';
+    				
+    					// works
+    					// Begonia myanmarica (Begoniaceae), a new species from Myanmar, and molecular phylogenetics of Begonia sect. Monopteron
+    					//html = '<iframe width="100%" height="800" src="external/pdfjs/web/viewer.html?file=' + encodeURIComponent('http://localhost/~rpage/biblio-lake/www/pdf_proxy.php?url=' + pdf) + '" />';
+    					//$('#xml').html(html);
+    				}
+ 	  				
+	  			}	  			
 	  			
 	  		}
 	  	);
@@ -79,6 +322,8 @@
 	
 	$('#content').html('');
 	$('#panel').html('');
+	$('#headline').html('');
+	$('#xml').html('');
 	
 	//console.log(text);
 	
@@ -332,6 +577,9 @@
 </div>
 <!-- <div class="container"> -->
 	<div class="row">
+	
+		<div id="headline"></div>
+	
 		<div class="col s12 m8 l9"> 
 		<!-- <div> -->
 <!-- Page content
@@ -341,6 +589,10 @@
           12-columns-wide on small screens  -->
 			<div id="content">
 			</div>
+			
+			<div id="xml">
+			</div>
+			
 		</div>
 		
 		<div class="col s12 m4 l3 hide-on-small-only">

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//TaxonX//DTD Taxonomic Treatment Publishing DTD v0 20100105//EN" "tax-treatment-NS0.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tp="http://www.plazi.org/taxpub" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">Journal of Hymenoptera Research</journal-id>
+      <journal-title-group>
+        <journal-title xml:lang="en">Journal of Hymenoptera Research</journal-title>
+        <abbrev-journal-title xml:lang="en">JHR</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1070-9428</issn>
+      <issn pub-type="epub">1314-2607</issn>
+      <publisher>
+        <publisher-name>Pensoft Publishers</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3897/JHR.48.7045</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Taxonomy of the Indo-Malayan presocial potter wasp genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> de Saussure (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>, <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>, <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name>)</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Nugroho</surname>
+            <given-names>Hari</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ubaidillah</surname>
+            <given-names>Rosichon</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kojima</surname>
+            <given-names>Jun-ichi</given-names>
+          </name>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1">
+        <label>1</label>
+        <addr-line>Museum Zoologicum Bogoriense, Research Center for Biology, Indonesian Institute of Sciences (LIPI), Jl. Raya Jakarta-Bogor Km 46, Cibinong, Bogor, Indonesia</addr-line>
+      </aff>
+      <aff id="A2">
+        <label>2</label>
+        <addr-line>Museum Zoologicum Bogoriense, Research Center for Biology, Indonesian Institute of Sciences (LIPI), Jl. Raya Jakarta-Bogor Km 46, Cibinong, Bogor, Indonesia</addr-line>
+      </aff>
+      <aff id="A3">
+        <label>3</label>
+        <addr-line>Natural History Laboratory, Faculty of Science, Ibaraki University, Mito, 310-8512 Japan</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="corresp">
+          <p>Corresponding author: Hari Nugroho (<email xlink:type="simple">hntawon@gmail.com</email>)</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Academic editor: M. Ohl</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>1</day>
+        <month>3</month>
+        <year>2016</year>
+      </pub-date>
+      <issue>48</issue>
+      <fpage>19</fpage>
+      <lpage>32</lpage>
+      <history>
+        <date date-type="received">
+          <day>2</day>
+          <month>11</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>12</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Hari Nugroho, Rosichon Ubaidillah, Jun-ichi Kojima</copyright-statement>
+        <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/4.0" xlink:type="simple">
+          <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="zoobank" xlink:type="simple">http://zoobank.org/5C371BB3-3FBE-4FF2-877E-A60F1A603F11</self-uri>
+      <abstract>
+        <label>Abstract</label>
+        <p>The taxonomic history and current taxonomic status of the presocial potter wasp genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> de Saussure, 1852, at generic and species levels are reviewed. The hitherto-unknown female of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part></tp:taxon-name></italic> Giordani Soika, 1960, is described based on specimens newly collected in Central and Southeast Sulawesi. A key to species is also provided.</p>
+      </abstract>
+      <kwd-group>
+        <label>Keywords</label>
+        <kwd><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name></kwd>
+        <kwd><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name></kwd>
+        <kwd><italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic></kwd>
+        <kwd>presocial potter wasps</kwd>
+        <kwd>taxonomy</kwd>
+        <kwd>Indo-Malayan</kwd>
+      </kwd-group>
+    </article-meta>
+    <notes>
+      <sec sec-type="Citation">
+        <title>Citation</title>
+        <p>Nugroho H, Ubaidillah R, Kojima J (2016) Taxonomy of the Indo-Malayan presocial potter wasp genus <italic>Calligaster</italic> de Saussure (Hymenoptera, Vespidae, Eumeninae). Journal of Hymenoptera Research 48: 19–32. doi: <ext-link xlink:type="simple" ext-link-type="doi" xlink:href="10.3897/JHR.48.7045">10.3897/JHR.48.7045</ext-link></p>
+      </sec>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="Introduction">
+      <title>Introduction</title>
+      <p>Since <xref ref-type="bibr" rid="B33">Williams (1919)</xref> described detailed natural history of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> Bequaert, 1940, under the name of <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> (<tp:taxon-name-part taxon-name-part-type="subgenus">Calligaster</tp:taxon-name-part>) <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name> de Saussure, 1852, <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> wasps have been considered to practice fully progressive provisioning, and <!--PageBreak-->thus to be ones of several subsocial or presocial potter wasps (<xref ref-type="bibr" rid="B9">Cowan 1991</xref>). The nesting behavior of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> wasps is unique in the Oriental potter wasps in that, as the wasps of the Neotropical subgenus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethoides</tp:taxon-name-part></tp:taxon-name></italic> of the genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic> Fabricius, they make a nest with plant material (leaves cut into small pieces) and that they nest communally with sisters. All these behavioral characters of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> allow us to consider the genus key to our better understanding of evolution of social and nesting behavior in the <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name> (<xref ref-type="bibr" rid="B9">Cowan 1991</xref>).</p>
+      <p>Nevertheless, the phylogenetic position of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> in the <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name> or even in the <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name> has not yet been fully studied. <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic>, in which six valid species are currently recognized, is in general considered as a genus comprising the potter wasp tribe <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="tribes">Zethini</tp:taxon-name-part></tp:taxon-name>, together with the following genera: <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Argentozethus</tp:taxon-name-part></tp:taxon-name></italic> Stange, 1979 (Neotropical in distribution), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Australozethus</tp:taxon-name-part></tp:taxon-name></italic> Giordani Soika, 1969 (Australian), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Ctenochilus</tp:taxon-name-part></tp:taxon-name></italic> de Saussure, 1856 (Neotropical), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Deuterodiscoelius</tp:taxon-name-part></tp:taxon-name></italic> Dalla Torre, 1904 (Australian), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Discoelius</tp:taxon-name-part></tp:taxon-name></italic> Latreille, 1809 (Palearctic), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Elimus</tp:taxon-name-part></tp:taxon-name></italic> de Saussure, 1852 (Papua-Australian), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Ischnocoelia</tp:taxon-name-part></tp:taxon-name></italic> Perkins, 1908 (Australian), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Macrocalymma</tp:taxon-name-part></tp:taxon-name></italic> Perkins, 1908 (Australian), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Pachycoelius</tp:taxon-name-part></tp:taxon-name></italic> Giordani Soika, 1969 (Australian), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Paramischocyttarus</tp:taxon-name-part></tp:taxon-name></italic> Magretti, 1884 (Afrotropical, Palearctic), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Protodiscoelius</tp:taxon-name-part></tp:taxon-name></italic> Dalla Torre, 1904 (Neotropical), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Raphiglossa</tp:taxon-name-part></tp:taxon-name></italic> Saunders, 1850 (Afrotropical, Palearctic) and <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic> Fabricius, 1804 (worldwide other than Palearctic) (<xref ref-type="bibr" rid="B25">Richards 1962</xref>, <xref ref-type="bibr" rid="B5">Bohart and Stange 1965</xref>, <xref ref-type="bibr" rid="B15">Giordani Soika 1969</xref>, <xref ref-type="bibr" rid="B30">Stange 1979</xref>, <xref ref-type="bibr" rid="B24">Pickett and Carpenter 2010</xref>, <xref ref-type="bibr" rid="B19">Hermes et al. 2013</xref>). <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> is Indo-Malayan endemic, occurring from the eastern part of the Indian subcontinent in the west to Sulawesi Island of Indonesia and the Philippines in the east. The genus was not included in <xref ref-type="bibr" rid="B19">Hermes et al.’s (2013)</xref> detailed phylogenetic analyses using morphological characters in the <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name>.</p>
+      <p>Furthermore, despite such interesting aspects of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> from the viewpoints of evolution of social and nesting behavior, phylogeny and biogeography, its taxonomy at generic as well as species levels is not yet revised even though such a taxonomic revision would provide us with robust bases for these studies. In the present paper, the history of taxonomy and current taxonomic status of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> at generic and species levels are reviewed, together with a description of the hitherto-unknown female of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part></tp:taxon-name></italic> Giordani Soika, 1960, and a key to species.</p>
+    </sec>
+    <sec sec-type="materials|methods">
+      <title>Material and methods</title>
+      <p>The present study is based on specimens deposited in the collections of the <abbrev content-type="institution"><def><p>Museum Zoologicum Bogoriense </p></def>(MZB)</abbrev>, Cibinong, Indonesia; <abbrev content-type="institution"><def><p>Natural History Collection at Ibaraki University </p></def>(IUNH)</abbrev>, Mito, Japan; <abbrev content-type="institution"><def><p>National Museum of Nature and Science </p></def>(NMST)</abbrev>, Tsukuba, Japan and the <abbrev content-type="institution"><def><p>Institute of Ecology and Biological Resources </p></def>(IEBR)</abbrev>, Hanoi, Vietnam.</p>
+      <p>Each species account is accompanied by the original citation; sex(es) and locality(ies), if mentioned, are given together with the repository(ies) of name-bearing type specimen(s) in parentheses. Distributional data are summarized under “Distribution”. The acronyms <!--PageBreak-->of the type repositories are as follows: <abbrev content-type="institution">BMNH<def><p>, The Natural History Museum, London</p></def></abbrev>; <abbrev content-type="institution">MCZ<def><p>, Museum of Comparative Zoology, Harvard University, Cambridge, U.S.A</p></def></abbrev>; <abbrev content-type="institution">MSNG<def><p>, Museo Civico di Storia Naturale di Genova Giacomo Doria, Genova</p></def></abbrev>; <abbrev content-type="institution">RMNH<def><p>, Nationaal Natuurhistorisch Museum (formerly Rijksmuseum van Natuurlijke Historie), Leiden, Netherlands</p></def></abbrev>; <abbrev content-type="institution">USC<def><p>, University of San Carlos, Cebu City, Philippines</p></def></abbrev>; <abbrev content-type="institution">ZMB<def><p>, Zoologisches Museum der Humboldt Universität, Berlin</p></def></abbrev>.</p>
+      <p>Morphological characters and marking patterns were observed on pinned-and-dried specimens under a stereoscopic dissecting microscope. Male genitalia of some species were dissected, cleared in lactic acid, and observed in glycerin under a stereoscopic dissecting microscope. Line drawings were made by using the drawing tube attached to the microscope. Terminology on morphological characters mainly follows <xref ref-type="bibr" rid="B5">Bohart and Stange (1965)</xref>, <xref ref-type="bibr" rid="B8">Carpenter and Cumming (1985)</xref>, that on surface sculpturing follows <xref ref-type="bibr" rid="B18">Harris (1979)</xref>, and on male genitalia mainly follows <xref ref-type="bibr" rid="B4">Bitsch (2012)</xref>.</p>
+    </sec>
+    <sec sec-type="Taxonomy">
+      <title>Taxonomy</title>
+      <tp:taxon-treatment>
+        <tp:treatment-meta>
+          <kwd-group>
+            <label>Taxon classification</label>
+            <kwd>
+              <named-content content-type="kingdom" xlink:type="simple">Animalia</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="order" xlink:type="simple">Hymenoptera</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="family" xlink:type="simple">Vespidae</named-content>
+            </kwd>
+          </kwd-group>
+        </tp:treatment-meta>
+        <tp:nomenclature>
+          <label>Genus</label>
+          <tp:taxon-name>
+            <tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+          </tp:taxon-name>
+          <tp:taxon-authority>de Saussure</tp:taxon-authority>
+          <tp:nomenclature-citation-list>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name><comment> de Saussure, 1852: 22. Type species: <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name> de Saussure, 1852, by subsequent designation of <xref ref-type="bibr" rid="B1">Ashmead (1902</xref>: 205).</comment></tp:nomenclature-citation>
+          </tp:nomenclature-citation-list>
+        </tp:nomenclature>
+        <tp:treatment-sec sec-type="Diagnosis">
+          <title>Diagnosis.</title>
+          <p>The genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> can be differentiated from any other eumenine genera by the combination of the following characters: labial and maxillary palpus with three and six palpomeres respectively; mid tibia with two spurs; mesepisternum with horizontal suture absent; propodeum with propodeal orifice rounded dorsally, apical valvula short and rounded, and submarginal carina not projecting as pointed lobe above valvula; metasomal segment I petiolate; tergum I in dorsal view abruptly widened laterally shortly after basal slit, then nearly parallel-sided apically, with longitudinal striae; metasomal sternum II with basal fossa; male characters: terminal antennal flagellomere simple; distal lobe of gonocoxite sub-truncated; gonostyle subapically with a tuft of short and thin hairs; basivolsella long and narrow, slightly enlarged at the base, with an obliquely truncated apex.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Remarks">
+          <title>Remarks.</title>
+          <p>
+            <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> was proposed by de <xref ref-type="bibr" rid="B27">Saussure (1852</xref>: 23, Pl. IX fig. 6) as a genus to accomodate his two species from “Java”: <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> de Saussure, 1852 and <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">hero</tp:taxon-name-part></tp:taxon-name></italic> de Saussure, 1852. Later, he (de <xref ref-type="bibr" rid="B28">Saussure 1855</xref>: 115) synonymized <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">hero</tp:taxon-name-part></tp:taxon-name></italic> under <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">gigas</tp:taxon-name-part></tp:taxon-name></italic> Spinola, 1841, which is a South American <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic> species and is now treated as a synonym of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">coeruleopennis</tp:taxon-name-part></tp:taxon-name></italic> (Fabricius, 1798) (<xref ref-type="bibr" rid="B5">Bohart and Stange 1965</xref>). Although de <xref ref-type="bibr" rid="B28">Saussure (1855)</xref> did not refer to the type locality of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">hero</tp:taxon-name-part></tp:taxon-name></italic> given in de <xref ref-type="bibr" rid="B27">Saussure (1852)</xref> (= “Java”), it may have been certainly based on an erroneous labeling. <xref ref-type="bibr" rid="B1">Ashmead (1902)</xref> designated <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> de Saussure as the type species of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> de Saussure, 1852.</p>
+          <!--PageBreak-->
+          <p>The taxonomic status of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> had not been stabilized until <xref ref-type="bibr" rid="B2">Bequaert (1928)</xref> reinstalled its generic status; that is, de <xref ref-type="bibr" rid="B28">Saussure (1855)</xref> treated it as a division in the genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic>; <xref ref-type="bibr" rid="B16">Gribodo (1892)</xref>, possibly having followed de <xref ref-type="bibr" rid="B28">Saussure (1855)</xref>, treated <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> as a subgenus in the genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic> when he described <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">javanus</tp:taxon-name-part></tp:taxon-name></italic> (=<italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name></italic>); <xref ref-type="bibr" rid="B10">Dalla Torre (1904)</xref> treated <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> as a genus; and <xref ref-type="bibr" rid="B6">Cameron (1904</xref>, <xref ref-type="bibr" rid="B7">1909</xref>) described two species of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic>, which <xref ref-type="bibr" rid="B2">Bequaert (1928)</xref> transferred to the genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic>. But, establishment of the concept of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> currently accepted by most of the vespid taxonomists was of <xref ref-type="bibr" rid="B14">Giordani Soika (1960)</xref>.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Key to species of Calligaster">
+          <title>Key to species of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic></title>
+          <p>As no specimens were available to us, the characters for <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">etchellsii</tp:taxon-name-part></tp:taxon-name></italic> and <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">zetteli</tp:taxon-name-part></tp:taxon-name></italic> were extracted from <xref ref-type="bibr" rid="B7">Cameron (1909)</xref> and <xref ref-type="bibr" rid="B2">Bequaert (1928)</xref>, and <xref ref-type="bibr" rid="B17">Gusenleitner (2006)</xref>, respectively. Neither information of the male characters of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">zetelli</tp:taxon-name-part></tp:taxon-name></italic> nor of the female of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">etchellsi</tp:taxon-name-part></tp:taxon-name></italic> is available to us. In <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic>, we have observed distinct morphological differences between sexes in the head characters, while characters of the mesosoma and metasoma (except for the number of metasomal segments and genital organs) are nearly the same between the sexes. In the following key, sex is specified only for the head characters.</p>
+          <table-wrap content-type="key" position="anchor" orientation="portrait">
+            <table id="TID0EHJAC" rules="all">
+              <tbody>
+                <tr>
+                  <td rowspan="1" colspan="1">1</td>
+                  <td rowspan="1" colspan="1">Metasomal tergum I other than basal petiolate part in lateral view hardly convex dorsally (Fig. <xref ref-type="fig" rid="F1">4</xref>)</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>2</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">–</td>
+                  <td rowspan="1" colspan="1">Metasomal tergum I other than basal petiolate part in lateral view more or less distinctly convex dorsally (Figs <xref ref-type="fig" rid="F1">1</xref>, <xref ref-type="fig" rid="F1">3</xref>, <xref ref-type="fig" rid="F1">5</xref>)</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>3</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">2</td>
+                  <td rowspan="1" colspan="1">Female clypeus with dense and coarse punctures. Propodeum with dorsal face smooth and barely punctured. Metasomal tergum II basally barely punctured, apically with sparse minute punctures. Female mandible entirely black</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>
+                      <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> Bequaert</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">–</td>
+                  <td rowspan="1" colspan="1">Female clypeus with sparse minute punctures. Propodeum with dorsal face coarsely punctured. Metasomal tergum II entirely with sparse minute punctures. Female mandible with yellow basal spot</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>
+                      <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">zetelli</tp:taxon-name-part></tp:taxon-name></italic> Gusenleitner</bold> [male unknown]</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">3</td>
+                  <td rowspan="1" colspan="1">Male clypeus in frontal view about 1.5 times as wide as high. Body black entirely or with bright yellow markings</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>4</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">–</td>
+                  <td rowspan="1" colspan="1">Male clypeus in frontal view about 2 times as wide as high; ventral margin shallowly emarginate medially. Body with pale-yellow markings</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>
+                      <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">etchellsii</tp:taxon-name-part></tp:taxon-name></italic> (Cameron)</bold> [female unknown]</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">4</td>
+                  <td rowspan="1" colspan="1">Metasomal tergum I in lateral view without distinct subapical depression (Fig. <xref ref-type="fig" rid="F1">1</xref>); in dorsal view strongly convex along lateral margin (Fig. <xref ref-type="fig" rid="F1">6</xref>). Wings fuscous, with greenish-purple iridescence</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>
+                      <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part></tp:taxon-name></italic> Giordani Soika</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">–</td>
+                  <td rowspan="1" colspan="1">Metasomal tergum I in lateral view distinctly constricted subapically (Figs <xref ref-type="fig" rid="F1">3</xref>, <xref ref-type="fig" rid="F1">5</xref>); in dorsal view nearly parallel-sided, with slight subapical constriction (Figs <xref ref-type="fig" rid="F1">7</xref>, <xref ref-type="fig" rid="F1">9</xref>). Wings fuscous, with blue-green and purple iridescence</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>5</bold>
+                  </td>
+                </tr>
+                <!--PageBreak-->
+                <tr>
+                  <td rowspan="1" colspan="1">5</td>
+                  <td rowspan="1" colspan="1">Metasomal segment I in dorsal view relatively slender, about 2.5 times as long as its maximum width (Fig. <xref ref-type="fig" rid="F1">7</xref>); tergum I hardly punctured, so that dorsal striae are more or less conspicuous</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>
+                      <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> de Saussure</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">–</td>
+                  <td rowspan="1" colspan="1">Metasomal segment I in dorsal view shorter and stouter, about 1.8 times as long as its maximum width (Fig. <xref ref-type="fig" rid="F1">9</xref>); tergum I with dense and distinct puncture, so that dorsal striae inconspicuous</td>
+                  <td rowspan="1" colspan="1">
+                    <bold>
+                      <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayanensis</tp:taxon-name-part></tp:taxon-name></italic> (Cameron)</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </tp:treatment-sec>
+      </tp:taxon-treatment>
+      <tp:taxon-treatment>
+        <tp:treatment-meta>
+          <kwd-group>
+            <label>Taxon classification</label>
+            <kwd>
+              <named-content content-type="kingdom" xlink:type="simple">Animalia</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="order" xlink:type="simple">Hymenoptera</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="family" xlink:type="simple">Vespidae</named-content>
+            </kwd>
+          </kwd-group>
+        </tp:treatment-meta>
+        <tp:nomenclature>
+          <tp:taxon-name>
+            <tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+            <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part>
+          </tp:taxon-name>
+          <tp:taxon-authority>de Saussure, 1852</tp:taxon-authority>
+          <xref ref-type="fig" rid="F1">Figs 3</xref><xref ref-type="fig" rid="F1">, 7</xref><xref ref-type="fig" rid="F2">, 10</xref><xref ref-type="fig" rid="F2">, 14</xref><xref ref-type="fig" rid="F2">, 17</xref><xref ref-type="fig" rid="F3">, 19–22</xref>
+          <tp:nomenclature-citation-list>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name><comment> de Saussure, 1852: 23, pl. IX figs. 7, 7a, ♀, “Java”, syntypes (?<named-content content-type="dwc:institutional_code">RMNH</named-content>).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name><comment>; <xref ref-type="bibr" rid="B28">de Saussure 1855</xref>: 115 (here called <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name> Lep. [!]), 123 (in division <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name>; ♂).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> (<tp:taxon-name-part taxon-name-part-type="subgenus">Calligaster</tp:taxon-name-part>) <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name><comment>; <xref ref-type="bibr" rid="B16">Gribodo 1892 (1891)</xref>: 260.</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> (<tp:taxon-name-part taxon-name-part-type="subgenus">Calligaster</tp:taxon-name-part>) <tp:taxon-name-part taxon-name-part-type="species">javanus</tp:taxon-name-part></tp:taxon-name><comment> Gribodo, 1892 (1891): 261, ♂ (in subgenus <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name>), “Kaliparè (Giava orientale)”, holotype [by monotypy] (<named-content content-type="dwc:institutional_code">MSNG</named-content>). Synonymized under <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name> de Saussure, 1852 by van der <xref ref-type="bibr" rid="B31">Vecht (1937</xref>: 262).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">javana</tp:taxon-name-part></tp:taxon-name><comment>; <xref ref-type="bibr" rid="B10">Dalla Torre 1904</xref>: 17 (cat.).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">erythrostomus</tp:taxon-name-part></tp:taxon-name><comment> Cameron Meade-Waldo, 1914: 404, “Java”, holotype [by monotypy] (<abbrev content-type="institution" xlink:title="The Natural History Museum, London">BMNH</abbrev>), as a synonym of <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name> de Saussure. Available under Article 11.6.1 of the International Code of Zoological Nomenclature.</comment></tp:nomenclature-citation>
+          </tp:nomenclature-citation-list>
+        </tp:nomenclature>
+        <tp:treatment-sec sec-type="Diagnosis">
+          <title>Diagnosis.</title>
+          <p>
+            <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> is distinguished from its congeners by the combination of the following characters: metasomal tergum I in lateral view moderately convex dorsally, with distinct preapical depression (Fig. <xref ref-type="fig" rid="F1">3</xref>), in dorsal view nearly parallel-sided, relatively slender, about 2.5 times as long as its maximum width (Fig. <xref ref-type="fig" rid="F1">7</xref>); female clypeus in frontal view about 1.5 times as wide as high, with ventral margin more or less truncated rather than broadly rounded (Fig. <xref ref-type="fig" rid="F2">10</xref>); male clypeus in frontal view about 1.5 times as wide as high, with semi-elliptic emargination at ventral margin (Fig. <xref ref-type="fig" rid="F2">14</xref>); tergum I hardly punctured, so that dorsal striae are more or less conspicuous (Fig. <xref ref-type="fig" rid="F1">7</xref>).</p>
+          <fig id="F1" position="float" orientation="portrait">
+            <label>Figures 1–9.</label>
+            <caption>
+              <p>
+          <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> species. <bold>1–9</bold> Female <bold>1, 2, 6</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part></tp:taxon-name></italic> <bold>3, 7</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> <bold>4, 8</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> <bold>5, 9</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name></italic> <bold>1</bold> Body, lateral view <bold>2</bold> Head, frontal view <bold>3–5</bold> Metasomal segments I–II, lateral view <bold>6–9</bold> Metasomal tergum I, dorsal view. Scale 1 mm.</p>
+            </caption>
+            <graphic xlink:href="journal_of_hymenoptera_research-48-e7045-g001.jpg" position="float" orientation="portrait" xlink:type="simple" id="oo_79928.jpg"/>
+          </fig>
+          <fig id="F2" position="float" orientation="portrait">
+            <label>Figures 10–18.</label>
+            <caption>
+              <p>
+          <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> species. <bold>10–13</bold> Female. <bold>14–18</bold> Male <bold>10, 14, 17</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> <bold>11</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part></tp:taxon-name></italic> <bold>12, 15, 18</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> <bold>13, 16</bold> <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name></italic> <bold>10–13</bold> Female clypeus <bold>14–16</bold> Male clypeus <bold>17, 18</bold> Apex of male antenna. Scale 1 mm.</p>
+            </caption>
+            <graphic xlink:href="journal_of_hymenoptera_research-48-e7045-g002.jpg" position="float" orientation="portrait" xlink:type="simple" id="oo_79929.jpg"/>
+          </fig>
+          <fig id="F3" position="float" orientation="portrait">
+            <label>Figures 19–22.</label>
+            <caption>
+              <p>
+          <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic>. <bold>19</bold> Female from Garut, West Java <bold>20</bold> Single cell nest from Garut, West Java <bold>21</bold> Nest with a newly constructed cell (made of cuts of fresh leaves) from Garut, West Java <bold>22</bold> Nest from Bali.</p>
+            </caption>
+            <graphic xlink:href="journal_of_hymenoptera_research-48-e7045-g003.jpg" position="float" orientation="portrait" xlink:type="simple" id="oo_79930.jpg"/>
+          </fig>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="material">
+          <title>Material examined.</title>
+          <p>JAVA: 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Tjikadjang, Bandjarwangi, alt. 8–900 m, 7–10.iv.1939, M.A. Lieftinck; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Priangan, Gn. [= “Mt.”] Limboeng, alt. 1000 m, 28.vii.1934, M.A. Lieftinck; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Priangan, Gn. Limboeng, 1000 m, 28.vii.1934, M.A. Lieftinck; 2♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Djampang, Gn. Tjimerang, xii.1932, M. E. Walsh; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Djasinga, 4.xii.1938, M. A. Lieftinck; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Djampang Tengah, G. Tjisoeroe, alt. 600–800 m, 1933, M. E. Walsh; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), G. Gedeh, Tjiboenar, 14.xi.1929, F.C. Drescher; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Tjipanas, 19.xii.1930; 3♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Soekanegara, alt. 400–1000 m, ii.1940, native coll.; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Pelaboean Ratoe, 16–17.iv.1933, M.A. Lieftinck; 1♂ 2♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Priangan, Mt. Limboeng, alt. 900 m, 30.vii.1934, M.A. Lieftinck; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Cikaniki, Gn. Halimun, Sukabumi, alt. 950 m, 8.viii.1997, Zamilah et al.; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Cikaniki, Gn. Halimun, Sukabumi, alt. 950–1000 m, 26.iv–2.v.1999, T. Ueno, M.R. Sofyan; 1♀ 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), 2.v.1937, Mt. Salak; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Mt. Gede, i.1935; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Djasinga, 2.viii.1952, Amsari; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Gn. Tjimerang, 600 m, Bodjongkulong, Djampang Tengah, iii.1941, <!--PageBreak-->native coll.; 5♀ 3♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Mt. Gede, 1000 m, i.1935, native coll.; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Gn. Halimun Nat. Park, Cikaniki, <named-content content-type="dwc:verbatimCoordinates">06°45'04”S 106°31'31”E</named-content>, alt. 925 m, 15.ix.1999, W.A. Noerdjito; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Sukabumi, Jampang, Bojong Pari, <named-content content-type="dwc:verbatimCoordinates">07°10’S 106°37’E</named-content>, 29.iii.2002, R. Ubaidillah; 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Penandjoeng bay, Kalipoetjang, alt. 300 m, vi.1936, M.A. Lieftinck; 1♀ 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Batoerraden, Gn. Slamat, Java, 23.xii.1928, F.C. Drescher; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Batoerraden, Gn. Slamat, Java, 9.vii.1939, F.C. Drescher; 3♀ 1♂ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Cisompet, Garut, W. Java, 4.vii.2013, H. Nugroho &amp; J. Kojima. BALI: 2♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Baturiti, Tabanan, 13.ix.2013, H. Nugroho et al.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Distribution">
+          <title>Distribution.</title>
+          <p>Sumatra Is. (Marang), Java Is., Bali Is. (new record).</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Remarks">
+          <title>Remarks.</title>
+          <p>In his monograph on solitary vespid wasps, de <xref ref-type="bibr" rid="B27">Saussure (1852)</xref> described <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> based on at least two (the body length was mentioned as “20 á 25 mill. [20 to 25 mill.]”) females from “Java”. The syntypes were indicated to be in “Musée de Leyde” (de <xref ref-type="bibr" rid="B27">Saussure 1852</xref>: 24), but no one has referred to the syntypes. <xref ref-type="bibr" rid="B16">Gribodo (1892</xref>: 261) described <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> (<tp:taxon-name-part taxon-name-part-type="subgenus">Calligaster</tp:taxon-name-part>) <tp:taxon-name-part taxon-name-part-type="species">javanus</tp:taxon-name-part></tp:taxon-name> based on a single male from “Kaliparè [in Malang] (Giava orientale [East Java])”, and van der <xref ref-type="bibr" rid="B31">Vecht (1937</xref>: 262) synonymized it under <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic>, stating “… Gribodo’s species is undoubtedly conspecific with <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name></italic> … the shape of the clypeus is very different in the two sexes”. <xref ref-type="bibr" rid="B22">Meade-Waldo (1914</xref>: 204) published, as a synonym of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name></italic> de Saussure, 1852, “<italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">erythrostomus</tp:taxon-name-part></tp:taxon-name></italic> Cameron”, which was actually an unpublished Cameron’s manuscript name for a female specimen from Lawang, East Java (<xref ref-type="bibr" rid="B2">Bequaert 1928</xref>: 157).</p>
+          <p>This species have so far been recorded from Sumatra Is. (<xref ref-type="bibr" rid="B16">Gribodo 1892</xref>: 260) and Java Is. (de <xref ref-type="bibr" rid="B27">Saussure 1852</xref>, <xref ref-type="bibr" rid="B16">Gribodo 1892</xref>, <xref ref-type="bibr" rid="B31">van der Vecht 1937</xref>, <xref ref-type="bibr" rid="B32">1938</xref>; our own data as listed below), and we herewith firstly record the species from Bali Is. We also collected a couple of nests made on tree twigs along the creek at Baturiti, Bali; their structure is basically the same as that from the south of Garut, West Java, described by van der <xref ref-type="bibr" rid="B32">Vecht (1938)</xref>.</p>
+        </tp:treatment-sec>
+      </tp:taxon-treatment>
+      <tp:taxon-treatment>
+        <tp:treatment-meta>
+          <kwd-group>
+            <label>Taxon classification</label>
+            <kwd>
+              <named-content content-type="kingdom" xlink:type="simple">Animalia</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="order" xlink:type="simple">Hymenoptera</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="family" xlink:type="simple">Vespidae</named-content>
+            </kwd>
+          </kwd-group>
+        </tp:treatment-meta>
+        <tp:nomenclature>
+          <tp:taxon-name>
+            <tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+            <tp:taxon-name-part taxon-name-part-type="species">etchellsii</tp:taxon-name-part>
+          </tp:taxon-name>
+          <tp:taxon-authority>(Cameron, 1909)</tp:taxon-authority>
+          <tp:nomenclature-citation-list>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zeuthus</tp:taxon-name-part>
+              </tp:taxon-name><comment> [!] <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="species">etchellsii</tp:taxon-name-part></tp:taxon-name> Cameron, 1909: 206, ♂, “Kuching, Borneo”, holotype [by monotypy] (<abbrev content-type="institution" xlink:title="The Natural History Museum, London">BMNH</abbrev>).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">etchellsii</tp:taxon-name-part></tp:taxon-name><comment>; <xref ref-type="bibr" rid="B2">Bequaert 1928</xref>: 157 (holotype examined; notes).</comment></tp:nomenclature-citation>
+          </tp:nomenclature-citation-list>
+        </tp:nomenclature>
+        <tp:treatment-sec sec-type="Remarks">
+          <title>Remarks.</title>
+          <p>This species was described based on a single male specimen from “Kuching, Borneo” in combination with <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic> (<xref ref-type="bibr" rid="B7">Cameron 1909</xref>: 206) and <xref ref-type="bibr" rid="B2">Bequaert (1928</xref>: 157) moved it to the genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic>. Neither other records of this species have so far been published nor have we collected any wasps of this species in our rather intensive field collection at several places in Kalimantan.</p>
+          <p>
+            <xref ref-type="bibr" rid="B2">Bequaert (1928</xref>: 157), having examined the holotype (by monotypy), stated “... quite a distinct species in the shape of the clypeus, which is unusually wide (twice as broad as high) and ends in a deep semi-elliptic emargination.” Such a deep semi-<!--PageBreak-->elliptical emargination at the ventral margin of the male clypeus is also found in <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic>, while the male clypeus in the latter is about 1.5 times as wide as high.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="material">
+          <title>Material examined.</title>
+          <p>No specimen examined.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Distribution">
+          <title>Distribution.</title>
+          <p>Only the type locality [Kuching in Sarawak, Borneo Is.].</p>
+        </tp:treatment-sec>
+      </tp:taxon-treatment>
+      <tp:taxon-treatment>
+        <tp:treatment-meta>
+          <kwd-group>
+            <label>Taxon classification</label>
+            <kwd>
+              <named-content content-type="kingdom" xlink:type="simple">Animalia</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="order" xlink:type="simple">Hymenoptera</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="family" xlink:type="simple">Vespidae</named-content>
+            </kwd>
+          </kwd-group>
+        </tp:treatment-meta>
+        <tp:nomenclature>
+          <tp:taxon-name>
+            <tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+            <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part>
+          </tp:taxon-name>
+          <tp:taxon-authority>(Cameron, 1904)</tp:taxon-authority>
+          <xref ref-type="fig" rid="F1">Figs 5</xref><xref ref-type="fig" rid="F1">, 9</xref><xref ref-type="fig" rid="F2">, 13</xref><xref ref-type="fig" rid="F2">, 16</xref>
+          <!--PageBreak-->
+          <tp:nomenclature-citation-list>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name><comment> Cameron, 1904: 13, ♀, “Sikkim” (<abbrev content-type="institution" xlink:title="The Natural History Museum, London">BMNH</abbrev>).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name><comment>; <xref ref-type="bibr" rid="B2">Bequaert 1928</xref>: 157 (holotype examined; possibly a valid species).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">hymalayensis</tp:taxon-name-part></tp:taxon-name><comment> [!]; <xref ref-type="bibr" rid="B13">Giordani Soika 1941</xref>: 216 (incorrect spelling of <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name> Cameron; syn. of <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name> de Saussure).</comment></tp:nomenclature-citation>
+          </tp:nomenclature-citation-list>
+        </tp:nomenclature>
+        <tp:treatment-sec sec-type="Diagnosis">
+          <title>Diagnosis.</title>
+          <p>The characters which may allow us to differentiate <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name></italic> from <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> are as follows [characters for <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> are given in the brackets]: Metasomal segment I in dorsal view shorter and stouter (Fig. <xref ref-type="fig" rid="F1">9</xref>), about 1.8 times as long as its maximum width [slender, about 2.5 times as long as its maximum width (Fig. <xref ref-type="fig" rid="F1">7</xref>)]; tergum I with dorsal striae inconspicuous, in consequence of strong and distinct punctures [dorsal striae conspicuous; tergum with nearly no punctures]; mesoscutum strongly punctured, also in areas along notauli [strongly punctured, but areas along notauli with no punctures]; scutellum and metanotum with denser, larger and deeper punctures than those in <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic>; dorsal face of propodeum with strong <!--PageBreak-->punctures along the border with the posterior face [glossy, nearly without punctures]; lateral face of propodeum with denser and deeper punctures [punctures sparser, interspaces between punctures wider than diameter of a puncture]; male antennal scape yellow ventrally [black entirely]; interantennal space with paired yellow spots [usually absent in female, rarely absent in male]; female clypeus black entirely [black with wide reddish-brown transverse band ventrally]; male clypeus with large yellow spot occupying nearly entire disk of clypeus [closely paired yellow spots in ventral part, but occasionally lacking].</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="material">
+          <title>Material examined.</title>
+          <p>VIETNAM: 1♂ (<abbrev content-type="institution" xlink:title="Natural History Collection at Ibaraki University">IUNH</abbrev>), Me Linh, emerged from a nest collected on 9.iii.2005, F. Saito et al. [the nest, in its structure, is similar to that of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> we observed and that of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> described by <xref ref-type="bibr" rid="B33">Williams (1919)</xref>]; 1♀ 1♂ (<abbrev content-type="institution" xlink:title="Institute of Ecology and Biological Resources">IEBR</abbrev>), Kim Hy National Park, Bac Kan, 5.viii.2012, L.T.P Nguyen et al.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Distribution">
+          <title>Distribution.</title>
+          <p>Sikkim, China, Laos, northern parts of Vietnam.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Remarks">
+          <title>Remarks.</title>
+          <p>
+            <xref ref-type="bibr" rid="B6">Cameron (1904</xref>: 13) proposed <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name></italic> for a single female from “Sikkim [India]” and <xref ref-type="bibr" rid="B2">Bequaert (1928</xref>: 157) moved it to the genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic>. <xref ref-type="bibr" rid="B2">Bequaert (1928</xref>: 157), having examined the holotype, mentioned that “Although similar to <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name></italic>, it appears to differ in the shape of the clypeus and is possibly a valid species.” Based on the comparison of our specimens from Vietnam [given under “Material examined”] with those of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> from Java and Bali, we recognized that <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name></italic> differs from the latter in having stronger and more distinct punctures.</p>
+          <p>Other than the locality given in the original description (Sikkim in India), <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name></italic> has been recorded from China (<xref ref-type="bibr" rid="B14">Giordani Soika 1960</xref>; without giving any specific localities). We have herein firstly recorded the species from northern parts of Vietnam (new record), suggesting that <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">himalayensis</tp:taxon-name-part></tp:taxon-name></italic> may occur along the eastern slope of the Himalayas from Sikkim to northern parts of Vietnam, and probably to southeastern parts of China.</p>
+        </tp:treatment-sec>
+      </tp:taxon-treatment>
+      <tp:taxon-treatment>
+        <tp:treatment-meta>
+          <kwd-group>
+            <label>Taxon classification</label>
+            <kwd>
+              <named-content content-type="kingdom" xlink:type="simple">Animalia</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="order" xlink:type="simple">Hymenoptera</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="family" xlink:type="simple">Vespidae</named-content>
+            </kwd>
+          </kwd-group>
+        </tp:treatment-meta>
+        <tp:nomenclature>
+          <tp:taxon-name>
+            <tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+            <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part>
+          </tp:taxon-name>
+          <tp:taxon-authority>Giordani Soika, 1960</tp:taxon-authority>
+          <xref ref-type="fig" rid="F1">Figs 1</xref><xref ref-type="fig" rid="F1">, 2</xref><xref ref-type="fig" rid="F1">, 6</xref><xref ref-type="fig" rid="F2">, 11</xref>
+          <tp:nomenclature-citation-list>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part></tp:taxon-name><comment> Giordani Soika, 1960: 72, fig. 11 (nos. 7–8), 74, ♂, “<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Celebes</tp:taxon-name-part></tp:taxon-name>: Enrekang”, holotype (<named-content content-type="dwc:institutional_code">ZMB</named-content>).</comment></tp:nomenclature-citation>
+          </tp:nomenclature-citation-list>
+        </tp:nomenclature>
+        <tp:treatment-sec sec-type="Remarks">
+          <title>Remarks.</title>
+          <p>
+            <xref ref-type="bibr" rid="B14">Giordani Soika (1960</xref>: 72, 74) proposed <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">viridipennis</tp:taxon-name-part></tp:taxon-name></italic> for a single male from “<italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Celebes</tp:taxon-name-part></tp:taxon-name></italic>: Enrekang”. Since then, no information on this species has been added.</p>
+          <p>Based on the specimens recently collected in Central and Southeast Sulawesi we describe below the female of this Sulawesi-endemic <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> wasp for the first time.</p>
+          <p>The female can be associated with the male by the combination of the following characters: posterior face of propodeum strongly and reticulately punctured; basal fossa of metasomal sternum II deep and distinct, with dense fulvous hairs; wings fuscous, with strong greenish-purple iridescence.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Female characters">
+          <title>Female characters.</title>
+          <p>Body length (head + mesosoma + metasomal segments I and II) 21–22 mm; fore wing length 20 mm. Head in frontal view subcircular, slightly wider than high, 1.2 times as wide as high (Fig. <xref ref-type="fig" rid="F1">2</xref>). Clypeus in profile smoothly and weakly convex; in frontal view about 1.5 times as wide as high (Fig. <xref ref-type="fig" rid="F2">11</xref>), with dorsal margin deeply emarginate medially and ventral margin slightly convex.</p>
+          <!--PageBreak-->
+          <p>Mesosoma flattened dorsoventrally, 1.5 times as long as high in lateral view (Fig. <xref ref-type="fig" rid="F1">1</xref>); in dorsal view 1.4 times as long as wide. Propodeum with posterior face strongly and reticulately punctured (instead of rugosely striated). Metasomal segment I shorter than mesosoma, 0.8 times as long as mesosoma; tergum I strongly convex dorsally (Fig. <xref ref-type="fig" rid="F1">1</xref>) [moderately convex in <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic>]; tergum in dorsal view strongly convex along lateral margins, with faint oblique striae (Fig. <xref ref-type="fig" rid="F1">6</xref>). Metasomal sternum II with basal fossa as in <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic>, but distinct and deeper, with dense fulvous hairs.</p>
+          <p>Body densely covered with dense whitish pubescence; tibia and tarsi with golden pubescence. Head strongly punctured, but vertex and gena only sparsely with smaller punctures. Mesosoma strongly punctured; mesoscutum, scutellum and metanotum with punctures sparser and smaller, as those on vertex and gena. Metasomal segment I with punctures slightly stronger than those on <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic>; tergum I with punctures smaller than those on mesonotum; tergum II with small and superficial punctures, regularly arranged from base to apex.</p>
+          <p>Body black, without markings. Wings fuscous, with greenish-purple iridescence.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="material">
+          <title>Material examined.</title>
+          <p>SULAWESI: 3♀ 1♂ (<abbrev content-type="institution" xlink:title="National Museum of Nature and Science">NMST</abbrev>), Palu, Palolo, [2♀ 1♂, vii.1995; 1♀, i.1991], Mokuyosha; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), North Kolaka, Tinukari, Mekongga, <named-content content-type="dwc:verbatimCoordinates">03°38'17"S, 121°11'31"E</named-content>, alt. ca. 1430 m, 17.vii.2011, R. Ubaidillah et al.; 1♀ (<named-content content-type="dwc:institutional_code">MZB</named-content>), Luwuk timur, Towuti, Soroako, <named-content content-type="dwc:verbatimCoordinates">03°35'10"S, 121°24'06"E</named-content>, alt. ca.450 m, 1–5.i.2007, A. Suwito &amp; E. Cholik.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Distribution">
+          <title>Distribution.</title>
+          <p>Sulawesi Is. (central, south, and southeast Sulawesi).</p>
+        </tp:treatment-sec>
+      </tp:taxon-treatment>
+      <tp:taxon-treatment>
+        <tp:treatment-meta>
+          <kwd-group>
+            <label>Taxon classification</label>
+            <kwd>
+              <named-content content-type="kingdom" xlink:type="simple">Animalia</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="order" xlink:type="simple">Hymenoptera</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="family" xlink:type="simple">Vespidae</named-content>
+            </kwd>
+          </kwd-group>
+        </tp:treatment-meta>
+        <tp:nomenclature>
+          <tp:taxon-name>
+            <tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+            <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part>
+          </tp:taxon-name>
+          <tp:taxon-authority>Bequaert, 1940</tp:taxon-authority>
+          <xref ref-type="fig" rid="F1">Figs 4</xref><xref ref-type="fig" rid="F1">, 8</xref><xref ref-type="fig" rid="F2">, 12</xref><xref ref-type="fig" rid="F2">, 15</xref><xref ref-type="fig" rid="F2">, 18</xref>
+          <!--PageBreak-->
+          <tp:nomenclature-citation-list>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> (<tp:taxon-name-part taxon-name-part-type="subgenus">Calligaster</tp:taxon-name-part>) <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name><comment>; <xref ref-type="bibr" rid="B33">Williams 1919</xref>: 157–164 (natural history).</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+              </tp:taxon-name><comment> n. sp.; van der <xref ref-type="bibr" rid="B31">Vecht 1937</xref>: 263.</comment></tp:nomenclature-citation>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name><comment> Bequaert, 1940: 124, fig. 1 A–D, ♀♂, “Los Baños, Luzon, Philippine Is.”, holotype female (<named-content content-type="dwc:institutional_code">MCZ</named-content>).</comment></tp:nomenclature-citation>
+          </tp:nomenclature-citation-list>
+        </tp:nomenclature>
+        <tp:treatment-sec sec-type="Diagnosis">
+          <title>Diagnosis.</title>
+          <p>
+            <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> can be distinguished from its congeners by the combination of the following characters: metasomal tergum I in lateral view barely convex dorsally, with preapical dorsal depression weakly produced (Fig. <xref ref-type="fig" rid="F1">4</xref>), in dorsal view weakly and evenly convex laterally (Fig. <xref ref-type="fig" rid="F1">8</xref>); longitudinal striae on tergum I strong, more or less regularly arranged (Fig. <xref ref-type="fig" rid="F1">8</xref>); apex of male terminal antennal flagellomere rounded [Fig. <xref ref-type="fig" rid="F2">18</xref>; bluntly pointed in <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanoptera</tp:taxon-name-part></tp:taxon-name></italic> (Fig. <xref ref-type="fig" rid="F2">17</xref>)].</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="material">
+          <title>Material examined.</title>
+          <p>LUZON: 1♀ (<abbrev content-type="institution" xlink:title="Natural History Collection at Ibaraki University">IUNH</abbrev>), Los Banos, Laguna, 31.iii.1978, T. Murota; 2♀ 1♂ (<abbrev content-type="institution" xlink:title="Natural History Collection at Ibaraki University">IUNH</abbrev>), Los Banos, Laguna, 2-5.viii.1978, H. Kurokawa; 1♀ (<abbrev content-type="institution" xlink:title="Natural History Collection at Ibaraki University">IUNH</abbrev>), Univ. Phil. Los Banos, Laguna, 21.iii.1980, J. Kojima; 1♂ (<abbrev content-type="institution" xlink:title="Natural History Collection at Ibaraki University">IUNH</abbrev>), Univ. Phil. Los Banos, Laguna, 10.iii.1980, J. Kojima; 1♂ (<abbrev content-type="institution" xlink:title="Natural History Collection at Ibaraki University">IUNH</abbrev>), Univ. Phil. Los Banos, Laguna, 15.iii.1980, J. Kojima; 1♂ (<named-content content-type="dwc:institutional_code">NSMT</named-content>), Mt. Maquiling, Laguna Province, 17–<!--PageBreak-->18.vi.1977, Y. Kurosawa. MINDANAO: 1♀ (<named-content content-type="dwc:institutional_code">NSMT</named-content>), N. Zamboanga, 5.xii.1994, J. Abella, Nagase coll.; 1♀ (<named-content content-type="dwc:institutional_code">NSMT</named-content>), Aras-asan, Surigao, S. Mindanao, x.1978.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Distribution">
+          <title>Distribution.</title>
+          <p>Philippines: Luzon Is., Mindoro Is., Mindanao Is.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Remarks">
+          <title>Remarks.</title>
+          <p>Van der <xref ref-type="bibr" rid="B31">Vecht (1937</xref>: 262) pointed out that the Phiippine species of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic>, of which life history was described by <xref ref-type="bibr" rid="B33">Williams (1919)</xref> under the name of <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part> (<tp:taxon-name-part taxon-name-part-type="subgenus">Calligaster</tp:taxon-name-part>) <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name>, was “not conspecific with <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name></italic>” and mentioned that the species “will be described in a forthcoming paper by Prof. J. Bequaert.” <xref ref-type="bibr" rid="B3">Bequaert (1940</xref>: 124–126) proposed <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> for the females and males from several places on Luzon Is. and Mindoro Is., with designation of a female from “Los Baños, Luzon” as the holotype.</p>
+          <p>As listed above, we examined specimens also from Mindanao Is., suggesting this species would be distributed throughout the Philippines Islands except for Palawan Is.</p>
+        </tp:treatment-sec>
+      </tp:taxon-treatment>
+      <tp:taxon-treatment>
+        <tp:treatment-meta>
+          <kwd-group>
+            <label>Taxon classification</label>
+            <kwd>
+              <named-content content-type="kingdom" xlink:type="simple">Animalia</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="order" xlink:type="simple">Hymenoptera</named-content>
+            </kwd>
+            <kwd>
+              <named-content content-type="family" xlink:type="simple">Vespidae</named-content>
+            </kwd>
+          </kwd-group>
+        </tp:treatment-meta>
+        <tp:nomenclature>
+          <tp:taxon-name>
+            <tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part>
+            <tp:taxon-name-part taxon-name-part-type="species">zetteli</tp:taxon-name-part>
+          </tp:taxon-name>
+          <tp:taxon-authority>Gusenleitner, 2006</tp:taxon-authority>
+          <tp:nomenclature-citation-list>
+            <tp:nomenclature-citation><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">zetteli</tp:taxon-name-part></tp:taxon-name><comment> Gusenleitner, 2006: 1353, ♀, “Philippinen ... Bais Forest, Negros-Oriental Province”, holotype (<named-content content-type="dwc:institutional_code">USC</named-content>).</comment></tp:nomenclature-citation>
+          </tp:nomenclature-citation-list>
+        </tp:nomenclature>
+        <tp:treatment-sec sec-type="material">
+          <title>Material examined.</title>
+          <p>No specimen examined.</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Remarks">
+          <title>Remarks.</title>
+          <p>
+            <xref ref-type="bibr" rid="B17">Gusenleitner (2006</xref>: 1353–1355) proposed <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">zetteli</tp:taxon-name-part></tp:taxon-name></italic> for females from Negros, Bohol, and Mindanao Islands, as a species similar to <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic>. According to <xref ref-type="bibr" rid="B17">Gusenleitner (2006)</xref>, this species may be differentiated from <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">williamsi</tp:taxon-name-part></tp:taxon-name></italic> by the characters given in the key to <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> species [for complete comparison see <xref ref-type="bibr" rid="B17">Gusenleitner (2006</xref>: 1354)].</p>
+        </tp:treatment-sec>
+        <tp:treatment-sec sec-type="Distribution">
+          <title>Distribution.</title>
+          <p>Philippines: Negros Is., Bohol Is., Mindanao Is.</p>
+        </tp:treatment-sec>
+      </tp:taxon-treatment>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>This study is supported by the JSPS–LIPI Bilateral Research (2012–2015). We are thankful to A. Shinohara (<named-content content-type="dwc:institutional_code">NSMT</named-content>) for arranging a loan of specimens and the ICBG Project, University California-Davis – LIPI for the specimens from southeast Sulawesi. We thank to J. M. Carpenter and an anonymous reviewer for comments on the manuscript.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Ashmead</surname> <given-names>WH</given-names></name></person-group> (<year>1902</year>) <article-title>Classification of the fossorial, predaceous and parasitic wasps, or the superfamily <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="superfamily">Vespoidea</tp:taxon-name-part></tp:taxon-name>.</article-title> <source>The Canadian Entomologist</source> <volume>34</volume>: <fpage>203</fpage>–<lpage>210</lpage>. doi: <ext-link xlink:type="simple" ext-link-type="doi" xlink:href="10.4039/Ent34203-8">10.4039/Ent34203-8</ext-link></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Bequaert</surname> <given-names>J</given-names></name></person-group> (<year>1928</year>) <article-title>A study of certain types of diplopterous wasps in the collection of the British Museum.</article-title> <source>Annals and Magazine of Natural History</source> (<volume-series>10</volume-series>) <volume>2</volume>: <fpage>138</fpage>–<lpage>176</lpage>. doi: <ext-link xlink:type="simple" ext-link-type="doi" xlink:href="10.1080/00222932808672864">10.1080/00222932808672864</ext-link></mixed-citation>
+      </ref>
+      <!--PageBreak-->
+      <ref id="B3">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Bequaert</surname> <given-names>J</given-names></name></person-group> (<year>1940</year>) <article-title>A new species of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part></tp:taxon-name></italic> from the Philippine Islands (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>, <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>, Subfam. <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Zethinae</tp:taxon-name-part></tp:taxon-name>).</article-title> <source>The Pan-Pacific Entomologist</source> <volume>16</volume>: <fpage>124</fpage>–<lpage>126</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Bitsch</surname> <given-names>J</given-names></name></person-group> (<year>2012</year>) <article-title>Morphologie comparée des derniers segments du gastre et des genitalia mâles des <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>. 1. Sous-famille des <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name> (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>).</article-title> <source>Bulletin de la Société entomologique de France</source> <volume>117</volume>: <fpage>199</fpage>–<lpage>218</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Bohart</surname> <given-names>RM</given-names></name><name name-style="western"><surname>Stange</surname> <given-names>LA</given-names></name></person-group> (<year>1965</year>) <article-title>A revision of the genus <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zethus</tp:taxon-name-part></tp:taxon-name></italic> Fabricius in the Western Hemisphere.</article-title> <source>University of California Publications in Entomology</source> <volume>40</volume>: <fpage>1</fpage>–<lpage>208</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Cameron</surname> <given-names>P</given-names></name></person-group> (<year>1904</year>) <article-title>Descriptions of new genera and species of <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name> from India.</article-title> <source>Zeitschrift für Systematische Hymenopterologie und Dipterologie</source> <volume>4</volume>(<issue>1</issue>): <fpage>5</fpage>–<lpage>15</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Cameron</surname> <given-names>P</given-names></name></person-group> (<year>1909</year>) <article-title>On a new species of <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Zeuthus</tp:taxon-name-part></tp:taxon-name></italic> (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Eumenidae</tp:taxon-name-part></tp:taxon-name>) from Borneo.</article-title> <source>Entomologist</source> <volume>42</volume>: <fpage>206</fpage>–<lpage>207</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Carpenter</surname> <given-names>JM</given-names></name><name name-style="western"><surname>Cumming</surname> <given-names>JM</given-names></name></person-group> (<year>1985</year>) <article-title>A character analysis of the North American potter wasps (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>: <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>; <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name>).</article-title> <source>Journal of Natural History</source> <volume>19</volume>: <fpage>877</fpage>–<lpage>916</lpage>. doi: <ext-link xlink:type="simple" ext-link-type="doi" xlink:href="10.1080/00222938500770551">10.1080/00222938500770551</ext-link></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Cowan</surname> <given-names>DP</given-names></name></person-group> (<year>1991</year>) <article-title>The solitary and prosocial <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>.</article-title> In: <person-group><name name-style="western"><surname>Ross</surname> <given-names>KG</given-names></name><name name-style="western"><surname>Matthews</surname> <given-names>RW</given-names></name></person-group> (<role>Eds</role>) <source>The social biology of wasps</source>. <publisher-name>Cornell University Press</publisher-name>, <publisher-loc>Ithaca</publisher-loc>, <fpage>33</fpage>–<lpage>73</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Dalla Torre</surname> <given-names>KW von</given-names></name></person-group> (<year>1904</year>) <article-title><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name> fam. <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>.</article-title> <source>Genera Insectorum</source> <volume>19</volume>: <fpage>1</fpage>–<lpage>108</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Fabricius</surname> <given-names>JC</given-names></name></person-group> (<year>1798</year>) <source>Supplementum Entomologiae systematicae</source>. <publisher-loc>Hafniae</publisher-loc>, <publisher-name>apud Proft et Storch</publisher-name>: <size units="page">1–572 + 1–52</size>.</mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Fabricius</surname> <given-names>JC</given-names></name></person-group> (<year>1804</year>) <source>Systema Piezatorum, secundum: Ordines, Genera, Species adiectis Synonymis, locis, observationibus, descriptionibus</source>. <publisher-loc>Brunsvigae</publisher-loc>, <fpage>apud Carolum Reichard</fpage>, <size units="page">1–439 + 1–30</size>.</mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Giordani Soika</surname> <given-names>A</given-names></name></person-group> (<year>1941</year>) <article-title>Studi sui Vespidi solitari VI. Studio di alcuni tipi di vespidi solitari.</article-title> <source>Bollettino del Museo civico di storia naturale di Venezia</source> <volume>2</volume>: <fpage>212</fpage>–<lpage>273</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Giordani Soika</surname> <given-names>A</given-names></name></person-group> (<year>1960 [1958]</year>) <article-title>Notulae vespidologicae.</article-title> <source>Bollettino del Museo civico di storia naturale di Venezia</source> <volume>11</volume>: <fpage>35</fpage>–<lpage>102</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Giordani Soika</surname> <given-names>A</given-names></name></person-group> (<year>1969</year>) <article-title>Revisione dei <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Discoeliinae</tp:taxon-name-part></tp:taxon-name> australiani.</article-title> <source>Bollettino del Museo civico di Storia Nturale di Venezia</source> <volume>19</volume>: <fpage>25</fpage>–<lpage>100</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Gribodo</surname> <given-names>G</given-names></name></person-group> (<year>1892 [1891]</year>) <article-title>Contribuzioni imenotterologiche sopra alcune specie nuove o poco conosciute di Imenotteri Diplotteri nota IV (1).</article-title> <source>Bullettino della Societa Entomologica Italiana</source> <volume>23</volume>: <fpage>242</fpage>–<lpage>300</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Gusenleitner</surname> <given-names>J</given-names></name></person-group> (<year>2006</year>) <article-title><italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">zetteli</tp:taxon-name-part></tp:taxon-name></italic>, eine neue Art von den Philippinen (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>: <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>: <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name>).</article-title> <source>Linzer biologische Beiträge</source> <volume>38</volume>: <fpage>1353</fpage>–<lpage>1355</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Harris</surname> <given-names>RA</given-names></name></person-group> (<year>1979</year>) <article-title>A glossary of surface sculpturing.</article-title> <source>Occasional Papers in Entomology</source> <volume>28</volume>: <fpage>1</fpage>–<lpage>31</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Hermes</surname> <given-names>MG</given-names></name><name name-style="western"><surname>Melo</surname> <given-names>GAR</given-names></name><name name-style="western"><surname>Carpenter</surname> <given-names>JM</given-names></name></person-group> (<year>2013</year>) <article-title>The higher-level phylogenetic relationships of the <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="subfamily">Eumeninae</tp:taxon-name-part></tp:taxon-name> (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="class">Insecta</tp:taxon-name-part></tp:taxon-name>, <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>, <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>), with emphasis on <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Eumenes</tp:taxon-name-part></tp:taxon-name></italic> sensu lato.</article-title> <source>Cladistics</source> <volume>30</volume>: <fpage>453</fpage>–<lpage>484</lpage>. doi: <ext-link xlink:type="simple" ext-link-type="doi" xlink:href="10.1111/cla.12059">10.1111/cla.12059</ext-link></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Latreille</surname> <given-names>PA</given-names></name></person-group> (<year>1809</year>) <source>Genera Crustaceorum et Insectorum secumdum ordinen naturalem in Familias disposita, iconibu expemplisque plurimus explicata</source>. <volume>Tomus Quartus et Ultimus</volume>. <publisher-name>Parisiis et Argentorati, apud Amand Konig, Biblioplam</publisher-name>, <fpage>1</fpage>–<lpage>599</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Magretti</surname> <given-names>P</given-names></name></person-group> (<year>1884</year>) <article-title>Risultati di raccolte imenotterologiche nell'Africa Orientale.</article-title> <source>Annali del Museo Civico di Storia Naturale di Genova</source> <volume>21</volume>: <fpage>523</fpage>–<lpage>636</lpage>, pl. 1.</mixed-citation>
+      </ref>
+      <!--PageBreak-->
+      <ref id="B22">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Meade-Waldo</surname> <given-names>G</given-names></name><name name-style="western"><surname>Morely</surname> <given-names>C</given-names></name></person-group> (<year>1914</year>) <article-title>Notes and synonymy of <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name> in the collection of the British Museum.</article-title> <source>Annals and Magazine of Natural History</source> (<volume-series>8</volume-series>) <volume>14</volume>: <fpage>402</fpage>–<lpage>410</lpage>. doi: <ext-link xlink:type="simple" ext-link-type="doi" xlink:href="10.1080/00222931408693594">10.1080/00222931408693594</ext-link></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Perkins</surname> <given-names>RCL</given-names></name></person-group> (<year>1908</year>) <article-title>Some remarkable Australian <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>.</article-title> <source>Proceedings of the Hawaiian Entomological Society</source> <volume>2</volume>: <fpage>27</fpage>–<lpage>35</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Pickett</surname> <given-names>KM</given-names></name><name name-style="western"><surname>Carpenter</surname> <given-names>JM</given-names></name></person-group> (<year>2010</year>) <article-title>Simultaneous analysis and the origin of eusociality in the <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name> (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="class">Insecta</tp:taxon-name-part></tp:taxon-name>: <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>).</article-title> <source>Arthropod Systematics &amp; Phylogeny</source> <volume>68</volume>: <fpage>3</fpage>–<lpage>33</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Richards</surname> <given-names>OW</given-names></name></person-group> (<year>1962</year>) <source>A Revisional Study of the Masarid Wasps (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>, <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="superfamily">Vespoidea</tp:taxon-name-part></tp:taxon-name>)</source>. <publisher-name>British Museum (Natural History)</publisher-name>, <publisher-loc>London</publisher-loc>.</mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Saunders</surname> <given-names>SS</given-names></name></person-group> (<year>1850</year>) <article-title>Descriptions of some new Aculeate <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name> from Epirus.</article-title> <source>Transactions of the Entomological Society of London</source>, <series>new series</series> <volume>1</volume>: <fpage>69</fpage>–<lpage>75</lpage>, pls 5–6.</mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Saussure</surname> <given-names>H de</given-names></name></person-group> (<year>1852</year>) <source>Études sur la Famille des Vespides 1. Monographie des Guêpes solitaires ou de la tribu des Euméniens</source>. <volume>V</volume>. <publisher-name>Masson</publisher-name>, <publisher-loc>Paris</publisher-loc> and <publisher-name>J. Kessmann</publisher-name>, <publisher-loc>Genéve</publisher-loc>.</mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Saussure</surname> <given-names>H de</given-names></name></person-group> (<year>1855</year>) <source>Études sur la Famille des Vespides 2. La Monographie des Masariens et un supplément à la Monographie des Euméniens</source>. <volume>V</volume>. <publisher-name>Masson</publisher-name>, <publisher-loc>Paris</publisher-loc> and <publisher-name>J. Kessmann</publisher-name>, <publisher-loc>Genéve</publisher-loc>, <fpage>49</fpage>–<lpage>288</lpage>, pls. 6–14.</mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Spinola</surname> <given-names>MM</given-names></name></person-group> (<year>1841</year>) <article-title>Hyménptères recueillis a Cayenne en 1839 par M. Leprieur, pharmacien de la marine royale.</article-title> <source>Annales de la Société Entomologique de France DIXIEME</source> <volume>10</volume>: <fpage>85</fpage>–<lpage>149</lpage>, pl. 3.</mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Stange</surname> <given-names>LA</given-names></name></person-group> (<year>1979</year>) <article-title>Tipos de distribución de la subfamilia <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Discoeliinae</tp:taxon-name-part></tp:taxon-name> con las descripciones de dos géneros nuevos de Argentina (<tp:taxon-name><tp:taxon-name-part taxon-name-part-type="order">Hymenoptera</tp:taxon-name-part></tp:taxon-name>: <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Eumenidae</tp:taxon-name-part></tp:taxon-name>).</article-title> <source>Acta Zoologica Lilloana</source> <volume>35</volume>(<issue>2</issue>): <fpage>729</fpage>–<lpage>741</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Vecht</surname> <given-names>J van der</given-names></name></person-group> (<year>1937</year>) <article-title>Descriptions and records of Oriental and Papuan solitary <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name> (Hym.).</article-title> <source>Treubia</source> <volume>16</volume>: <fpage>261</fpage>–<lpage>293</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Vecht</surname> <given-names>J van der</given-names></name></person-group> (<year>1938</year>) <article-title>Iets over de levenswije van de Javaansche behangerswesp, <italic><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Calligaster</tp:taxon-name-part> <tp:taxon-name-part taxon-name-part-type="species">cyanopterus</tp:taxon-name-part></tp:taxon-name></italic> Sauss. (Hym., <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="family">Vespidae</tp:taxon-name-part></tp:taxon-name>).</article-title> <source>Entomologische Mededelingen van Nederlandsche–Indie</source> <volume>4</volume>: <fpage>26</fpage>–<lpage>30</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation xlink:type="simple">
+          <person-group><name name-style="western"><surname>Williams</surname> <given-names>FX</given-names></name></person-group> (<year>1919</year>) <article-title>Philippine wasp studies. Part 2. Descriptions of new species and life history studies.</article-title> <source>Bulletin of the Experimental Station of the Hawaiian Sugar Plantation Association</source> <volume>14</volume>: <fpage>19</fpage>–<lpage>187</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
