@@ -1,21 +1,19 @@
 <?php
 
-// proxy for Elastic search queries
+// proxy for CouchDB queries
 
-$url = $_GET['url'];
+$url = '';
 
-$postdata = '';
-if (isset($_GET['postdata']))
+if (isset($_GET['url']))
 {
-	$postdata = $_GET['postdata'];
+	$url = $_GET['url'];
 }
 
-$param = '';
-if (isset($_GET['param']))
+$key = '';
+if (isset($_GET['key']))
 {
-	$param = $_GET['param'];
-	
-	$url .= $param;
+	$key = $_GET['key'];
+	$url .= '?key=' . $key;
 }
 
 $callback = '';
@@ -31,12 +29,6 @@ curl_setopt ($ch, CURLOPT_COOKIEJAR, 'cookie.txt');
 curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, false);
 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));	
-
-if (!$postdata == '')
-{
-	curl_setopt($ch, CURLOPT_POST, TRUE);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
-}
 
 $response = curl_exec($ch);
 $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
