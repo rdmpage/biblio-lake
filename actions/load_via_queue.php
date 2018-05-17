@@ -193,6 +193,20 @@ $urls = array(
 'https://doi.org/10.7717/peerj.2402'
 );
 
+// Towards holomorphology in entomology: rapid and cost-effective adult-larva matching using NGS barcodes
+// lots of references
+$urls = array(
+'https://doi.org/10.1111/syen.12296'
+);
+
+// Revalidation and redescription of Potamon elbursi Pretzmann, 1976 (Brachyura, Potamidae) from Iran, based on morphology and genetics
+// https://www.ncbi.nlm.nih.gov/nuccore/KF227382
+$urls = array('https://doi.org/10.2478/s11535-013-0203-z');
+
+// Exploring Genetic Divergence in a Species-Rich Insect Genus Using 2790 DNA Barcodes
+// PMID, PMC, data in BOLD http://dx.doi.org/10.5883/DS-TABAC
+$urls = array('https://dx.doi.org/10.1371/journal.pone.0138993');
+
 //----------------------------------------------------------------------------------------
 // Add items to the queue
 
