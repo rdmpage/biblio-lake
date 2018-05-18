@@ -216,6 +216,11 @@ $urls = array(
 'https://doi.org/10.3406/linly.1923.14612'
 );
 
+// Psyche, references
+$urls = array('https://doi.org/10.1155/2016/5924521');
+
+$urls=array('https://doi.org/10.7601/mez.34.305');
+
 //----------------------------------------------------------------------------------------
 // Add items to the queue
 
