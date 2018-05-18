@@ -17,7 +17,7 @@
 	<script src="js/prism.min.js"></script>
 	
 	<!-- altmetric -->
-	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+	<!-- <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> -->
 	
 	<style>
 		/* some overrides by me */
@@ -104,6 +104,37 @@ function show_jats_xml (jats_xml, id) {
 			}
 		);
 	}
+	
+	//--------------------------------------------------------------------------------
+	function do_details(doc) {
+		var html = '';
+		
+		var values = [];
+		
+		if (doc.isPartOf) {
+			values.push(doc.isPartOf.name);    						
+		} 
+		if (doc.volume) {
+			values.push(doc.volume);    						
+		}   						
+		if (doc.issueNumber) {
+			values.push(doc.issueNumber);    						
+		}   						
+		if (doc.pageStart) {
+			values.push(doc.pageStart);    						
+		}   						
+		if (doc.pageEnd) {
+			values.push('- ' + doc.pageEnd);    						
+		}   						
+		if (doc.datePublished) {
+			values.push(doc.datePublished);    						
+		}   	
+		
+		html = values.join(' ');					
+		
+		return html;
+	
+	}
 
 
 	//--------------------------------------------------------------------------------
@@ -127,7 +158,12 @@ function show_jats_xml (jats_xml, id) {
 	  				
 	  				html += '<div class="blue white-text" style="padding:10px;">';
     				html += '<span style="font-size:24px;">';
-    				html += data.rows[0].value.name;
+    				
+    				if (data.rows[0].value.name) {
+	    				html += data.rows[0].value.name;
+	    			} else {
+	    				html += '[Untitled]';
+	    			}
     				html += '</span>';
     				html += '</div>';
     				html += '<br>';
@@ -135,9 +171,17 @@ function show_jats_xml (jats_xml, id) {
     				
     				
     				
-    				// Identifiers
+    				
+    				// details
     				html = '';
     				
+    				
+    				
+    				html += '<div class="card-panel"><span>' + do_details(data.rows[0].value) + '</span></div>';
+    				
+    				
+    				// Identifiers
+     				
 					if (data.rows[0].value.identifier) {
 							for (var i in data.rows[0].value.identifier) {
 								switch (data.rows[0].value.identifier[i].propertyID) {
@@ -158,7 +202,7 @@ function show_jats_xml (jats_xml, id) {
     				html += '<div>';
     				if (data.rows[0].value.creator) {
     					for (var i in data.rows[0].value.creator) {
-    						html += '<div class="chip">' + data.rows[0].value.creator[i].name + '</div>';
+    						html += '<div class="chip">' + '<i class="material-icons">account_circle</i>' + data.rows[0].value.creator[i].name + '</div>';
     					}
     				
     				}
@@ -251,15 +295,11 @@ function show_jats_xml (jats_xml, id) {
     						
     						if (data.rows[0].value.citation[i].isPartOf) {
     							html += data.rows[0].value.citation[i].isPartOf.name;    						
-    						}
-    						
+    						}   						
     						if (data.rows[0].value.citation[i].volume) {
     							html += ' ' + data.rows[0].value.citation[i].volume;
     						}
     						if (data.rows[0].value.citation[i].issueNumber) {
-    							html += ' ' + data.rows[0].value.citation[i].issueNumber;
-    						}
-     						if (data.rows[0].value.citation[i].issueNumber) {
     							html += ' ' + data.rows[0].value.citation[i].issueNumber;
     						}
     						if (data.rows[0].value.citation[i].pageStart) {
@@ -269,13 +309,38 @@ function show_jats_xml (jats_xml, id) {
     							html += ' ' + data.rows[0].value.citation[i].datePublished;
     						}
   							html += '</div>';
+  							
+  							//--------------------
+  							var parameters = [];
+  							
+    						if (data.rows[0].value.citation[i].isPartOf) {
+    							parameters.push('title=' + encodeURIComponent(data.rows[0].value.citation[i].isPartOf.name));    						
+    						}   						
+    						if (data.rows[0].value.citation[i].volume) {
+    							parameters.push('volume=' + data.rows[0].value.citation[i].volume);
+    						}
+    						if (data.rows[0].value.citation[i].pageStart) {
+    							parameters.push('spage=' + data.rows[0].value.citation[i].pageStart);
+    						}
     						
-    						
+    						if (data.rows[0].value.citation[i].datePublished) {
+    							parameters['date'] = data.rows[0].value.citation[i].datePublished;
+    						}
+  							
+  							if (parameters.length == 3) {
+  								html += '<a href="'
+  								 + 'http://www.crossref.org/openurl?pid=r.page@bio.gla.ac.uk'
+  								 + '&' + parameters.join('&')
+  								 + '" target="_new">CrossRef OpenURL</a>';
+  							}
+     						
+     						/*
     						html += '<span class="secondary-content">';
     						if (data.rows[0].value.citation[i]["@id"]) {
     							html += '<div data-badge-popover="right" data-badge-type="donut" data-doi="' + data.rows[0].value.citation[i]["@id"].replace(/http:\/\/doi.org\//, "") + '" data-hide-no-mentions="true" class="altmetric-embed"></div>';
     						}
     						html += '</span>';
+    						*/
     						
     						
     						html += '</li>';
@@ -288,12 +353,15 @@ function show_jats_xml (jats_xml, id) {
     				$('#content').html(html);
     				
     				
-    				// Experiments dsplaying XML and embedding PDFs
+    				// Experiments displaying XML and embedding PDFs
    					var html = '';
    				
     				// XML
     				if (xml != '') {
-       					do_show_xml(xml, 'xml');   				
+       					//do_show_xml(xml, 'xml');   				
+       					$('#xml').html('<div class="card-panel orange"><b>Have XML but not showing it for now!</b></div>');
+       					
+
     				}
     				
  					if (pdf) {
@@ -309,6 +377,10 @@ function show_jats_xml (jats_xml, id) {
     					//$('#xml').html(html);
     				}
  	  				
+	  			} else {
+	  				// no data
+	  				$('#content').html('<b>No data for' + id + '</b>');
+	  			
 	  			}	  			
 	  			
 	  		}
@@ -505,7 +577,7 @@ function show_jats_xml (jats_xml, id) {
 		
 									if (data.hits.hits[i]._source.search_result_data.creator) {
 										for (var j in data.hits.hits[i]._source.search_result_data.creator) {
-											html += '<div class="chip">' + data.hits.hits[i]._source.search_result_data.creator[j] + '</div>';
+											html += '<div class="chip">' + '<i class="material-icons">account_circle</i>' + data.hits.hits[i]._source.search_result_data.creator[j] + '</div>';
 										}
 									}
 
