@@ -19,6 +19,24 @@
 	<!-- altmetric -->
 	<!-- <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> -->
 	
+	<!-- triples -->
+	<script src="hexastore.js"></script>  	
+  	<script>
+		var mydb = new Hexastore();	
+	</script>
+
+	<!-- include triples -->
+	<script src="triples.js"></script>
+	
+	<script>
+	// add everything from the query
+	for (var i in couchdb.rows) {
+		mydb.put(couchdb.rows[i].value);
+	}
+	</script>
+	
+	
+	
 	<style>
 		/* some overrides by me */
 		body { font-size:12px; }
@@ -29,6 +47,25 @@
 </head>
 <body>
 <script>
+
+
+	//--------------------------------------------------------------------------------
+	function ts_citation(cluster) {
+		var result = [];
+		
+		var query_result = mydb.search([
+
+			[ ["work"], "sameAs", cluster ],
+			[ ["citing"], "citation", ["work"] ]
+			
+			  ]);
+			  
+		for (var i in query_result) {
+			result.push(query_result[i].citing);
+		}
+	
+		return result;	
+	}
 
 	//--------------------------------------------------------------------------------
 function loadXMLDoc(filename) {
@@ -150,13 +187,23 @@ function show_jats_xml (jats_xml, id) {
 	  			
 	  			if (data.rows.length == 1) {
 	  				//$('#content').html('<pre>' + JSON.stringify(data.rows[0], null, 2) + '</pre>');
+	  				
+	  				// Side panel is dump of JSON-LD record
 	  				$('#panel').html('<pre class="language-json">' + JSON.stringify(data.rows[0], null, 2) + '</pre>');
+	  				
+	  				// Side panel is dump of citations
+	  				$('#panel').html('<pre class="language-json">' + JSON.stringify(ts_citation(data.rows[0].value["@id"]), null, 2) + '</pre>');
 	  				
 	  				
 	  				//  title
 	  				var html = '';
 	  				
 	  				html += '<div class="blue white-text" style="padding:10px;">';
+	
+					var citations = ts_citation(data.rows[0].value["@id"]);
+					html += '<span class="badge white-text">' + citations.length + '</span>';
+	  				
+	  				
     				html += '<span style="font-size:24px;">';
     				
     				if (data.rows[0].value.name) {
@@ -176,9 +223,8 @@ function show_jats_xml (jats_xml, id) {
     				html = '';
     				
     				
-    				
     				html += '<div class="card-panel"><span>' + do_details(data.rows[0].value) + '</span></div>';
-    				
+
     				
     				// Identifiers
      				
@@ -257,6 +303,10 @@ function show_jats_xml (jats_xml, id) {
     					for (var i in data.rows[0].value.citation) {
     					
     						html += '<li class="collection-item avatar">';
+    						
+							var citations = ts_citation(data.rows[0].value.citation[i]["@id"]);
+							html += '<span class="badge blue white-text">' + citations.length + '</span>';
+    						
     						
     					
     						html += '<span class="title">';
@@ -543,6 +593,11 @@ function show_jats_xml (jats_xml, id) {
 									html += '<div>';
 									html += '  <div class="card">';
 									html += '    <div class="card-content  blue white-text">';
+									
+									var citations = ts_citation(cluster_id);
+									html += '<span class="badge white-text">' + citations.length + '</span>';
+
+									
 									//html += '      <span class="card-title activator">' + data.hits.hits[i]._source.search_result_data.name + '<i class="material-icons right">more_vert</i></span>';
 									
 									html += '<a class="white-text" href="?id=' + encodeURIComponent(data.hits.hits[i]._source.id) + '">';
@@ -600,6 +655,8 @@ function show_jats_xml (jats_xml, id) {
 									*/
 									
 									html += '<div class="divider"></div>';
+									
+														
 																		
 									if (dois[cluster_id].length > 0) {
 										for (var j in dois[cluster_id]) {
@@ -609,6 +666,9 @@ function show_jats_xml (jats_xml, id) {
 									for (var j in sources[cluster_id]) {
 										html += '<div class="truncate"><i class="material-icons">radio_button_unchecked</i>' + sources[cluster_id][j] + '</div>';
 									}
+									
+									
+									
 									
 									html += '    </div>';
 									
