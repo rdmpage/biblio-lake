@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8" />
+  	<title>Triples</title>
+  	
+  	<style>
+  		body {
+  			font-family:arial,helvetica,sans-serif;
+  			background-color:rgb(240,240,240);
+  		}
+  	</style>
+  	
+  	
+	<!-- triples -->
+	<script src="hexastore.js"></script>  	
+  	<script>
+		var mydb = new Hexastore();	
+	</script>
+
+	<!-- include triples -->
+	<script src="triples.js"></script>
+	
+	<script>
+	// add everything from the query
+	for (var i in couchdb.rows) {
+		mydb.put(couchdb.rows[i].value);
+	}
+	</script>
+
+</head>
+<body>
+	<h1>Experiments with triples and hexastore</h1>
+
+	<div id="output"></div>
+	
+	<script>
+	
+
+		// do a query
+		/*
+		var uri = "urn:lsid:biodiversity.org.au:afd.taxon:ecd1ecdb-9c63-4b18-a7ee-d54118255cb2"; // taxon
+		
+		var result = null;
+		
+ 		result = mydb.search([
+			[uri, ["p"], ["o"]]
+			  ]);
+			  
+console.log(JSON.stringify(result, null, 2));	
+*/	  
+			  
+			  var work1 = 'https://doi.org/10.1007/bf00005610';
+			  var cluster1 = 'https://doi.org/10.1007/bf00005610';
+			  
+			  console.log(work1);
+			  
+			  // list cited works
+			  
+			  console.log('Works cited by ' + cluster1);
+			  
+		result = mydb.search([
+			
+			[ cluster1, "citation", ["work2"] ],
+			[ ["work2"], "sameAs", ["cluster2"] ]
+			
+			  ]);
+			
+		console.log(JSON.stringify(result, null, 2));
+		
+		
+			// who cites this work?
+			
+			var work = 'https://doi.org/10.1007/bf00005610#CR3';
+			work = 'https://doi.org/10.1163/22119434-99900054';
+		
+		    result = mydb.search([
+			
+			[ ["cluster1"], "citation", work ],
+			[ work, "sameAs", ["cluster2"] ]
+			
+			  ]);
+			
+			console.log('Who cites ' + work);
+			console.log(JSON.stringify(result, null, 2));
+			
+			
+			var cluster = 'https://doi.org/10.1163/22119434-99900054';
+			
+			result = mydb.search([
+			
+			
+			[ ["work"], "sameAs", cluster ],
+			[ ["citing"], "citation", ["work"] ]
+			
+			  ]);
+			  
+			  console.log(JSON.stringify(result, null, 2));
+			
+		
+		/*
+		,
+			[ work1, "citation", ["work2"]],
+			[["work2"], "sameAs", ["cluster2"]], */
+	
+		
+	</script>
+
+
+
+
+</body>
+</html>
