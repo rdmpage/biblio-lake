@@ -114,15 +114,16 @@ function merge_records ($records, $check = false)
 		// merge things 
 		foreach ($blocks as $block)
 		{
+			// if component has more than one member then merge them
 			if (count($block) > 1)
 			{
 				$cluster_id = $records[$block[0]]->id;
 				
 				$clusters[$cluster_id] = array();
-				
-				foreach ($block as $i)
+								
+				foreach ($block as $k => $v)
 				{
-					$member = $records[$block[$i]]->id;
+					$member = $records[$v]->id;
 					$clusters[$cluster_id][] = $member;
 				}
 			}
