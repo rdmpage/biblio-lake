@@ -281,7 +281,7 @@ function show_jats_xml (jats_xml, id) {
 					var orcids = ts_orcid(data.rows[0].value["@id"]);
 					if (orcids.length > 0) {
 						for (var j in orcids) {
-							html += '<div><i class="ai ai-orcid ai-2x"></i>' + orcids[j].replace('https://orcid.org/','') + '</div>';
+							html += '<div><i class="ai ai-orcid ai-2x" style="color:#A6CE39"></i>' + orcids[j].replace('https://orcid.org/','') + '</div>';
 						}
 						
 					}
@@ -724,7 +724,7 @@ function show_jats_xml (jats_xml, id) {
 									var orcids = ts_orcid(cluster_id);
 									if (orcids.length > 0) {
 										for (var j in orcids) {
-											html += '<div><i class="ai ai-orcid ai-2x"></i>' + orcids[j].replace('https://orcid.org/','') + '</div>';
+											html += '<div><i class="ai ai-orcid ai-2x" style="color:#A6CE39"></i>' + orcids[j].replace('https://orcid.org/','') + '</div>';
 										}
 										
 									}
