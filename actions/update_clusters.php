@@ -254,10 +254,13 @@ $start_time = date("c", time() - (60 * 5)); // last 5 minutes
 
 $start_time = date("c", time() - (60 * 180)); // last 3 hours
 
-//update('csl', $start_time, 'hash');
-//update('reference', $start_time, 'hash');
+//update('csl', $start_time, 'doi');
+//update('reference', $start_time, 'doi');
 
-cluster_records('hash', array(1960, 83, 79));
+update('csl', $start_time, 'hash');
+update('reference', $start_time, 'hash');
+
+//cluster_records('hash', array(1982,36,74));
 
 
 ?>

@@ -257,6 +257,12 @@ $urls=array(
 'https://doi.org/10.5169/seals-88902'
 );
 
+// Maximilian Weigend
+$urls = array('https://orcid.org/0000-0003-0813-6650');
+
+// Tilo Henning
+$urls = array('https://orcid.org/0000-0003-1929-3264');
+
 //----------------------------------------------------------------------------------------
 // Add items to the queue
 
