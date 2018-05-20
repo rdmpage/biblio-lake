@@ -19,12 +19,12 @@
 	</script>
 
 	<!-- include triples -->
-	<script src="triples.js"></script>
+	<script src="orcid.js"></script>
 	
 	<script>
 	// add everything from the query
-	for (var i in couchdb.rows) {
-		mydb.put(couchdb.rows[i].value);
+	for (var i in couchdb_orcid.rows) {
+		mydb.put(couchdb_orcid.rows[i].value);
 	}
 	</script>
 
@@ -35,6 +35,15 @@
 	<div id="output"></div>
 	
 	<script>
+	
+	
+	var result = null;
+		
+ 		result = mydb.search([
+			[["s"], ["p"], ["o"]]
+			  ]);
+			  
+console.log(JSON.stringify(result, null, 2));	
 	
 
 		// do a query
@@ -49,7 +58,8 @@
 			  
 console.log(JSON.stringify(result, null, 2));	
 */	  
-			  
+		
+		/*	  
 			  var work1 = 'https://doi.org/10.1007/bf00005610';
 			  var cluster1 = 'https://doi.org/10.1007/bf00005610';
 			  
@@ -96,7 +106,7 @@ console.log(JSON.stringify(result, null, 2));
 			  ]);
 			  
 			  console.log(JSON.stringify(result, null, 2));
-			
+		*/	
 		
 		/*
 		,

@@ -7,6 +7,12 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 <!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	
+	<!-- academicons https://jpswalsh.github.io/academicons/ -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+	
+	
 <!-- jquery -->
 	<script src="jquery.js">
 	</script>
@@ -29,12 +35,21 @@
 	<script src="triples.js"></script>
 	
 	<script>
-	// add everything from the query
+	// add everything from citation triples to hexastore 
 	for (var i in couchdb.rows) {
 		mydb.put(couchdb.rows[i].value);
 	}
 	</script>
 	
+	<!-- include orcid triples -->
+	<script src="orcid.js"></script>
+	
+	<script>
+	// add everything from triples query
+	for (var i in couchdb_orcid.rows) {
+		mydb.put(couchdb_orcid.rows[i].value);
+	}
+	</script>
 	
 	
 	<style>
@@ -66,6 +81,23 @@
 	
 		return result;	
 	}
+	
+	//--------------------------------------------------------------------------------
+	function ts_orcid(cluster) {
+		var result = [];
+		
+		var query_result = mydb.search([
+			[ ["work"], "sameAs", cluster ],
+			[ ["work"], "creator", ["person"] ]
+			  ]);
+			  
+		for (var i in query_result) {
+			result.push(query_result[i].person);
+		}
+	
+		return result;	
+	}
+	
 
 	//--------------------------------------------------------------------------------
 function loadXMLDoc(filename) {
@@ -193,6 +225,8 @@ function show_jats_xml (jats_xml, id) {
 	  				
 	  				// Side panel is dump of citations
 	  				//$('#panel').html('<pre class="language-json">' + JSON.stringify(ts_citation(data.rows[0].value["@id"]), null, 2) + '</pre>');
+
+	  				//$('#panel').html('<pre class="language-json">' + JSON.stringify(ts_orcid(data.rows[0].value["@id"]), null, 2) + '</pre>');
 	  				
 	  				
 	  				//  title
@@ -226,7 +260,7 @@ function show_jats_xml (jats_xml, id) {
 
     				
     				// Identifiers
-     				
+     				html += '<div class="card-panel">';
 					if (data.rows[0].value.identifier) {
 							for (var i in data.rows[0].value.identifier) {
 								switch (data.rows[0].value.identifier[i].propertyID) {
@@ -242,9 +276,19 @@ function show_jats_xml (jats_xml, id) {
 						
 						}
 						
+					var orcids = ts_orcid(data.rows[0].value["@id"]);
+					if (orcids.length > 0) {
+						for (var j in orcids) {
+							html += '<div><i class="ai ai-orcid ai-2x"></i>' + orcids[j].replace('https://orcid.org/','') + '</div>';
+						}
+						
+					}
+					html += '</div>';
+
+						
      				// Authors
     				
-    				html += '<div>';
+    				html += '<div class="card-panel">';
     				if (data.rows[0].value.creator) {
     					for (var i in data.rows[0].value.creator) {
     						html += '<div class="chip">' + '<i class="material-icons">account_circle</i>' + data.rows[0].value.creator[i].name + '</div>';
@@ -674,6 +718,14 @@ function show_jats_xml (jats_xml, id) {
 										html += '<div class="truncate"><i class="material-icons">radio_button_unchecked</i>' + sources[cluster_id][j] + '</div>';
 									}
 									
+									
+									var orcids = ts_orcid(cluster_id);
+									if (orcids.length > 0) {
+										for (var j in orcids) {
+											html += '<div><i class="ai ai-orcid ai-2x"></i>' + orcids[j].replace('https://orcid.org/','') + '</div>';
+										}
+										
+									}
 									
 									
 									

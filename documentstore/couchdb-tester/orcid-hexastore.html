@@ -1,0 +1,2937 @@
+<html>
+	<head>
+		<title>ORCID to simple triples</title>
+		<meta charset="UTF-8"/>
+		<script src="jquery.js"></script>
+		<!-- stuff below needs to go into CouchDB views -->
+		<script src="shared.js"></script>
+		<script src="language.js"></script>
+		<style>
+		td { border: 1px solid red; }
+		</style>
+	</head>
+<body>
+
+<h1>ORCID to simple triples</h1>
+
+
+<div>
+	<div style="width:100%;height:auto;">
+		<h2>JSON</h2>
+			<!-- JSON for data object goes below -->
+			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">{
+  "_id": "https://orcid.org/0000-0003-3628-2567",
+  "_rev": "8-a95686b6951d5edb6d1fd8535c217c92",
+  "message-timestamp": "2018-05-13T20:55:04+00:00",
+  "message-modified": "2018-05-13T20:55:09+00:00",
+  "message-format": "application/orcid+json",
+  "message-source": "https://pub.orcid.org/v2.1/0000-0003-3628-2567",
+  "message": {
+    "orcid-identifier": {
+      "uri": "https://orcid.org/0000-0003-3628-2567",
+      "path": "0000-0003-3628-2567",
+      "host": "orcid.org"
+    },
+    "preferences": {
+      "locale": "EN"
+    },
+    "history": {
+      "creation-method": "DIRECT",
+      "completion-date": null,
+      "submission-date": {
+        "value": 1450832356523
+      },
+      "last-modified-date": {
+        "value": 1525282280225
+      },
+      "claimed": true,
+      "source": null,
+      "deactivation-date": null,
+      "verified-email": true,
+      "verified-primary-email": true
+    },
+    "person": {
+      "last-modified-date": {
+        "value": 1450833615172
+      },
+      "name": {
+        "created-date": {
+          "value": 1460765087497
+        },
+        "last-modified-date": {
+          "value": 1460765087497
+        },
+        "given-names": {
+          "value": "Kuo-Fang"
+        },
+        "family-name": {
+          "value": "Chung"
+        },
+        "credit-name": null,
+        "source": null,
+        "visibility": "PUBLIC",
+        "path": "0000-0003-3628-2567"
+      },
+      "other-names": {
+        "last-modified-date": {
+          "value": 1450833615172
+        },
+        "other-name": [
+          {
+            "created-date": {
+              "value": 1450833615172
+            },
+            "last-modified-date": {
+              "value": 1450833615172
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "content": "鍾國芳",
+            "visibility": "PUBLIC",
+            "path": "/0000-0003-3628-2567/other-names/605587",
+            "put-code": 605587,
+            "display-index": 0
+          }
+        ],
+        "path": "/0000-0003-3628-2567/other-names"
+      },
+      "biography": {
+        "created-date": {
+          "value": 1460765087500
+        },
+        "last-modified-date": {
+          "value": 1460765087500
+        },
+        "content": null,
+        "visibility": "PUBLIC",
+        "path": "/0000-0003-3628-2567/biography"
+      },
+      "researcher-urls": {
+        "last-modified-date": null,
+        "researcher-url": [],
+        "path": "/0000-0003-3628-2567/researcher-urls"
+      },
+      "emails": {
+        "last-modified-date": null,
+        "email": [],
+        "path": "/0000-0003-3628-2567/email"
+      },
+      "addresses": {
+        "last-modified-date": null,
+        "address": [],
+        "path": "/0000-0003-3628-2567/address"
+      },
+      "keywords": {
+        "last-modified-date": null,
+        "keyword": [],
+        "path": "/0000-0003-3628-2567/keywords"
+      },
+      "external-identifiers": {
+        "last-modified-date": null,
+        "external-identifier": [],
+        "path": "/0000-0003-3628-2567/external-identifiers"
+      },
+      "path": "/0000-0003-3628-2567/person"
+    },
+    "activities-summary": {
+      "last-modified-date": {
+        "value": 1525282280238
+      },
+      "educations": {
+        "last-modified-date": {
+          "value": 1450833121092
+        },
+        "education-summary": [
+          {
+            "created-date": {
+              "value": 1450832433119
+            },
+            "last-modified-date": {
+              "value": 1450833121092
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "Department of Biology",
+            "role-title": "Ph.D.",
+            "start-date": {
+              "year": {
+                "value": "2000"
+              },
+              "month": {
+                "value": "08"
+              },
+              "day": {
+                "value": "01"
+              }
+            },
+            "end-date": {
+              "year": {
+                "value": "2006"
+              },
+              "month": {
+                "value": "09"
+              },
+              "day": {
+                "value": "30"
+              }
+            },
+            "organization": {
+              "name": "Washington University in St. Louis",
+              "address": {
+                "city": "St. Louis",
+                "region": "MO",
+                "country": "US"
+              },
+              "disambiguated-organization": null
+            },
+            "visibility": "PUBLIC",
+            "put-code": 1425503,
+            "path": "/0000-0003-3628-2567/education/1425503"
+          },
+          {
+            "created-date": {
+              "value": 1450833045485
+            },
+            "last-modified-date": {
+              "value": 1450833045485
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "Graduate Institute of Botany",
+            "role-title": "M.S.",
+            "start-date": {
+              "year": {
+                "value": "1994"
+              },
+              "month": {
+                "value": "09"
+              },
+              "day": {
+                "value": "01"
+              }
+            },
+            "end-date": {
+              "year": {
+                "value": "1996"
+              },
+              "month": {
+                "value": "06"
+              },
+              "day": {
+                "value": "30"
+              }
+            },
+            "organization": {
+              "name": "National Taiwan University",
+              "address": {
+                "city": "Taipei",
+                "region": null,
+                "country": "TW"
+              },
+              "disambiguated-organization": {
+                "disambiguated-organization-identifier": "33561",
+                "disambiguation-source": "RINGGOLD"
+              }
+            },
+            "visibility": "PUBLIC",
+            "put-code": 1425516,
+            "path": "/0000-0003-3628-2567/education/1425516"
+          },
+          {
+            "created-date": {
+              "value": 1450833097577
+            },
+            "last-modified-date": {
+              "value": 1450833097577
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "Department of Botany",
+            "role-title": "B.S.",
+            "start-date": {
+              "year": {
+                "value": "1990"
+              },
+              "month": {
+                "value": "10"
+              },
+              "day": {
+                "value": "01"
+              }
+            },
+            "end-date": {
+              "year": {
+                "value": "1994"
+              },
+              "month": {
+                "value": "06"
+              },
+              "day": {
+                "value": "30"
+              }
+            },
+            "organization": {
+              "name": "National Taiwan University",
+              "address": {
+                "city": "Taipei",
+                "region": null,
+                "country": "TW"
+              },
+              "disambiguated-organization": {
+                "disambiguated-organization-identifier": "33561",
+                "disambiguation-source": "RINGGOLD"
+              }
+            },
+            "visibility": "PUBLIC",
+            "put-code": 1425517,
+            "path": "/0000-0003-3628-2567/education/1425517"
+          }
+        ],
+        "path": "/0000-0003-3628-2567/educations"
+      },
+      "employments": {
+        "last-modified-date": {
+          "value": 1472606866878
+        },
+        "employment-summary": [
+          {
+            "created-date": {
+              "value": 1450832627353
+            },
+            "last-modified-date": {
+              "value": 1450833700068
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "Biodiversity Research Center",
+            "role-title": "Associate Research Fellow",
+            "start-date": {
+              "year": {
+                "value": "2016"
+              },
+              "month": {
+                "value": "02"
+              },
+              "day": {
+                "value": "01"
+              }
+            },
+            "end-date": null,
+            "organization": {
+              "name": "Academia Sinica",
+              "address": {
+                "city": "Taipei",
+                "region": null,
+                "country": "TW"
+              },
+              "disambiguated-organization": {
+                "disambiguated-organization-identifier": "38017",
+                "disambiguation-source": "RINGGOLD"
+              }
+            },
+            "visibility": "PUBLIC",
+            "put-code": 1425506,
+            "path": "/0000-0003-3628-2567/employment/1425506"
+          },
+          {
+            "created-date": {
+              "value": 1472606866878
+            },
+            "last-modified-date": {
+              "value": 1472606866878
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "Research Museum of Biodiversity Research Center",
+            "role-title": "Director",
+            "start-date": {
+              "year": {
+                "value": "2016"
+              },
+              "month": {
+                "value": "08"
+              },
+              "day": {
+                "value": "01"
+              }
+            },
+            "end-date": {
+              "year": {
+                "value": "2016"
+              },
+              "month": {
+                "value": "12"
+              },
+              "day": {
+                "value": "31"
+              }
+            },
+            "organization": {
+              "name": "Academia Sinica",
+              "address": {
+                "city": "Taipei",
+                "region": null,
+                "country": "TW"
+              },
+              "disambiguated-organization": {
+                "disambiguated-organization-identifier": "38017",
+                "disambiguation-source": "RINGGOLD"
+              }
+            },
+            "visibility": "PUBLIC",
+            "put-code": 2196623,
+            "path": "/0000-0003-3628-2567/employment/2196623"
+          },
+          {
+            "created-date": {
+              "value": 1450832574175
+            },
+            "last-modified-date": {
+              "value": 1450833717182
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "School of Forestry and Resource Conservation",
+            "role-title": "Associate Professor",
+            "start-date": {
+              "year": {
+                "value": "2014"
+              },
+              "month": {
+                "value": "08"
+              },
+              "day": {
+                "value": "01"
+              }
+            },
+            "end-date": {
+              "year": {
+                "value": "2016"
+              },
+              "month": {
+                "value": "01"
+              },
+              "day": {
+                "value": "31"
+              }
+            },
+            "organization": {
+              "name": "National Taiwan University",
+              "address": {
+                "city": "Taipei",
+                "region": null,
+                "country": "TW"
+              },
+              "disambiguated-organization": {
+                "disambiguated-organization-identifier": "33561",
+                "disambiguation-source": "RINGGOLD"
+              }
+            },
+            "visibility": "PUBLIC",
+            "put-code": 1425505,
+            "path": "/0000-0003-3628-2567/employment/1425505"
+          },
+          {
+            "created-date": {
+              "value": 1450832513226
+            },
+            "last-modified-date": {
+              "value": 1450832513226
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "School of Forestry and Resource Conservation",
+            "role-title": "Assistant Professor",
+            "start-date": {
+              "year": {
+                "value": "2008"
+              },
+              "month": {
+                "value": "02"
+              },
+              "day": {
+                "value": "01"
+              }
+            },
+            "end-date": {
+              "year": {
+                "value": "2014"
+              },
+              "month": {
+                "value": "07"
+              },
+              "day": {
+                "value": "31"
+              }
+            },
+            "organization": {
+              "name": "National Taiwan University",
+              "address": {
+                "city": "Taipei",
+                "region": null,
+                "country": "TW"
+              },
+              "disambiguated-organization": {
+                "disambiguated-organization-identifier": "33561",
+                "disambiguation-source": "RINGGOLD"
+              }
+            },
+            "visibility": "PUBLIC",
+            "put-code": 1425504,
+            "path": "/0000-0003-3628-2567/employment/1425504"
+          },
+          {
+            "created-date": {
+              "value": 1450833172463
+            },
+            "last-modified-date": {
+              "value": 1450833172463
+            },
+            "source": {
+              "source-orcid": {
+                "uri": "https://orcid.org/0000-0003-3628-2567",
+                "path": "0000-0003-3628-2567",
+                "host": "orcid.org"
+              },
+              "source-client-id": null,
+              "source-name": {
+                "value": "Kuo-Fang Chung"
+              }
+            },
+            "department-name": "Biodiversity Research Center",
+            "role-title": "Postdoc",
+            "start-date": {
+              "year": {
+                "value": "2006"
+              },
+              "month": {
+                "value": "10"
+              },
+              "day": {
+                "value": "16"
+              }
+            },
+            "end-date": {
+              "year": {
+                "value": "2008"
+              },
+              "month": {
+                "value": "01"
+              },
+              "day": {
+                "value": "31"
+              }
+            },
+            "organization": {
+              "name": "Academia Sinica",
+              "address": {
+                "city": "Taipei",
+                "region": null,
+                "country": "TW"
+              },
+              "disambiguated-organization": {
+                "disambiguated-organization-identifier": "38017",
+                "disambiguation-source": "RINGGOLD"
+              }
+            },
+            "visibility": "PUBLIC",
+            "put-code": 1425520,
+            "path": "/0000-0003-3628-2567/employment/1425520"
+          }
+        ],
+        "path": "/0000-0003-3628-2567/employments"
+      },
+      "fundings": {
+        "last-modified-date": null,
+        "group": [],
+        "path": "/0000-0003-3628-2567/fundings"
+      },
+      "peer-reviews": {
+        "last-modified-date": null,
+        "group": [],
+        "path": "/0000-0003-3628-2567/peer-reviews"
+      },
+      "works": {
+        "last-modified-date": {
+          "value": 1525282280238
+        },
+        "group": [
+          {
+            "last-modified-date": {
+              "value": 1525282280238
+            },
+            "external-ids": {
+              "external-id": [
+                {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.1371/journal.pone.0194877",
+                  "external-id-url": {
+                    "value": "https://doi.org/10.1371/journal.pone.0194877"
+                  },
+                  "external-id-relationship": "SELF"
+                }
+              ]
+            },
+            "work-summary": [
+              {
+                "put-code": 44218696,
+                "created-date": {
+                  "value": 1525282280238
+                },
+                "last-modified-date": {
+                  "value": 1525282280238
+                },
+                "source": {
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/0000-0001-9884-1913",
+                    "path": "0000-0001-9884-1913",
+                    "host": "orcid.org"
+                  },
+                  "source-name": {
+                    "value": "Crossref"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Chloroplast and nuclear DNA exchanges among Begonia sect. Baryandra species (Begoniaceae) from Palawan Island, Philippines, and descriptions of five new species"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": [
+                    {
+                      "external-id-type": "doi",
+                      "external-id-value": "10.1371/journal.pone.0194877",
+                      "external-id-url": {
+                        "value": "https://doi.org/10.1371/journal.pone.0194877"
+                      },
+                      "external-id-relationship": "SELF"
+                    }
+                  ]
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2018"
+                  },
+                  "month": {
+                    "value": "05"
+                  },
+                  "day": {
+                    "value": "02"
+                  },
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/44218696",
+                "display-index": "0"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1502042198692
+            },
+            "external-ids": {
+              "external-id": [
+                {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.1186/s40529-017-0175-9",
+                  "external-id-url": {
+                    "value": "http://dx.doi.org/10.1186/s40529-017-0175-9"
+                  },
+                  "external-id-relationship": "SELF"
+                }
+              ]
+            },
+            "work-summary": [
+              {
+                "put-code": 35802044,
+                "created-date": {
+                  "value": 1502042198692
+                },
+                "last-modified-date": {
+                  "value": 1502042198692
+                },
+                "source": {
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/0000-0001-9884-1913",
+                    "path": "0000-0001-9884-1913",
+                    "host": "orcid.org"
+                  },
+                  "source-name": {
+                    "value": "Crossref"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Begonia myanmarica (Begoniaceae), a new species from Myanmar, and molecular phylogenetics of Begonia sect. Monopteron"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": [
+                    {
+                      "external-id-type": "doi",
+                      "external-id-value": "10.1186/s40529-017-0175-9",
+                      "external-id-url": {
+                        "value": "http://dx.doi.org/10.1186/s40529-017-0175-9"
+                      },
+                      "external-id-relationship": "SELF"
+                    }
+                  ]
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2017"
+                  },
+                  "month": {
+                    "value": "12"
+                  },
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/35802044",
+                "display-index": "0"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1511230293748
+            },
+            "external-ids": {
+              "external-id": [
+                {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.1186/s40529-017-0206-6",
+                  "external-id-url": {
+                    "value": "https://doi.org/10.1186/s40529-017-0206-6"
+                  },
+                  "external-id-relationship": "SELF"
+                }
+              ]
+            },
+            "work-summary": [
+              {
+                "put-code": 38813000,
+                "created-date": {
+                  "value": 1511230293748
+                },
+                "last-modified-date": {
+                  "value": 1511230293748
+                },
+                "source": {
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/0000-0001-9884-1913",
+                    "path": "0000-0001-9884-1913",
+                    "host": "orcid.org"
+                  },
+                  "source-name": {
+                    "value": "Crossref"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Phylogenetic Classification of Seed Plants of Taiwan"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": [
+                    {
+                      "external-id-type": "doi",
+                      "external-id-value": "10.1186/s40529-017-0206-6",
+                      "external-id-url": {
+                        "value": "https://doi.org/10.1186/s40529-017-0206-6"
+                      },
+                      "external-id-relationship": "SELF"
+                    }
+                  ]
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2017"
+                  },
+                  "month": {
+                    "value": "12"
+                  },
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/38813000",
+                "display-index": "0"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1502042198850
+            },
+            "external-ids": {
+              "external-id": [
+                {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.1186/s40529-017-0182-x",
+                  "external-id-url": {
+                    "value": "http://dx.doi.org/10.1186/s40529-017-0182-x"
+                  },
+                  "external-id-relationship": "SELF"
+                }
+              ]
+            },
+            "work-summary": [
+              {
+                "put-code": 35802045,
+                "created-date": {
+                  "value": 1502042198850
+                },
+                "last-modified-date": {
+                  "value": 1502042198850
+                },
+                "source": {
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/0000-0001-9884-1913",
+                    "path": "0000-0001-9884-1913",
+                    "host": "orcid.org"
+                  },
+                  "source-name": {
+                    "value": "Crossref"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Three new species of Begonia sect. Baryandra from Panay Island, Philippines"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": [
+                    {
+                      "external-id-type": "doi",
+                      "external-id-value": "10.1186/s40529-017-0182-x",
+                      "external-id-url": {
+                        "value": "http://dx.doi.org/10.1186/s40529-017-0182-x"
+                      },
+                      "external-id-relationship": "SELF"
+                    }
+                  ]
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2017"
+                  },
+                  "month": {
+                    "value": "12"
+                  },
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/35802045",
+                "display-index": "0"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1512097176651
+            },
+            "external-ids": {
+              "external-id": [
+                {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.1186/s40529-017-0207-5",
+                  "external-id-url": {
+                    "value": "https://doi.org/10.1186/s40529-017-0207-5"
+                  },
+                  "external-id-relationship": "SELF"
+                }
+              ]
+            },
+            "work-summary": [
+              {
+                "put-code": 39188823,
+                "created-date": {
+                  "value": 1512097176651
+                },
+                "last-modified-date": {
+                  "value": 1512097176651
+                },
+                "source": {
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/0000-0001-9884-1913",
+                    "path": "0000-0001-9884-1913",
+                    "host": "orcid.org"
+                  },
+                  "source-name": {
+                    "value": "Crossref"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Three new species of Paraboea (Gesneriaceae) from limestone karsts of China based on morphological and molecular evidence"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": [
+                    {
+                      "external-id-type": "doi",
+                      "external-id-value": "10.1186/s40529-017-0207-5",
+                      "external-id-url": {
+                        "value": "https://doi.org/10.1186/s40529-017-0207-5"
+                      },
+                      "external-id-relationship": "SELF"
+                    }
+                  ]
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2017"
+                  },
+                  "month": {
+                    "value": "12"
+                  },
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/39188823",
+                "display-index": "0"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1472607084625
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 26392580,
+                "created-date": {
+                  "value": 1472607084625
+                },
+                "last-modified-date": {
+                  "value": 1472607084625
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Sex distribution of paper mulberry (Broussonetia papyrifera) in the Pacific"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2016"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/26392580",
+                "display-index": "1"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1454226287602
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039668,
+                "created-date": {
+                  "value": 1450856687563
+                },
+                "last-modified-date": {
+                  "value": 1454226287602
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "A holistic picture of Austronesian migrations revealed by phylogeography of Pacific paper mulberry"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039668",
+                "display-index": "32"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833315022
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039667,
+                "created-date": {
+                  "value": 1450833315022
+                },
+                "last-modified-date": {
+                  "value": 1450833315022
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Begonia difformis comb. & stat. nov.(Sect. Platycentrum, Begoniaceae), a new species segregated from B. palmata D. Don"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039667",
+                "display-index": "31"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833307973
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039663,
+                "created-date": {
+                  "value": 1450833307973
+                },
+                "last-modified-date": {
+                  "value": 1450833307973
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "New Distribution Record of Begonia grandis (Begoniaceae, section Diploclinium) from Taiwan, with subspecies assignment based on morphology and molecular phylogeny"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039663",
+                "display-index": "27"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833311597
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039665,
+                "created-date": {
+                  "value": 1450833311597
+                },
+                "last-modified-date": {
+                  "value": 1450833311597
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "The Miocene to Pleistocene colonization of the Philippine archipelago by Begonia sect. Baryandra (Begoniaceae)"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039665",
+                "display-index": "29"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833313475
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039666,
+                "created-date": {
+                  "value": 1450833313475
+                },
+                "last-modified-date": {
+                  "value": 1450833313475
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Three new species of Begonia endemic to the Puerto Princesa Subterranean River National Park, Palawan"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039666",
+                "display-index": "30"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833320910
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039669,
+                "created-date": {
+                  "value": 1450833320910
+                },
+                "last-modified-date": {
+                  "value": 1450833320910
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Three new species of Primulina (Gesneriaceae) from limestone karsts of China based on morphological and molecular evidence"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039669",
+                "display-index": "33"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833309665
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039664,
+                "created-date": {
+                  "value": 1450833309665
+                },
+                "last-modified-date": {
+                  "value": 1450833309665
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Two new species of Begonia, B. moneta and B. peridoticola (Begoniaceae) from Sabah, Malaysia"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039664",
+                "display-index": "28"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833302755
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039660,
+                "created-date": {
+                  "value": 1450833302755
+                },
+                "last-modified-date": {
+                  "value": 1450833302755
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Petrocodon (Gesneriaceae) in the limestone karsts of Guangxi, China: three new species and a new combination based on morphological and molecular evidence"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2014"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039660",
+                "display-index": "24"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833284430
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039653,
+                "created-date": {
+                  "value": 1450833284430
+                },
+                "last-modified-date": {
+                  "value": 1450833284430
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Phylogenetic analyses of Begonia sect. Coelocentrum and allied limestone species of China shed light on the evolution of Sino-Vietnamese karst flora"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2014"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039653",
+                "display-index": "17"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833306761
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039662,
+                "created-date": {
+                  "value": 1450833306761
+                },
+                "last-modified-date": {
+                  "value": 1450833306761
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Systematics of Berberis sect. Wallichianae (Berberidaceae) of Taiwan and Luzon with description of three new species, B. schaaliae, B. ravenii, and B. pengii"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2014"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039662",
+                "display-index": "26"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833304347
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039661,
+                "created-date": {
+                  "value": 1450833304347
+                },
+                "last-modified-date": {
+                  "value": 1450833304347
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Two new species of Begonia sect. Coelocentrum, B. guixiensis and B. longa, from Sino-Vietnamese limestone karsts"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2014"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039661",
+                "display-index": "25"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833289695
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039655,
+                "created-date": {
+                  "value": 1450833289695
+                },
+                "last-modified-date": {
+                  "value": 1450833289695
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Correction of confusions regarding the identity and synonymy of Youngia (Asteraceae: Tribe Cichorieae) in Taiwan"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2013"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039655",
+                "display-index": "19"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833282977
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039652,
+                "created-date": {
+                  "value": 1450833282977
+                },
+                "last-modified-date": {
+                  "value": 1450833282977
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Novelties in Begonia sect. Coelocentrum: B. longgangensis and B. ferox from limestone areas in Guangxi, China"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2013"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039652",
+                "display-index": "16"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833281683
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039651,
+                "created-date": {
+                  "value": 1450833281683
+                },
+                "last-modified-date": {
+                  "value": 1450833281683
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Primulina cardaminifolia (Gesneriaceae), a rare new species from limestone areas in Guangxi, China"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2013"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039651",
+                "display-index": "15"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833276405
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039647,
+                "created-date": {
+                  "value": 1450833276405
+                },
+                "last-modified-date": {
+                  "value": 1450833276405
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Primulina mabaensis (Gesneriaceae), a new species from a limestone cave of northern Guangdong, China"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2013"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039647",
+                "display-index": "11"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833300277
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039659,
+                "created-date": {
+                  "value": 1450833300277
+                },
+                "last-modified-date": {
+                  "value": 1450833300277
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Type specimen of Oreomyrrhis borneensis Merr.(Apiaceae) unearthed in Herbarium of National Museum of Philippines (PNH)"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2013"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039659",
+                "display-index": "23"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833273637
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039645,
+                "created-date": {
+                  "value": 1450833273637
+                },
+                "last-modified-date": {
+                  "value": 1450833273637
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Extreme habitats that emerged in the Pleistocene triggered divergence of weedy Youngia (Asteraceae) in Taiwan"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2012"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039645",
+                "display-index": "9"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833280479
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039650,
+                "created-date": {
+                  "value": 1450833280479
+                },
+                "last-modified-date": {
+                  "value": 1450833280479
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Intraspecific karyotypic polymorphism is highly concordant with allozyme variation in Lysimachia mauritiana (Primulaceae: Myrsinoideae) in Taiwan: implications for the colonization history and dispersal patterns of coastal plants"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2012"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039650",
+                "display-index": "14"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833270908
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039643,
+                "created-date": {
+                  "value": 1450833270908
+                },
+                "last-modified-date": {
+                  "value": 1450833270908
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Nine new combinations and one new name of Primulina (Gesneriaceae) from South China"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2012"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039643",
+                "display-index": "7"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833279462
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039649,
+                "created-date": {
+                  "value": 1450833279462
+                },
+                "last-modified-date": {
+                  "value": 1450833279462
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Oreocharis dayaoshanioides, a rare new species of Gesneriaceae from eastern Guangxi, China"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2012"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039649",
+                "display-index": "13"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833269618
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039642,
+                "created-date": {
+                  "value": 1450833269618
+                },
+                "last-modified-date": {
+                  "value": 1450833269618
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Two new species, Primulina multifida and P. pseudomollifolia (Gesneriaceae), from karst caves in Guangxi, China"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2012"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039642",
+                "display-index": "6"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833292044
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039656,
+                "created-date": {
+                  "value": 1450833292044
+                },
+                "last-modified-date": {
+                  "value": 1450833292044
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Isolation and characterization of microsatellite loci in Sassafras randaiense (Lauraceae)"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2011"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039656",
+                "display-index": "20"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833268305
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039641,
+                "created-date": {
+                  "value": 1450833268305
+                },
+                "last-modified-date": {
+                  "value": 1450833268305
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Begonia$\\times$ breviscapa (Begoniaceae), a new intersectional natural hybrid from limestone areas in Guangxi, China"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2010"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039641",
+                "display-index": "5"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833275004
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039646,
+                "created-date": {
+                  "value": 1450833275004
+                },
+                "last-modified-date": {
+                  "value": 1450833275004
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Observations on the Floral Morphology of Sassafras randaiense (Lauraceae) 1"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2010"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039646",
+                "display-index": "10"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833277874
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039648,
+                "created-date": {
+                  "value": 1450833277874
+                },
+                "last-modified-date": {
+                  "value": 1450833277874
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Emilia praetermissa Milne-Redh.(Asteraceae)-a misidentified alien species in Northern Taiwan"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2009"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039648",
+                "display-index": "12"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833293289
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039657,
+                "created-date": {
+                  "value": 1450833293289
+                },
+                "last-modified-date": {
+                  "value": 1450833293289
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Unearthing a forgotten legacy of 20th century floristics: the collection of Taiwanese plant specimens in the herbarium of the Academy of Natural Sciences (PH)"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2009"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039657",
+                "display-index": "21"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833267086
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039640,
+                "created-date": {
+                  "value": 1450833267086
+                },
+                "last-modified-date": {
+                  "value": 1450833267086
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Notes on Acmella (Asteraceae: Heliantheae) in Taiwan"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2008"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039640",
+                "display-index": "4"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833264064
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039638,
+                "created-date": {
+                  "value": 1450833264064
+                },
+                "last-modified-date": {
+                  "value": 1450833264064
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Two new species of Begonia (sect. Coelocentrum, Begoniaceae) from limestone areas in Guangxi, China: B. arachnoidea and B. subcoriacea"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2008"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039638",
+                "display-index": "2"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833272316
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039644,
+                "created-date": {
+                  "value": 1450833272316
+                },
+                "last-modified-date": {
+                  "value": 1450833272316
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Inclusion of the South Pacific alpine genus Oreomyrrhis (Apiaceae) in Chaerophyllum based on nuclear and chloroplast DNA sequences"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2007"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039644",
+                "display-index": "8"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833298166
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039658,
+                "created-date": {
+                  "value": 1450833298166
+                },
+                "last-modified-date": {
+                  "value": 1450833298166
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Lactuca L. In G. YATSKIEVYCH, Steyermark’s Flora of Missouri"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2006"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039658",
+                "display-index": "22"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833287059
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039654,
+                "created-date": {
+                  "value": 1450833287059
+                },
+                "last-modified-date": {
+                  "value": 1450833287059
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Phylogenetics and Phylogeography of the South Pacific Alpine Plant Oreomyrrhis: Insights Into Global Alpine Biogeography"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "DISSERTATION",
+                "publication-date": {
+                  "year": {
+                    "value": "2006"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039654",
+                "display-index": "18"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833256535
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039636,
+                "created-date": {
+                  "value": 1450833256535
+                },
+                "last-modified-date": {
+                  "value": 1450833256535
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Molecular systematics of the trans-Pacific alpine genus Oreomyrrhis (Apiaceae): phylogenetic affinities and biogeographic implications"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "2005"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039636",
+                "display-index": "0"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833258839
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039637,
+                "created-date": {
+                  "value": 1450833258839
+                },
+                "last-modified-date": {
+                  "value": 1450833258839
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Compositae"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "1998"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039637",
+                "display-index": "1"
+              }
+            ]
+          },
+          {
+            "last-modified-date": {
+              "value": 1450833265837
+            },
+            "external-ids": {
+              "external-id": []
+            },
+            "work-summary": [
+              {
+                "put-code": 21039639,
+                "created-date": {
+                  "value": 1450833265837
+                },
+                "last-modified-date": {
+                  "value": 1450833265837
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-3628-2567",
+                    "path": "0000-0003-3628-2567",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Kuo-Fang Chung"
+                  }
+                },
+                "title": {
+                  "title": {
+                    "value": "Notes on three newly naturalized plants (Asteraeeae) in Taiwan"
+                  },
+                  "subtitle": null,
+                  "translated-title": null
+                },
+                "external-ids": {
+                  "external-id": []
+                },
+                "type": "JOURNAL_ARTICLE",
+                "publication-date": {
+                  "year": {
+                    "value": "1998"
+                  },
+                  "month": null,
+                  "day": null,
+                  "media-type": null
+                },
+                "visibility": "PUBLIC",
+                "path": "/0000-0003-3628-2567/work/21039639",
+                "display-index": "3"
+              }
+            ]
+          }
+        ],
+        "path": "/0000-0003-3628-2567/works"
+      },
+      "path": "/0000-0003-3628-2567/activities"
+    },
+    "path": "/0000-0003-3628-2567"
+  },
+  "cluster_id": "https://orcid.org/0000-0003-3628-2567"
+}</textarea>			
+						<br />
+			<button onclick="convert()">Convert JSON to RDF</button>
+	</div>
+	<div style="clear:both;"></div>
+	
+	<div style="width:100%;">
+		<h2>JSON-LD</h2>
+		<div id="jsonld" style="width:100%;white-space:pre;background-color:#333;color:white;overflow:auto;"></div>
+
+</div>			
+			
+		
+		
+		
+<script>
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+// START COUCHDB VIEW
+//----------------------------------------------------------------------------------------
+
+
+//----------------------------------------------------------------------------------------
+function message(doc) {
+  if (doc.message) {
+  	var orcid = doc.message['orcid-identifier'].uri;
+  	
+  	// person
+  	
+  	// works authored
+  	
+  	if (doc.message['activities-summary']) {
+  	console.log('x');
+  		if (doc.message['activities-summary'].works) {
+  			for (var i in doc.message['activities-summary'].works.group) {
+				var work = doc.message['activities-summary'].works.group[i];
+				
+				var doi = '';
+				var work_id = '';
+				
+				if (work['external-ids'])
+				{
+					
+				
+					if (work['external-ids']['external-id']) {
+						for (var k in work['external-ids']['external-id']) {
+							if (work['external-ids']['external-id'][k]['external-id-type'] == 'doi') {
+								doi = 'https://doi.org/' + work['external-ids']['external-id'][k]['external-id-value'];								
+								work_id = doi;
+							}
+						}
+					}
+					
+					
+					
+				}
+				
+				if (doi == '') {
+					if (work['work-summary'][0].path) {
+						work_id = 'https://orcid.org' + work['work-summary'][0].path;
+						
+					}
+				}
+				
+				console.log(work_id);
+				
+				var triple = [
+					work_id,
+					"creator",					
+					orcid
+				];
+				console.log(triple);
+				
+				
+				
+			}			
+		}
+		
+	}  	
+  	
+ 
+  
+  }
+}
+
+function couchdb(doc) {
+  if (doc['message-format']) {
+
+    if (doc['message-format'] === 'application/orcid+json') {
+      message(doc);
+    }
+
+
+  }
+}
+
+// END COUCHDB VIEW
+		
+//----------------------------------------------------------------------------------------
+function convert() {
+	var json = $('#json').val();
+	var doc = JSON.parse(json);
+	
+	couchdb(doc);
+}
+
+	
+	</script>		
+			
+
+</div>
+</body>
+</html>			
