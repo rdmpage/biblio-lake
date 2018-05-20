@@ -221,6 +221,42 @@ $urls = array('https://doi.org/10.1155/2016/5924521');
 
 $urls=array('https://doi.org/10.7601/mez.34.305');
 
+$urls = array(
+'https://doi.org/10.1590/0102-33062017abb0368',
+'https://doi.org/10.1590/2175-7860201061207',
+'https://doi.org/10.3897/zookeys.150.2109',
+'https://doi.org/10.1080/00173130903435192'
+);
+
+$urls = array(
+'https://doi.org/10.1590/S2175-78602013000300005', 
+'https://doi.org/10.4067/S0717-66432012000200006',
+'https://doi.org/10.11646/phytotaxa.265.3.7',
+'https://doi.org/10.5902/2358198013894',
+'https://doi.org/10.3767/000651912X653813'
+);
+
+$urls = array(
+'https://doi.org/10.1111/j.1463-6409.2009.00404.x',
+'https://doi.org/10.1046/j.1365-294X.2003.01860.x',
+'https://doi.org/10.1098/rstb.2003.1443');
+
+// Crenicichla (fish)
+$urls = array(
+'https://doi.org/10.1590/s1679-62252010000300009',
+'https://doi.org/10.11606/d.41.2011.tde-20012012-142913',
+'https://doi.org/10.11606/t.41.2016.tde-05052016-100538',
+'https://doi.org/10.1111/j.1439-0469.2009.00557.x',
+'https://doi.org/10.2307/1445551'
+);
+
+// Dubois G, Rausch RL (1960) Quatrième contribution à l’étude des Strigéidés (Trematoda) nord-américains. Bulletin de la Société Neuchâteloise des Sciences Naturelles 83:79–92
+// SEALS lacks key bibliographic details :(
+// Can get more by locally resolving
+$urls=array(
+'https://doi.org/10.5169/seals-88902'
+);
+
 //----------------------------------------------------------------------------------------
 // Add items to the queue
 

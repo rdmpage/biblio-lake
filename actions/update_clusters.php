@@ -16,7 +16,7 @@ function doc_to_hash($id)
 	$hash = array();
 
 	$url = '_design/matching/_view/doc_to_hash' . '?key=' . urlencode('"' . $id . '"');
-	
+		
 	$resp = $couch->send("GET", "/" . $config['couchdb_options']['database'] . "/" . $url);
 
 	if ($resp)
@@ -144,7 +144,10 @@ function cluster_records($match_key_name, $match_key)
 	// Do we have more than one work with this hash?
 	if (count($records) > 1)
 	{
-		// We have records that could be clustered		
+		// We have records that could be clustered	
+		
+		echo "Records:\n";
+		print_r($records);			
 		
 		// Find clusters for these records
 		$clusters = merge_records($records, true);
@@ -247,7 +250,15 @@ function update($view = 'csl', $from = null, $match_type = 'doi')
 
 //update('csl',null, 'doi');
 
-update('csl',null, 'hash');
+$start_time = date("c", time() - (60 * 5)); // last 5 minutes
+
+$start_time = date("c", time() - (60 * 180)); // last 3 hours
+
+//update('csl', $start_time, 'hash');
+update('reference', $start_time, 'hash');
+
+//cluster_records('hash', array(1988, 101, 929));
+
 
 ?>
 
