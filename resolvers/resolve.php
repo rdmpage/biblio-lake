@@ -219,7 +219,16 @@ function resolve_url($url)
 							
 						// SEALS, 10.SERV/ETH
 						case '10.5169':
-							$data = datacite_fetch($identifier->id);
+							if (1)
+							{
+								// Datacite for basic metadata
+								$data = datacite_fetch($identifier->id);
+							}
+							else
+							{
+								// Local for more detail
+								$data = local_fetch($identifier->id);
+							}
 							break;
 							
 						// MEDRA
