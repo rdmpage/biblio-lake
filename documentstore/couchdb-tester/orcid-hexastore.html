@@ -2843,6 +2843,7 @@
 // START COUCHDB VIEW
 //----------------------------------------------------------------------------------------
 
+// Generate [work, creator, orcid] triples for works in an author's profile
 
 //----------------------------------------------------------------------------------------
 function message(doc) {
@@ -2851,10 +2852,8 @@ function message(doc) {
   	
   	// person
   	
-  	// works authored
-  	
+  	// works authored  	
   	if (doc.message['activities-summary']) {
-  	console.log('x');
   		if (doc.message['activities-summary'].works) {
   			for (var i in doc.message['activities-summary'].works.group) {
 				var work = doc.message['activities-summary'].works.group[i];
@@ -2864,8 +2863,6 @@ function message(doc) {
 				
 				if (work['external-ids'])
 				{
-					
-				
 					if (work['external-ids']['external-id']) {
 						for (var k in work['external-ids']['external-id']) {
 							if (work['external-ids']['external-id'][k]['external-id-type'] == 'doi') {
@@ -2874,9 +2871,6 @@ function message(doc) {
 							}
 						}
 					}
-					
-					
-					
 				}
 				
 				if (doi == '') {
@@ -2884,26 +2878,18 @@ function message(doc) {
 						work_id = 'https://orcid.org' + work['work-summary'][0].path;
 						
 					}
-				}
-				
-				console.log(work_id);
+				}				
+				//console.log(work_id);
 				
 				var triple = [
 					work_id,
 					"creator",					
 					orcid
 				];
-				console.log(triple);
-				
-				
-				
+				//console.log(triple);
 			}			
-		}
-		
+		}		
 	}  	
-  	
- 
-  
   }
 }
 
