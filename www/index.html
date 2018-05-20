@@ -45,7 +45,7 @@
 	</style>
 	
 </head>
-<body>
+<body class="teal lighten-5">
 <script>
 
 
@@ -192,7 +192,7 @@ function show_jats_xml (jats_xml, id) {
 	  				$('#panel').html('<pre class="language-json">' + JSON.stringify(data.rows[0], null, 2) + '</pre>');
 	  				
 	  				// Side panel is dump of citations
-	  				$('#panel').html('<pre class="language-json">' + JSON.stringify(ts_citation(data.rows[0].value["@id"]), null, 2) + '</pre>');
+	  				//$('#panel').html('<pre class="language-json">' + JSON.stringify(ts_citation(data.rows[0].value["@id"]), null, 2) + '</pre>');
 	  				
 	  				
 	  				//  title
@@ -215,7 +215,6 @@ function show_jats_xml (jats_xml, id) {
     				html += '</div>';
     				html += '<br>';
     				$('#headline').html(html);
-    				
     				
     				
     				
@@ -293,6 +292,14 @@ function show_jats_xml (jats_xml, id) {
     					html += '<br><h5><a href="' + pdf + '" target="_new">PDF</a></h5><br>';
     					html += '</div>';
     				}
+    				
+    				// Thumbnail if we have its URL
+    				
+					if (data.rows[0].value.thumbnailUrl) {
+    					html += '<img class="responsive-img" src="' + data.rows[0].value.thumbnailUrl + '" />';
+    				}
+    		    				
+    				
     				
     				
     				// Citations
