@@ -82,19 +82,81 @@ function get_work($doi)
 						$doc->_id = 'https://doi.org/' . $doi . '#' . $id;
 						$doc->cluster_id = $doc->_id;
 						
+						
+						// attempt to parse unstructured
+						if (isset($cited->unstructured) && !isset($cited->year))
+						{
+							$matched = false;
+							
+							// e.g. http://dx.doi.org/10.7202/033135ar
+							if (!$matched)
+							{
+								if (preg_match('/(?<authorstring>.*)\s+\(?(?<year>[0-9]{4})[a-z]?\)?\.?\s+(?<title>.*[\.|?])\s+(?<journal>.*),?\s+(?<volume>\d+)(\s*\((?<issue>.*)\))?:\s+(?<spage>\d+)\s*-\s*(?<epage>\d+)\b/Uu', $cited->unstructured, $m))
+								{
+									if ($m['authorstring'] != '')
+									{
+										$authorstring = $m['authorstring'];
+										$authorstring = preg_replace('/\.,\s+/u', '.|', $authorstring);
+										$authorstring = preg_replace('/\s+and\s+/u', '|', $authorstring);
+										$authorstring = preg_replace('/,\s*$/u', '', $authorstring);
+										$authorstring = preg_replace('/([A-Z])\.([A-Z])/u', '$1. $2', $authorstring);
+										
+										$cited->author = explode('|', $authorstring);
+									}
+								
+									if ($m['year'] != '')
+									{
+										$cited->year = $m['year'];
+									}								
+									if ($m['title'] != '')
+									{
+										$cited->{'article-title'} = $m['title'];
+										$cited->{'article-title'} = preg_replace('/\.$/u', '', $cited->{'article-title'});
+									}
+									if ($m['journal'] != '')
+									{
+										$cited->{'journal-title'} = $m['journal'];
+									}
+									if ($m['volume'] != '')
+									{
+										$cited->volume = $m['volume'];
+									}
+									if ($m['issue'] != '')
+									{
+										$cited->issue = $m['issue'];
+									}
+									if ($m['spage'] != '')
+									{
+										$cited->{'first-page'} = $m['spage'];
+									}
+									if ($m['epage'] != '')
+									{
+										$cited->{'last-page'} = $m['epage'];
+									}
+								
+									$matched = true;
+								}														
+							}
+						}
+						
+						//print_r($cited);
+						
 						$doc->message = $cited;
 						
 						// Add directly to database
-						$exists = $couch->exists($doc->_id);
-						if (!$exists)
+						if (1)
 						{
-							$couch->add_update_or_delete_document($doc, $doc->_id, 'add');	
-						}
-						else
-						{
-							if ($force)
+							$exists = $couch->exists($doc->_id);
+							if (!$exists)
 							{
-								$couch->add_update_or_delete_document($doc, $doc->_id, 'update');
+								$couch->add_update_or_delete_document($doc, $doc->_id, 'add');	
+							}
+							else
+							{
+								if ($force)
+								{
+									$couch->add_update_or_delete_document($doc, $doc->_id, 'update');
+								}
 							}
 						}
 
@@ -150,9 +212,11 @@ if (0)
 	
 	//$doi = '10.1371/journal.pone.0194877'; // PloS with lots of references
 	
+	$doi = 'https://doi.org/10.7202/033135ar';
+	
 	$data = crossref_fetch($doi);
 	
-	print_r($data);
+	//print_r($data);
 }
 
 ?>
