@@ -12,254 +12,671 @@
 	</head>
 <body>
 
-<h1>ZooBank to to Elastic Search</h1>
+<h1>Simple JSON-ld</h1>
 
 
 <div>
 	<div style="width:100%;height:auto;">
 		<h2>JSON</h2>
 			<!-- JSON for data object goes below -->
-			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">
-			
-{
-    "_id": "https://doi.org/10.3897/phytokeys.94.21553",
-    "_rev": "8-d973c421ba1a1f0b528f2cc03bc2cb24",
-    "message-timestamp": "2018-05-15T15:43:38+00:00",
-    "message-modified": "2018-05-15T15:43:42+00:00",
+			<textarea id="json" style="width:100%;background-color:#224FBC;color:#FFFF66;" rows="20">{
+    "_id": "https://doi.org/10.7202/033135ar",
+    "_rev": "5-5a8bb54bd8d76431339ca35c6a20ef69",
+    "message-timestamp": "2018-05-21T13:59:15+00:00",
+    "message-modified": "2018-05-21T13:59:17+00:00",
     "message-format": "application/vnd.crossref-api-message+json",
-    "message-source": "https://api.crossref.org/v1/works/http://dx.doi.org/10.3897/phytokeys.94.21553",
+    "message-source": "https://api.crossref.org/v1/works/http://dx.doi.org/10.7202/033135ar",
     "message": {
         "indexed": {
             "date-parts": [
                 [
                     2018,
-                    1,
-                    26
+                    5,
+                    5
                 ]
             ],
-            "date-time": "2018-01-26T11:11:22Z",
-            "timestamp": 1516965082259
+            "date-time": "2018-05-05T14:04:44Z",
+            "timestamp": 1525529084127
         },
-        "reference-count": 14,
-        "publisher": "Pensoft Publishers",
-        "license": [
-            {
-                "URL": "http://creativecommons.org/licenses/by/4.0/",
-                "start": {
-                    "date-parts": [
-                        [
-                            2018,
-                            1,
-                            29
-                        ]
-                    ],
-                    "date-time": "2018-01-29T00:00:00Z",
-                    "timestamp": 1517184000000
-                },
-                "delay-in-days": 0,
-                "content-version": "vor"
-            }
-        ],
+        "reference-count": 57,
+        "publisher": "Consortium Erudit",
+        "issue": "3",
         "content-domain": {
             "domain": [],
             "crossmark-restriction": false
         },
         "short-container-title": [
-            "PK"
+            "Géographie physique et Quaternaire"
         ],
-        "DOI": "10.3897/phytokeys.94.21553",
+        "published-print": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "DOI": "10.7202/033135ar",
         "type": "journal-article",
         "created": {
             "date-parts": [
                 [
-                    2018,
-                    1,
-                    26
+                    2012,
+                    7,
+                    18
                 ]
             ],
-            "date-time": "2018-01-26T10:29:51Z",
-            "timestamp": 1516962591000
+            "date-time": "2012-07-18T03:50:37Z",
+            "timestamp": 1342583437000
         },
-        "page": "1-10",
+        "page": "353",
         "source": "Crossref",
-        "is-referenced-by-count": 0,
+        "is-referenced-by-count": 11,
         "title": [
-            "Two new species of Trivalvaria (Annonaceae) from northern Myanmar"
+            "Phylogeny and Geographic History of Annonaceae"
         ],
-        "prefix": "10.3897",
-        "volume": "94",
+        "prefix": "10.7202",
+        "volume": "51",
         "author": [
             {
-                "given": "Bin",
-                "family": "Yang",
+                "given": "James A.",
+                "family": "Doyle",
+                "sequence": "first",
                 "affiliation": []
             },
             {
-                "given": "Shishun",
-                "family": "Zhou",
-                "affiliation": []
-            },
-            {
-                "given": "Hongbo",
-                "family": "Ding",
-                "affiliation": []
-            },
-            {
-                "given": "Ren",
-                "family": "Li",
-                "affiliation": []
-            },
-            {
-                "given": "Kyaw Win",
-                "family": "Maung",
-                "affiliation": []
-            },
-            {
-                "ORCID": "http://orcid.org/0000-0001-6238-2743",
-                "authenticated-orcid": true,
-                "given": "Yun-Hong",
-                "family": "Tan",
+                "given": "Annick",
+                "family": "Le Thomas",
+                "sequence": "additional",
                 "affiliation": []
             }
         ],
-        "member": "2258",
-        "published-online": {
-            "date-parts": [
-                [
-                    2018,
-                    1,
-                    29
-                ]
-            ]
-        },
+        "member": "4194",
         "reference": [
             {
-                "key": "21553_B1",
-                "DOI": "10.3732/ajb.1300403",
-                "doi-asserted-by": "publisher"
+                "key": "10.7202/033135ar_ref1",
+                "unstructured": "Brenner, G.J., 1976. Middle Cretaceous floral provinces and early migrations of angiosperms, p. 23-47. In C. B. Beck, éd., Origin and Early Evolution of Angiosperms. Columbia University Press. New York, 341 p."
             },
             {
-                "key": "21553_B2",
-                "DOI": "10.1111/j.1095-8339.2012.01235.x",
-                "doi-asserted-by": "publisher"
+                "key": "10.7202/033135ar_ref2",
+                "unstructured": "Chatrou, L., 1997. Malmea and other post-Pliocene invaders of Central America. Annonaceae Newletter. 11."
             },
             {
-                "key": "21553_B3",
-                "first-page": "263",
-                "article-title": "Two new species of Annonaceae from eastern India.",
-                "volume": "10",
-                "author": "Das",
-                "year": "1968",
-                "journal-title": "Bulletin of the Botanical Survey of India"
+                "key": "10.7202/033135ar_ref3",
+                "unstructured": "Chesters, K.I.M., 1955. Some plant remains from the Upper Cretaceous and Tertiary of West Africa. Annals and Magazine of Natural History, series 12, 8: 498-504.",
+                "author": [
+                    "Chesters, K. I.M."
+                ],
+                "year": "1955",
+                "article-title": "Some plant remains from the Upper Cretaceous and Tertiary of West Africa",
+                "journal-title": "Annals and Magazine of Natural History, series 12",
+                "volume": "8",
+                "first-page": "498",
+                "last-page": "504"
             },
             {
-                "key": "21553_B4",
-                "author": "Gardner",
-                "year": "2015"
+                "key": "10.7202/033135ar_ref4",
+                "unstructured": "Collinson, M.E., 1983. Fossil Plants of the London Clay. Palaeontological Association, London, 121 p."
             },
             {
-                "key": "21553_B5",
-                "year": "2012"
+                "key": "10.7202/033135ar_ref5",
+                "unstructured": "Crane. P.R., Friis, E.M. and Pedersen, K.R., 1995. The origin and early diversification of angiosperms. Nature. 374: 27-33.",
+                "author": [
+                    "Crane. P. R.",
+                    "Friis, E. M.",
+                    "Pedersen, K. R."
+                ],
+                "year": "1995",
+                "article-title": "The origin and early diversification of angiosperms",
+                "journal-title": "Nature.",
+                "volume": "374",
+                "first-page": "27",
+                "last-page": "33"
             },
             {
-                "key": "21553_B6",
-                "DOI": "10.1007/978-3-662-02899-5_9",
-                "doi-asserted-by": "publisher"
+                "key": "10.7202/033135ar_ref6",
+                "unstructured": "Crepet, W.L. and Nixon, K.C, 1994. Flowers of Turonian Magnoliidae and their implications. Plant Systematics and Evolution Supplement, 8: 73-91.",
+                "author": [
+                    "Crepet, W. L.",
+                    "Nixon, K. C"
+                ],
+                "year": "1994",
+                "article-title": "Flowers of Turonian Magnoliidae and their implications",
+                "journal-title": "Plant Systematics and Evolution Supplement",
+                "volume": "8",
+                "first-page": "73",
+                "last-page": "91"
             },
             {
-                "key": "21553_B7",
-                "first-page": "1",
-                "article-title": "A checklist of the trees, shrubs, herbs, and climbers of Myanmar.",
-                "volume": "45",
-                "author": "Kress",
-                "year": "2003",
-                "journal-title": "Contributions from the United States National Herbarium"
+                "key": "10.7202/033135ar_ref7",
+                "unstructured": "Cronquist, A., 1981. An Integrated System of Classification of Flowering Plants. Columbia University Press, New York, 1262 p."
             },
             {
-                "key": "21553_B8",
-                "author": "Li",
-                "first-page": "696",
-                "year": "2011",
-                "article-title": "Trivalvaria.",
-                "journal-title": "19). Science Press, Beijing and Missouri Botanical Garden Press, St. Louis"
+                "key": "10.7202/033135ar_ref8",
+                "unstructured": "Deroin, T. and Le Thomas, A., 1989. Sur la systématique et les potentialités évolutives des Annonacées: cas d'Ambavia gerrardii (Baill.) Le Thomas, espèce endémique de Madagascar. Comptes Rendus de l'Académie des Sciences, Paris, série 3, 309: 647-652.",
+                "author": [
+                    "Deroin, T.",
+                    "Le Thomas, A."
+                ],
+                "year": "1989",
+                "article-title": "Sur la systématique et les potentialités évolutives des Annonacées: cas d'Ambavia gerrardii (Baill.) Le Thomas, espèce endémique de Madagascar",
+                "journal-title": "Comptes Rendus de l'Académie des Sciences, Paris, série 3",
+                "volume": "309",
+                "first-page": "647",
+                "last-page": "652"
             },
             {
-                "key": "21553_B9",
-                "first-page": "1",
-                "article-title": "Anonaceae Archipelagi Indici.",
+                "key": "10.7202/033135ar_ref9",
+                "unstructured": "Dilcher. D.L. and Crane, P.R., 1984. Archaeanthus: An early angiosperm from the Cenomanian of the Western Interior of North America. Annals of the Missouri Botanical Garden, 71: 351-383.",
+                "author": [
+                    "Dilcher. D. L.",
+                    "Crane, P. R."
+                ],
+                "year": "1984",
+                "article-title": "Archaeanthus: An early angiosperm from the Cenomanian of the Western Interior of North America",
+                "journal-title": "Annals of the Missouri Botanical Garden",
+                "volume": "71",
+                "first-page": "351",
+                "last-page": "383"
+            },
+            {
+                "key": "10.7202/033135ar_ref10",
+                "unstructured": "Donoghue, M.J. and Doyle, J.A.. 1989. Phylogenetic analysis of angiosperms and the relationships of Hamamelidae, p. 17-45. In P.R. Crane and S. Blackmore, eds., Evolution, Systematics, and Fossil History of the Hamamelidae, vol. 1, Clarendon Press, Oxford, 305 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref11",
+                "unstructured": "Doyle, J.A., 1984. Evolutionary, geographic, and ecological aspects of the rise of angiosperms. Proceedings of the 27th International Geological Congress (Moscow, 1984), 2: 23-33.",
+                "author": [
+                    "Doyle, J. A."
+                ],
+                "year": "1984",
+                "article-title": "Evolutionary, geographic, and ecological aspects of the rise of angiosperms",
+                "journal-title": "Proceedings of the 27th International Geological Congress (Moscow, 1984)",
                 "volume": "2",
-                "author": "Miquel",
-                "year": "1865",
-                "journal-title": "Annales Musei Botanici Lugduno-Batavi"
+                "first-page": "23",
+                "last-page": "33"
             },
             {
-                "key": "21553_B10",
-                "first-page": "299",
-                "article-title": "Observationes phytographicae.",
-                "volume": "52",
-                "author": "Scheffer",
-                "year": "1869",
-                "journal-title": "Flora; oder, (allgemeine) botanische Zeitung"
+                "key": "10.7202/033135ar_ref12",
+                "unstructured": "Doyle, J.A., 1992. Revised palynological correlations of the lower Potomac Group (USA) and the Cocobeach sequence of Gabon (Barremian-Aptian). Cretaceous Research, 13: 337-349.",
+                "author": [
+                    "Doyle, J. A."
+                ],
+                "year": "1992",
+                "article-title": "Revised palynological correlations of the lower Potomac Group (USA) and the Cocobeach sequence of Gabon (Barremian-Aptian)",
+                "journal-title": "Cretaceous Research",
+                "volume": "13",
+                "first-page": "337",
+                "last-page": "349"
             },
             {
-                "key": "21553_B11",
-                "DOI": "10.1007/s12225-009-9136-0",
-                "doi-asserted-by": "publisher"
+                "key": "10.7202/033135ar_ref13",
+                "unstructured": "Doyle, J.A., Biens, P., Doerenkamp. A. and Jardiné, S., 1977. Angiosperm pollen from the pre-Albian Cretaceous of Equatorial Africa. Bulletin des Centres de Recherches Exploration-Production Elf-Aquitaine, 1: 451-473.",
+                "author": [
+                    "Doyle, J. A.",
+                    "Biens, P.",
+                    "Doerenkamp. A.",
+                    "Jardiné, S."
+                ],
+                "year": "1977",
+                "article-title": "Angiosperm pollen from the pre-Albian Cretaceous of Equatorial Africa",
+                "journal-title": "Bulletin des Centres de Recherches Exploration-Production Elf-Aquitaine",
+                "volume": "1",
+                "first-page": "451",
+                "last-page": "473"
             },
             {
-                "key": "21553_B12",
-                "DOI": "10.1111/j.1756-1051.1997.tb00306.x",
-                "doi-asserted-by": "publisher"
+                "key": "10.7202/033135ar_ref14",
+                "unstructured": "Doyle, J.A. and Donoghue, M.J., 1993. Phylogenies and angiosperm diversification. Paleobiology, 19: 141-167.",
+                "author": [
+                    "Doyle, J. A.",
+                    "Donoghue, M. J."
+                ],
+                "year": "1993",
+                "article-title": "Phylogenies and angiosperm diversification",
+                "journal-title": "Paleobiology",
+                "volume": "19",
+                "first-page": "141",
+                "last-page": "167"
             },
             {
-                "key": "21553_B13",
-                "DOI": "10.1080/14772000.2010.542497",
-                "doi-asserted-by": "publisher"
+                "key": "10.7202/033135ar_ref15",
+                "unstructured": "Doyle. J.A., Donoghue, M.J. and Zimmer, E.A., 1994. Integration of morphological and ribosomal RNA data on the origin of angiosperms. Annals of the Missouri Botanical Garden, 81: 419-450.",
+                "author": [
+                    "Doyle. J. A.",
+                    "Donoghue, M. J.",
+                    "Zimmer, E. A."
+                ],
+                "year": "1994",
+                "article-title": "Integration of morphological and ribosomal RNA data on the origin of angiosperms",
+                "journal-title": "Annals of the Missouri Botanical Garden",
+                "volume": "81",
+                "first-page": "419",
+                "last-page": "450"
             },
             {
-                "key": "21553_B14",
-                "first-page": "418",
-                "article-title": "Plantae novae in horto bogoriense cultae.",
-                "volume": "25",
-                "author": "Teijsmann",
-                "year": "1863",
-                "journal-title": "Natuurkundig Tijdschrift voor Nederlandsch-Indië"
+                "key": "10.7202/033135ar_ref16",
+                "unstructured": "Doyle, J.A. and Hotton, C.L., 1991. Diversification of early angiosperm pollen in a cladistic context, p. 169-195. In S. Blackmore and S. H. Barnes, eds., Pollen and Spores: Patterns of Diversification, Clarendon Press, Oxford, 391 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref17",
+                "unstructured": "Doyle. J.A., Jardiné, S. and Doerenkamp. A., 1982. Afropollis, a new genus of early angiosperm pollen, with notes on the Cretaceous palynostratigraphy and paleoenvironments of Northern Gondwana. Bulletin des Centres de Recherches Exploration-Production Elf-Aquitaine, 6: 39-117.",
+                "author": [
+                    "Doyle. J. A.",
+                    "Jardiné, S.",
+                    "Doerenkamp. A."
+                ],
+                "year": "1982",
+                "article-title": "Afropollis, a new genus of early angiosperm pollen, with notes on the Cretaceous palynostratigraphy and paleoenvironments of Northern Gondwana",
+                "journal-title": "Bulletin des Centres de Recherches Exploration-Production Elf-Aquitaine",
+                "volume": "6",
+                "first-page": "39",
+                "last-page": "117"
+            },
+            {
+                "key": "10.7202/033135ar_ref18",
+                "unstructured": "Doyle, J.A. and Le Thomas, A., 1994. Cladistic analysis and pollen evolution in Annonaceae. Acta Botanica Gallica, 141: 149-170.",
+                "author": [
+                    "Doyle, J. A.",
+                    "Le Thomas, A."
+                ],
+                "year": "1994",
+                "article-title": "Cladistic analysis and pollen evolution in Annonaceae",
+                "journal-title": "Acta Botanica Gallica",
+                "volume": "141",
+                "first-page": "149",
+                "last-page": "170"
+            },
+            {
+                "key": "10.7202/033135ar_ref19",
+                "unstructured": "Doyle, J.A. and Le Thomas, A., 1995. Evolution of pollen characters and relationships of African Annonaceae: Implications of a cladistic analysis, p. 241-254. In A. Le Thomas and E. Roche, eds., 2e Symposium de Palynologie africaine, Tervuren (Belgique), Centre international pour Ia Formation et les Échanges géologiques, Publication occasionnelle, 1995/31, Orléans, 262 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref20",
+                "unstructured": "Doyle, J.A. and Le Thomas, A., 1996. Phylogenetic analysis and character evolution in Annonaceae. Bulletin du Muséum national d'Histoire naturelle, section B, Adansonia. 18: 279-334.",
+                "author": [
+                    "Doyle, J. A.",
+                    "Le Thomas, A."
+                ],
+                "year": "1996",
+                "article-title": "Phylogenetic analysis and character evolution in Annonaceae",
+                "journal-title": "Bulletin du Muséum national d'Histoire naturelle, section B, Adansonia.",
+                "volume": "18",
+                "first-page": "279",
+                "last-page": "334"
+            },
+            {
+                "key": "10.7202/033135ar_ref21",
+                "unstructured": "Drinnan, A.N., Crane, P.R., Friis, E.M. and Pedersen, K.R., 1990. Lauraceous flowers from the Potomac Group (mid-Cretaceous) of eastern North America. Botanical Gazette. 151: 370-384.",
+                "author": [
+                    "Drinnan, A. N.",
+                    "Crane, P. R.",
+                    "Friis, E. M.",
+                    "Pedersen, K. R."
+                ],
+                "year": "1990",
+                "article-title": "Lauraceous flowers from the Potomac Group (mid-Cretaceous) of eastern North America",
+                "journal-title": "Botanical Gazette.",
+                "volume": "151",
+                "first-page": "370",
+                "last-page": "384"
+            },
+            {
+                "key": "10.7202/033135ar_ref22",
+                "unstructured": "Fries, R.E., 1959. Annonaceae, p. 1-171. In H. Melchior, éd., Die Naturlichen Pflanzenfamilien, Zweite Auflage, Band 17all, Duncker and Humblot, Berlin, 229 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref23",
+                "unstructured": "Friis, E.M. and Crepet, W.L., 1987. Time of appearance of floral features, p. 145-179. In E.M. Friis, W.G. Chaloner and P.R. Crane, eds., The Origins of Angiosperms and Their Biological Consequences. Cambridge University Press, Cambridge, 358 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref24",
+                "unstructured": "Friis, E.M., Eklund, H., Pedersen, K.R. and Crane, P.R., 1994. Virginianthus calycanthoides gen. et sp. nov.-a calycanthaceous flower from the Potomac Group (Early Cretaceous) of eastern North America. International Journal of Plant Sciences, 155: 772-785.",
+                "author": [
+                    "Friis, E. M.",
+                    "Eklund, H.",
+                    "Pedersen, K. R.",
+                    "Crane, P. R."
+                ],
+                "year": "1994",
+                "article-title": "Virginianthus calycanthoides gen",
+                "journal-title": "et sp. nov.-a calycanthaceous flower from the Potomac Group (Early Cretaceous) of eastern North America. International Journal of Plant Sciences",
+                "volume": "155",
+                "first-page": "772",
+                "last-page": "785"
+            },
+            {
+                "key": "10.7202/033135ar_ref25",
+                "unstructured": "Hamby, R.K. and Zimmer, E.A., 1992. Ribosomal RNA as a phylogenetic tool in plant systematics, p. 50-91. In P.S. Soltis, D.E. Soltis and J.J. Doyle, eds., Molecular Systematics of Plants. Chapman and Hall, New York, 434 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref26",
+                "unstructured": "Hickey, LJ. and Doyle, J.A., 1977. Early Cretaceous fossil evidence for angiosperm evolution. Botanical Review, 43: 1-104.",
+                "author": [
+                    "Hickey, LJ.",
+                    "Doyle, J. A."
+                ],
+                "year": "1977",
+                "article-title": "Early Cretaceous fossil evidence for angiosperm evolution",
+                "journal-title": "Botanical Review",
+                "volume": "43",
+                "first-page": "1",
+                "last-page": "104"
+            },
+            {
+                "key": "10.7202/033135ar_ref27",
+                "unstructured": "Hollick, A., 1906. The Cretaceous flora of southern New York and New England. U. S. Geological Survey Monograph, 50: 1-219.",
+                "author": [
+                    "Hollick, A."
+                ],
+                "year": "1906",
+                "article-title": "The Cretaceous flora of southern New York and New England",
+                "journal-title": "U. S. Geological Survey Monograph",
+                "volume": "50",
+                "first-page": "1",
+                "last-page": "219"
+            },
+            {
+                "key": "10.7202/033135ar_ref28",
+                "unstructured": "Johnson. D.M. and Murray, N.A., 1995. Synopsis of the tribe Bocageeae (Annonaceae). with revisions of Cardiopetalum, Froesiodendron, Trigynaea, Bocagea, and Hornschuchia. Brittonia, 47: 248-319.",
+                "author": [
+                    "Johnson. D. M.",
+                    "Murray, N. A."
+                ],
+                "year": "1995",
+                "article-title": "Synopsis of the tribe Bocageeae (Annonaceae)",
+                "journal-title": "with revisions of Cardiopetalum, Froesiodendron, Trigynaea, Bocagea, and Hornschuchia. Brittonia",
+                "volume": "47",
+                "first-page": "248",
+                "last-page": "319"
+            },
+            {
+                "key": "10.7202/033135ar_ref29",
+                "unstructured": "Le Thomas, A., 1980-1981. Ultrastructural characters of the pollen grains of African Annonaceae and their significance for the phylogeny of primitive angiosperms. Pollen et Spores, 22: 267-342, 23: 5-36."
+            },
+            {
+                "key": "10.7202/033135ar_ref30",
+                "unstructured": "Le Thomas, A. and Doyle, J.A., 1996a. Geographic relationships of Malagasy Annonaceae, p. 85-94. In W.R. Lourenço, éd., Biogéographie de Madagascar. ORSTOM, Paris."
+            },
+            {
+                "key": "10.7202/033135ar_ref31",
+                "unstructured": "Le Thomas, A. and Doyle, J.A., 1996b. Implications d'une analyse cladistique dans l'histoire géographique des Annonaceae: famille d'Angiospermes primitives, p. 171-180. In J.-L. Guillaume, M. Belin and H. Puig, eds., Phytogéographie tropicale: réalités et perspectives. ORSTOM. Paris, 386 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref32",
+                "unstructured": "Maas, P.J.M. and Westra, L.Y.T., 1984. Studies in Annonaceae. II. A monograph of the genus Anaxagorea A. St. HiI., Part 1. Botanische Jahrbucher fur Systematik, 105: 73-134.",
+                "author": [
+                    "Maas, P. J.M.",
+                    "Westra, L. Y.T."
+                ],
+                "year": "1984",
+                "article-title": "Studies in Annonaceae",
+                "journal-title": "II. A monograph of the genus Anaxagorea A. St. HiI., Part 1. Botanische Jahrbucher fur Systematik",
+                "volume": "105",
+                "first-page": "73",
+                "last-page": "134"
+            },
+            {
+                "key": "10.7202/033135ar_ref33",
+                "unstructured": "Maddison, D.R., 1991. African origin of human mitochondrial DNA revisited. Systematic Zoology, 40: 355-363.",
+                "author": [
+                    "Maddison, D. R."
+                ],
+                "year": "1991",
+                "article-title": "African origin of human mitochondrial DNA revisited",
+                "journal-title": "Systematic Zoology",
+                "volume": "40",
+                "first-page": "355",
+                "last-page": "363"
+            },
+            {
+                "key": "10.7202/033135ar_ref34",
+                "unstructured": "Maddison, W.P. and Maddison, D.R., 1992. MacClade: Analysis of Phylogeny and Character Evolution, version 3. Sinauer Associates, Sunderland, Mass., 398 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref35",
+                "unstructured": "Morawetz, W., 1988. Karyosystematics and evolution of Australian Annonaceae as compared with Eupomatiaceae, Himanatandraceae, and Austrobaileyaceae. Plant Systematics and Evolution. 159: 49-79.",
+                "author": [
+                    "Morawetz, W."
+                ],
+                "year": "1988",
+                "article-title": "Karyosystematics and evolution of Australian Annonaceae as compared with Eupomatiaceae, Himanatandraceae, and Austrobaileyaceae",
+                "journal-title": "Plant Systematics and Evolution.",
+                "volume": "159",
+                "first-page": "49",
+                "last-page": "79"
+            },
+            {
+                "key": "10.7202/033135ar_ref36",
+                "unstructured": "Muller, J., 1981. Fossil pollen records of extant angiosperms. Botanical Review, 47: 1-142.",
+                "author": [
+                    "Muller, J."
+                ],
+                "year": "1981",
+                "article-title": "Fossil pollen records of extant angiosperms",
+                "journal-title": "Botanical Review",
+                "volume": "47",
+                "first-page": "1",
+                "last-page": "142"
+            },
+            {
+                "key": "10.7202/033135ar_ref37",
+                "unstructured": "Parrish, J.T., 1987. Global palaeogeography and palaeoclimate of the Late Cretaceous and Early Tertiary, p. 51-73. In E.M. Friis, W.G. Chaloner and P.R. Crane, eds., The Origins of Angiosperms and Their Biological Consequences. Cambridge University Press, Cambridge, 358 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref38",
+                "unstructured": "Pedersen, K.R., Crane, P.R., Drinnan, A.N. and Friis, E.M., 1991. Fruits from the mid-Cretaceous of North America with pollen grains of the Clavatipollenites type. Grana, 30: 577-590.",
+                "author": [
+                    "Pedersen, K. R.",
+                    "Crane, P. R.",
+                    "Drinnan, A. N.",
+                    "Friis, E. M."
+                ],
+                "year": "1991",
+                "article-title": "Fruits from the mid-Cretaceous of North America with pollen grains of the Clavatipollenites type",
+                "journal-title": "Grana",
+                "volume": "30",
+                "first-page": "577",
+                "last-page": "590"
+            },
+            {
+                "key": "10.7202/033135ar_ref39",
+                "unstructured": "Qiu, Y.L., Chase, M.W.. Les, D.H. and Parks, CR., 1993. Molecular phylogenetics of the Magnoliidae: Cladistic analyses of nucleotide sequences of the plastid gene rbcL. Annals of the Missouri Botanical Garden, 80: 587-606.",
+                "author": [
+                    "Qiu, Y. L.",
+                    "Chase, M. W.. Les, D. H.",
+                    "Parks, CR."
+                ],
+                "year": "1993",
+                "article-title": "Molecular phylogenetics of the Magnoliidae: Cladistic analyses of nucleotide sequences of the plastid gene rbcL",
+                "journal-title": "Annals of the Missouri Botanical Garden",
+                "volume": "80",
+                "first-page": "587",
+                "last-page": "606"
+            },
+            {
+                "key": "10.7202/033135ar_ref40",
+                "unstructured": "Raven, P.H. and Axelrod, D.I., 1974. Angiosperm biogeography and past continental movements. Annals of the Missouri Botanical Garden, 61: 539-673.",
+                "author": [
+                    "Raven, P. H.",
+                    "Axelrod, D. I."
+                ],
+                "year": "1974",
+                "article-title": "Angiosperm biogeography and past continental movements",
+                "journal-title": "Annals of the Missouri Botanical Garden",
+                "volume": "61",
+                "first-page": "539",
+                "last-page": "673"
+            },
+            {
+                "key": "10.7202/033135ar_ref41",
+                "unstructured": "Reid, E.M. and Chandler, M.E.J., 1933. The London Clay Flora. British Museum (Natural History), London, 561 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref42",
+                "unstructured": "Rogstad, S.H. and Le Thomas, A., 1989. Pollen characters of the Polyalthia hypoleuca complex {Annonaceae): Their significance in establishing monophyly and candidate outgroups. Bulletin du Muséum national d'Histoire naturelle, Paris, 4e série, 11: 257-278.",
+                "author": [
+                    "Rogstad, S. H.",
+                    "Le Thomas, A."
+                ],
+                "year": "1989",
+                "article-title": "Pollen characters of the Polyalthia hypoleuca complex {Annonaceae): Their significance in establishing monophyly and candidate outgroups",
+                "journal-title": "Bulletin du Muséum national d'Histoire naturelle, Paris, 4e série",
+                "volume": "11",
+                "first-page": "257",
+                "last-page": "278"
+            },
+            {
+                "key": "10.7202/033135ar_ref43",
+                "unstructured": "Schatz, G.E. and Le Thomas, A., 1993. Annonaceae: A primitive dicot family with an ancient center in Africa-South America, p. 86-104. In P. Goldblatt, éd., Biological Relationships between Africa and South America. Yale University Press, New Haven, 630 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref44",
+                "unstructured": "Schuster, R.M., 1972. Continental movements, \"Wallace's Line\" and Indomalayan-Australasian dispersal of land plants: Some eclectic concepts. Botanical Review, 38: 3-86.",
+                "author": [
+                    "Schuster, R. M."
+                ],
+                "year": "1972",
+                "article-title": "Continental movements, \"Wallace's Line\" and Indomalayan-Australasian dispersal of land plants: Some eclectic concepts",
+                "journal-title": "Botanical Review",
+                "volume": "38",
+                "first-page": "3",
+                "last-page": "86"
+            },
+            {
+                "key": "10.7202/033135ar_ref45",
+                "unstructured": "Schuster, R.M., 1976. Plate tectonics and its bearing on the geographical origin and dispersal of angiosperms, p. 48-138. In C. B. Beck, éd., Origin and Early Evolution of Angiosperms. Columbia University Press. New York, 341 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref46",
+                "unstructured": "Sinclair, J., 1955. A revision of the Malayan Annonaceae. Gardens' Bulletin, Singapore, 14: 149-516.",
+                "author": [
+                    "Sinclair, J."
+                ],
+                "year": "1955",
+                "article-title": "A revision of the Malayan Annonaceae",
+                "journal-title": "Gardens' Bulletin, Singapore",
+                "volume": "14",
+                "first-page": "149",
+                "last-page": "516"
+            },
+            {
+                "key": "10.7202/033135ar_ref47",
+                "unstructured": "Smith, A.C., 1973. Angiosperm evolution and the relationship of the floras of Africa and South America, p. 49-61. In BJ. Meggers, E.S. Ayensu and W.D. Duckworth, eds., Tropical Forest Ecosystems in Africa and South America: A Comparative Review. Smithsonian Institution Press, Washington, D.C., 350 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref48",
+                "unstructured": "Sole de Porta, N., 1971. Algunos généras nuevos de polen procedentes de la Formaciôn Guaduas (Maastrichtiense-Paleoceno) de Colombia. Studia Geologica, Salamanca, 2: 133-143.",
+                "author": [
+                    "Sole de Porta, N."
+                ],
+                "year": "1971",
+                "article-title": "Algunos généras nuevos de polen procedentes de la Formaciôn Guaduas (Maastrichtiense-Paleoceno) de Colombia",
+                "journal-title": "Studia Geologica, Salamanca",
+                "volume": "2",
+                "first-page": "133",
+                "last-page": "143"
+            },
+            {
+                "key": "10.7202/033135ar_ref49",
+                "unstructured": "Takhtajan, A.L., 1969. Flowering Plants: Origin and Dispersal. Smithsonian Institution, Washington, D.C., 310 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref50",
+                "unstructured": "van Heusden, E.CH., 1992. Flowers of Annonaceae: morphology, classification, and evolution. Blumea Supplement, 7: 1-218.",
+                "author": [
+                    "van Heusden, E. CH."
+                ],
+                "year": "1992",
+                "article-title": "Flowers of Annonaceae: morphology, classification, and evolution",
+                "journal-title": "Blumea Supplement",
+                "volume": "7",
+                "first-page": "1",
+                "last-page": "218"
+            },
+            {
+                "key": "10.7202/033135ar_ref51",
+                "unstructured": "van Zuilen, CM., 1996. Patterns and affinities in the Duguetia alliance (Annonaceae). Molecular and morphological studies. Ph.D. Thesis, University of Utrecht, 133 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref52",
+                "unstructured": "Walker, J.W., 1971. Pollen morphology, phytogeography, and phylogeny of the Annonaceae. Contributions from the Gray Herbarium, 202: 1-131.",
+                "author": [
+                    "Walker, J. W."
+                ],
+                "year": "1971",
+                "article-title": "Pollen morphology, phytogeography, and phylogeny of the Annonaceae",
+                "journal-title": "Contributions from the Gray Herbarium",
+                "volume": "202",
+                "first-page": "1",
+                "last-page": "131"
+            },
+            {
+                "key": "10.7202/033135ar_ref53",
+                "unstructured": "Walker, J.W., 1976. Evolutionary significance of the exine in the pollen of primitive angiosperms, p. 1112-1137. In I. K. Ferguson and J. Muller, eds., The Evolutionary Significance of the Exine. Academic Press, London, 591 p."
+            },
+            {
+                "key": "10.7202/033135ar_ref54",
+                "unstructured": "Walker, J.W. and Walker. A.G., 1981. Comparative pollen morphology of the Madagascan genera of Myristicaceae {Mauloutchia, Brochoneura, and Haematodendron). Grana, 20:1-17."
+            },
+            {
+                "key": "10.7202/033135ar_ref55",
+                "unstructured": "Ward, J.V., Doyle, J.A. and Hotton, CL., 1989. Probable granular magnoliid angiosperm pollen from the Early Cretaceous. Pollen et Spores, 33: 101-120.",
+                "author": [
+                    "Ward, J. V.",
+                    "Doyle, J. A.",
+                    "Hotton, CL."
+                ],
+                "year": "1989",
+                "article-title": "Probable granular magnoliid angiosperm pollen from the Early Cretaceous",
+                "journal-title": "Pollen et Spores",
+                "volume": "33",
+                "first-page": "101",
+                "last-page": "120"
+            },
+            {
+                "key": "10.7202/033135ar_ref56",
+                "unstructured": "Wolfe, J.A., 1975. Some aspects of plant geography of the Northern Hemisphere during the Late Cretaceous and Tertiary. Annals of the Missouri Botanical Garden, 62: 264-279.",
+                "author": [
+                    "Wolfe, J. A."
+                ],
+                "year": "1975",
+                "article-title": "Some aspects of plant geography of the Northern Hemisphere during the Late Cretaceous and Tertiary",
+                "journal-title": "Annals of the Missouri Botanical Garden",
+                "volume": "62",
+                "first-page": "264",
+                "last-page": "279"
+            },
+            {
+                "key": "10.7202/033135ar_ref57",
+                "unstructured": "Wolfe, J.A., Doyle, J.A. and Page, V.M., 1975. The bases of angiosperm phylogeny: paleobotany. Annals of the Missouri Botanical Garden. 62: 801 -824.",
+                "author": [
+                    "Wolfe, J. A.",
+                    "Doyle, J. A.",
+                    "Page, V. M."
+                ],
+                "year": "1975",
+                "article-title": "The bases of angiosperm phylogeny: paleobotany",
+                "journal-title": "Annals of the Missouri Botanical Garden.",
+                "volume": "62",
+                "first-page": "801",
+                "last-page": "824"
             }
         ],
         "container-title": [
-            "PhytoKeys"
+            "Géographie physique et Quaternaire"
         ],
         "original-title": [],
-        "link": [
-            {
-                "URL": "https://phytokeys.pensoft.net/lib/ajax_srv/article_elements_srv.php?action=download_pdf&item_id=21553",
-                "content-type": "application/pdf",
-                "content-version": "vor",
-                "intended-application": "text-mining"
-            },
-            {
-                "URL": "https://phytokeys.pensoft.net/lib/ajax_srv/article_elements_srv.php?action=download_xml&item_id=21553",
-                "content-type": "application/xml",
-                "content-version": "vor",
-                "intended-application": "text-mining"
-            },
-            {
-                "URL": "https://phytokeys.pensoft.net/article_preview.php?id=21553&skip_redirect=1",
-                "content-type": "unspecified",
-                "content-version": "vor",
-                "intended-application": "similarity-checking"
-            }
-        ],
+        "language": "fr",
         "deposited": {
             "date-parts": [
                 [
-                    2018,
-                    1,
-                    26
+                    2012,
+                    7,
+                    18
                 ]
             ],
-            "date-time": "2018-01-26T10:29:51Z",
-            "timestamp": 1516962591000
+            "date-time": "2012-07-18T03:52:14Z",
+            "timestamp": 1342583534000
         },
         "score": 1,
         "subtitle": [],
@@ -267,39 +684,35 @@
         "issued": {
             "date-parts": [
                 [
-                    2018,
-                    1,
-                    29
+                    1997
                 ]
             ]
         },
-        "references-count": 14,
-        "URL": "http://dx.doi.org/10.3897/phytokeys.94.21553",
+        "references-count": 57,
+        "journal-issue": {
+            "issue": "3"
+        },
+        "URL": "http://dx.doi.org/10.7202/033135ar",
         "relation": {
             "cites": []
         },
         "ISSN": [
-            "1314-2003",
-            "1314-2011"
+            "0705-7199",
+            "1492-143X"
         ],
         "issn-type": [
             {
-                "value": "1314-2011",
+                "value": "0705-7199",
                 "type": "print"
             },
             {
-                "value": "1314-2003",
+                "value": "1492-143X",
                 "type": "electronic"
             }
-        ],
-        "subject": [
-            "Plant Science",
-            "Ecology, Evolution, Behavior and Systematics"
         ]
     },
-    "cluster_id": "https://doi.org/10.3897/phytokeys.94.21553"
-}			
-			</textarea>
+    "cluster_id": "https://doi.org/10.7202/033135ar"
+}</textarea>
 			<br />
 			<button onclick="convert()">Convert JSON to RDF</button>
 	</div>
@@ -315,7 +728,6 @@
 		
 		
 <script>
-
 
 
 //----------------------------------------------------------------------------------------
@@ -339,6 +751,19 @@ function do_csl(doc) {
       default:
         jsonld["@type"] = "CreativeWork";
         break;
+    }
+    
+    // identifier(s)
+    
+    if (doc.message.DOI) {
+      if (!jsonld.identifier) {
+      	jsonld.identifier = [];
+      }
+      var identifier = {};
+      identifier['@type'] = 'PropertyValue';
+      identifier.propertyID = 'doi';
+      identifier.value = doc.message.DOI;
+      jsonld.identifier.push(identifier);     
     }
 
     // title
@@ -372,7 +797,11 @@ function do_csl(doc) {
         default:
           break;
       }
-      jsonld.datePublished = String(date);
+      // Some records, e.g. https://doi.org/10.11606/t.41.2016.tde-05052016-100538
+      // have { "date-parts": [ [ null ] ] } so need to double check if date is null
+      if (date) {
+        jsonld.datePublished = String(date);
+      }
     }
 
     // container
@@ -429,6 +858,10 @@ function do_csl(doc) {
       }
     }
 
+    if (doc.message['page-first']) {
+        jsonld.pageStart = doc.message['page-first'];
+    }
+
     if (doc.message.author) {
       jsonld.creator = [];
       for (var i in doc.message.author) {
@@ -469,6 +902,11 @@ function do_csl(doc) {
 
       }
     }
+    
+    // thumbnailUrl
+    if (doc.message.thumbnailUrl) {
+      jsonld.thumbnailUrl = doc.message.thumbnailUrl;
+    }
 
     // license
     if (doc.message.license) {
@@ -490,17 +928,93 @@ function do_csl(doc) {
       for (var i in doc.message.reference) {
         var citation = {};
         if (doc.message.reference[i].DOI) {
+          // DOI is id for citation
           citation["@id"] = "https://doi.org/" + doc.message.reference[i].DOI;
+          
+          // store as identifier
+          citation.identifier = [];
+          var identifier = {};
+          identifier['@type'] = 'PropertyValue';
+          identifier.propertyID = 'doi';
+          identifier.value = doc.message.reference[i].DOI;
+          citation.identifier.push(identifier);     
+          
+        } else {
+          // Make fragment id 
+          var fragment = doc.message.reference[i].key;
+          fragment = fragment.replace(/[^a-zA-Z0-9_]/g, '');
+          citation["@id"] = doc._id + '#' + fragment;        
         }
+        
+        citation.name = '';
         if (doc.message.reference[i]['article-title']) {
           citation.name = doc.message.reference[i]['article-title'];
         }
-        if (doc.message.reference[i].unstructured) {
-          citation.name = doc.message.reference[i].unstructured;
+        if (doc.message.reference[i]['volume-title']) {
+          citation.name = doc.message.reference[i]['volume-title'];
+        }  
+        
+        if (citation.name == '') {
+          if (doc.message.reference[i].unstructured) {
+            citation.name = doc.message.reference[i].unstructured;
+          }
         }
+        
+        // other fields
+        if (doc.message.reference[i].year) {
+          citation.datePublished = doc.message.reference[i].year;
+        }
+        
+		// container
+		if (doc.message.reference[i]['journal-title']) {
+		  var container = {};
+		  container.name = doc.message.reference[i]['journal-title'];
+		  container["@type"] = "Periodical";
+
+		  if (doc.message.reference[i].ISSN) {
+			container.issn = [doc.message.ISSN];
+		  }
+		  citation.isPartOf = container;
+		}		
+        
+        if (doc.message.reference[i].volume) {
+          citation.volume = doc.message.reference[i].volume;
+        }
+        if (doc.message.reference[i].issue) {
+          citation.issueNumber = doc.message.reference[i].issue;
+        }
+        if (doc.message.reference[i]['first-page']) {
+          citation.pageStart = doc.message.reference[i]['first-page'];
+        }
+      
+		if (doc.message.reference[i].author) {
+		  citation.creator = [];
+
+		  if (Array.isArray(doc.message.reference[i].author)) {
+			for (var j in doc.message.reference[i].author) {
+			  var person = {};
+			  person["@type"] = "Person";
+			  person.name = doc.message.reference[i].author[j];
+			  citation.creator.push(person);
+			}
+
+		  } else {
+			var person = {};
+			person["@type"] = "Person";
+			person.name = doc.message.reference[i].author;
+
+			citation.creator.push(person);
+		  }
+		}
+        
+        if (citation.name == '') {
+        	delete citation.name;
+        }
+                
         jsonld.citation.push(citation);
       }
     }
+
 
     //emit(doc._id, jsonld);
     $('#jsonld').html(JSON.stringify(jsonld, null, 2));
@@ -528,6 +1042,9 @@ function do_reference(doc) {
 
     if (doc.message.unstructured) {
       jsonld.description = doc.message.unstructured;
+      jsonld.description = jsonld.description.replace(/\n/g, '');
+      jsonld.description = jsonld.description.replace(/^\s+/, '');
+       jsonld.description = jsonld.description.replace(/\s\s+/, '');
     }
 
     if (doc.message.year) {
@@ -581,8 +1098,10 @@ function do_reference(doc) {
       }
     }
 
+
+
+
     //emit(doc._id, jsonld);
-    $('#jsonld').html(JSON.stringify(jsonld, null, 2));
   }
 }
 
@@ -663,8 +1182,6 @@ function do_zoobank(doc) {
 
 
     //emit(doc._id, jsonld);
-    $('#jsonld').html(JSON.stringify(jsonld, null, 2));
-    
   }
 }
 
@@ -673,7 +1190,7 @@ function couchdb(doc) {
 
     // ORCID work
     if (doc['message-format'] === 'application/vnd.citationstyles.csl+json') {
-      //do_csl(doc);
+      do_csl(doc);
     }
 
     // CrossRef
@@ -683,18 +1200,16 @@ function couchdb(doc) {
 
     // Cited reference (e.g., from CrossRef CSL)
     if (doc['message-format'] === 'application/vnd.crossref-citation+json') {
-      //do_reference(doc);
+      do_reference(doc);
     }
 
     // Zoobank
     if (doc['message-format'] === 'application/vnd.zoobank+json') {
-      //do_zoobank(doc);
+      do_zoobank(doc);
     }
 
   }
 }
-
-// END COUCHDB VIEW
 
 // END COUCHDB VIEW
 		

@@ -263,6 +263,13 @@ $urls = array('https://orcid.org/0000-0003-0813-6650');
 // Tilo Henning
 $urls = array('https://orcid.org/0000-0003-1929-3264');
 
+
+// Lots of unstructured references, cited by 10.11646/phytotaxa.158.3.7 for
+// which we will need to scrape HTML to get citations
+$urls = array(
+'https://doi.org/10.7202/033135ar'
+);
+
 //----------------------------------------------------------------------------------------
 // Add items to the queue
 
